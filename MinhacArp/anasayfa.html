@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhac Arp - Arapça Öğrenme</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#0f391c', /* Logodaki koyu yeşil */
+                        brandLight: '#659834', /* Logodaki yaprak yeşili */
+                        brandBg: '#fbfdfc',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #fafafa; }
+        .card-shadow { box-shadow: 0 10px 40px -10px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body class="text-gray-800 min-h-screen flex flex-col items-center pt-8 pb-20">
+
+    <header class="w-full max-w-6xl px-6 flex justify-between items-center mb-16">
+        <div class="text-2xl font-extrabold text-brandDark flex items-center gap-2">
+            MİNHAC<span class="text-brandLight">ARP</span>
+        </div>
+        <div class="flex items-center gap-4 text-gray-500">
+            <svg class="w-6 h-6 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+            <div class="w-8 h-8 rounded-full bg-brandDark text-white flex items-center justify-center font-bold text-sm cursor-pointer">U</div>
+        </div>
+    </header>
+
+    <main class="w-full max-w-5xl px-4 flex flex-col items-center text-center">
+        <h1 class="text-3xl md:text-4xl font-bold text-brandDark mb-4 tracking-tight">
+            Arapça Öğrenme Yolculuğunda İki Güçlü Adım
+        </h1>
+        <p class="text-gray-600 mb-8 max-w-2xl text-sm md:text-base leading-relaxed">
+            AI Pratik Kulübü ve Challenge Eğitimi birbirini tamamlar; kalıcı ve <br class="hidden md:block">
+            akıcı Arapça için her ikisini de keşfet.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-3 mb-12">
+            <span class="bg-white px-4 py-2 rounded-full text-xs font-medium text-gray-600 shadow-sm border border-gray-100 flex items-center gap-2">🚀 Hızlı Öğrenme</span>
+            <span class="bg-white px-4 py-2 rounded-full text-xs font-medium text-gray-600 shadow-sm border border-gray-100 flex items-center gap-2">🎯 Kişiselleştirilmiş</span>
+            <span class="bg-white px-4 py-2 rounded-full text-xs font-medium text-gray-600 shadow-sm border border-gray-100 flex items-center gap-2">📈 İlerleme Takibi</span>
+            <span class="bg-white px-4 py-2 rounded-full text-xs font-medium text-gray-600 shadow-sm border border-gray-100 flex items-center gap-2">🏆 Başarı Sistemi</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+            
+            <div class="bg-white rounded-3xl p-10 card-shadow relative flex flex-col items-center text-center border border-transparent hover:border-brandLight/20 transition-all duration-300">
+                <span class="absolute top-6 right-6 bg-green-50 text-brandLight px-3 py-1 rounded-full text-[10px] font-bold tracking-wide">Aktif</span>
+                
+                <div class="w-20 h-20 mb-6 flex items-center justify-center text-brandDark">
+                    <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill-opacity="0.2" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                </div>
+                
+                <h2 class="text-2xl font-bold text-gray-900 mb-3">Challenge Eğitimi</h2>
+                <p class="text-sm text-gray-500 mb-8 max-w-[250px]">
+                    38 günlük kapsamlı program ile sistematik Arapça eğitimi
+                </p>
+
+                <div class="grid grid-cols-2 gap-y-4 gap-x-8 text-xs text-gray-600 w-full text-left mt-auto">
+                    <div class="flex items-center gap-2"><span class="text-lg">📅</span> 38 Günlük Program</div>
+                    <div class="flex items-center gap-2"><span class="text-lg">🎬</span> HD Video Dersler</div>
+                    <div class="flex items-center gap-2 col-span-2"><span class="text-lg">📚</span> Kapsamlı Müfredat</div>
+                </div>
+
+                <button class="absolute bottom-8 right-8 text-gray-400 hover:text-brandDark transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </button>
+            </div>
+
+            <a href="al-pratik-kulubu.html" class="bg-white rounded-3xl p-10 card-shadow relative flex flex-col items-center text-center border border-transparent hover:border-brandLight/20 transition-all duration-300 cursor-pointer">
+                <span class="absolute top-6 right-6 bg-green-50 text-brandLight px-3 py-1 rounded-full text-[10px] font-bold tracking-wide">Aktif</span>
+                
+                <div class="w-20 h-20 mb-6 flex items-center justify-center text-brandLight">
+                     <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </div>
+                
+                <h2 class="text-2xl font-bold text-gray-900 mb-3">AI Pratik Kulübü</h2>
+                <p class="text-sm text-gray-500 mb-8 max-w-[250px]">
+                    İnteraktif yapay zeka teknolojisiyle modern öğrenme deneyimi
+                </p>
+
+                <div class="grid grid-cols-2 gap-y-4 gap-x-8 text-xs text-gray-600 w-full text-left mt-auto">
+                    <div class="flex items-center gap-2"><span class="text-lg">🎯</span> İnteraktif Egzersizler</div>
+                    <div class="flex items-center gap-2"><span class="text-lg">🤖</span> 3D AI Avatar</div>
+                    <div class="flex items-center gap-2 col-span-2"><span class="text-lg">💬</span> Günlük Diyaloglar</div>
+                </div>
+
+                <button class="absolute bottom-8 right-8 text-gray-400 hover:text-brandDark transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
