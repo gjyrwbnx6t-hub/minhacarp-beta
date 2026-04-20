@@ -17,8 +17,70 @@ const egitimMufredati = {
             { arapca: "مَا الْأَخْبَارُ؟", turkce: "N'aber?" },
             { arapca: "مَاذَا كُنْتَ تَفْعَلُ مُؤَخَّرًا؟", turkce: "Görmeyeli neler yapıyorsun?" }
         ],
+        "diyaloglar": [
+            {
+                "baslik": "Diyalog 1: Gündelik Karşılaşma",
+                "senaryo": "Yolda yürürken uzun zamandır görmediğiniz bir arkadaşınızla karşılaşıyorsunuz...",
+                "akis": [
+                    { 
+                        "tur": "video", 
+                        "isim": "Arkadaşın", 
+                        "arapca": "مَرْحَبًا، مَا الْأَخْبَارُ؟ لَمْ نَرَكَ مُنْذُ زَمَنٍ طَوِيلٍ!", 
+                        "turkce": "Merhaba, ne haber? Seni uzun zamandır görmedik!" 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Sen", 
+                        "arapca": "آه، أَهْلًا! سَعِيدٌ بِرُؤْيَتِكَ. كَيْفَ هِيَ الْحَيَاةُ مَعَكَ؟", 
+                        "turkce": "Ah, selam! Seni görmek ne güzel. Hayat nasıl gidiyor?" 
+                    },
+                    { 
+                        "tur": "video", 
+                        "isim": "Arkadaşın", 
+                        "arapca": "لَيْسَتْ سَيِّئَةً، مَشْغُولٌ بِالْعَمَلِ فَقَطْ. مَاذَا عَنْكَ؟", 
+                        "turkce": "Fena değil, sadece işlerle meşgulüm. Senden n'aber?" 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Sen", 
+                        "arapca": "وَأَنَا أَيْضًا. دَعْنَا نَشْرَبُ قَهْوَةً وَنَتَحَدَّثُ!", 
+                        "turkce": "Ben de öyle. Hadi bir kahve içip laflayalım!" 
+                    }
+                ]
+            },
+            {
+                "baslik": "Diyalog 2: İş Arkadaşıyla Tanışma",
+                "senaryo": "Bir iş toplantısında ilk defa tanıştığınız bir meslektaşınızla selamlaşıyorsunuz...",
+                "akis": [
+                    { 
+                        "tur": "video", 
+                        "isim": "Habib (İş Arkadaşı)", 
+                        "arapca": "مَسَاءُ الْخَيْرِ. سَعِيدٌ بِلِقَائِكَ. أَنَا حَبِيب.", 
+                        "turkce": "İyi akşamlar. Seninle tanıştığıma memnun oldum. Ben Habib." 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Sen (Ali)", 
+                        "arapca": "مَسَاءُ النُّورِ يَا حَبِيب. سَعِيدٌ بِلِقَائِكَ أَيْضًا. أَنَا عَلِيّ.", 
+                        "turkce": "İyi akşamlar Habib. Ben de seninle tanıştığıma memnun oldum. Ben Ali." 
+                    },
+                    { 
+                        "tur": "video", 
+                        "isim": "Habib (İş Arkadaşı)", 
+                        "arapca": "آمُلُ أَنَّ كُلَّ شَيْءٍ يَسِيرُ عَلَى مَا يُرَامُ فِي الْمَشْرُوعِ؟", 
+                        "turkce": "Umarım projede her şey yolunda gidiyordur?" 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Sen (Ali)", 
+                        "arapca": "نَعَمْ، إِنَّهُ يَتَقَدَّمُ بِشَكْلٍ جَيِّدٍ. دَعْنَا نُنَاقِشُ التَّفَاصِيلَ فِي الِاجْتِمَاعِ.", 
+                        "turkce": "Evet, gayet iyi ilerliyor. Detayları toplantıda konuşalım." 
+                    }
+                ]
+            }
+        ],
         "okuma_alistirmasi": {
-            "resim": "",
+            "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/22U6VjoGKaInRdjObNBu.png",
             "ses": "",
             "metinler": {
                 "basit": "مَلْجَأُ الْحَيَوَانَاتِ هُوَ مَكَانٌ تَعِيشُ فِيهِ الْحَيَوَانَاتُ. يَقُومُ النَّاسُ بِإِنْقَاذِ هَذِهِ الْحَيَوَانَاتِ. الْحَيَوَانَاتُ هُنَا فِي أَمَانٍ. مَلَاجِئُ الْحَيَوَانَاتِ فِي الْوِلَايَاتِ الْمُتَّحِدَةِ تُوَاجِهُ مَشَاكِلَ. مُعْظَمُ الْمَلَاجِئِ الْبَالِغِ عَدَدُهَا ٤٥ مَلْجَأً تَضْطَرُّ لِدَفْعِ الْمَزِيدِ مُقَابِلَ أَشْيَاءَ مِثْلِ التِّبْنِ وَالْحُبُوبِ. تَرْتَفِعُ الْأَسْعَارُ كَثِيرًا بَعْدَ الْوَبَاءِ. تَتَضَاعَفُ أَسْعَارُ بَعْضِ الْأَشْيَاءِ. مَلْجَأُ كَاتْسْكِيل يَضُمُّ ٢٠٠ حَيَوَانٍ. وَيَضْطَرُّ أَيْضًا لِدَفْعِ الْمَزِيدِ مُقَابِلَ أَشْيَاءَ مِثْلِ التِّبْنِ وَالْحُبُوبِ. الطِّبُّ مُكْلِفٌ أَيْضًا. فِي الْوَقْتِ نَفْسِهِ، عَدَدٌ أَقَلُّ مِنَ النَّاسِ يَتَبَرَّعُونَ بِالْأَمْوَالِ لِمَلَاجِئِ الْحَيَوَانَاتِ. هَذِهِ أَخْبَارٌ سَيِّئَةٌ. تَحْتَاجُ مَلَاجِئُ الْحَيَوَانَاتِ إِلَى أَمْوَالٍ مِنَ النَّاسِ. إِذَا أُغْلِقَتِ الْمَلَاجِئُ، فَلَنْ تَجِدَ الْكَثِيرُ مِنَ الْحَيَوَانَاتِ طَعَامًا.",
@@ -86,8 +148,82 @@ const egitimMufredati = {
             { arapca: "مَاذَا كُنْتَ تَفْعَلُ مُؤَخَّرًا؟", turkce: "Neler yapıyorsun?" },
             { arapca: "مَا الْجَدِيدُ؟", turkce: "Neler yapıyorsun, Var mı yeni bir şeyler?" }
         ],
+        "diyaloglar": [
+            {
+                "baslik": "Diyalog 1: İş Arkadaşıyla Sabah Karşılaşması",
+                "senaryo": "İş yerinde sabah saatlerinde bir iş arkadaşınla karşılaşıyorsun ve ayaküstü kısa bir sohbet ediyorsunuz...",
+                "akis": [
+                    { 
+                        "tur": "video", 
+                        "isim": "İş Arkadaşın", 
+                        "arapca": "صَبَاحُ الْخَيْرِ! كَيْفَ الْحَالُ؟", 
+                        "turkce": "Günaydın! Nasıl gidiyor?" 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Sen", 
+                        "arapca": "صَبَاحُ النُّورِ! لَيْسَ سَيِّئًا. وَمَاذَا عَنْكَ؟", 
+                        "turkce": "Günaydın! Fena değil. Senden n'aber?" 
+                    },
+                    { 
+                        "tur": "video", 
+                        "isim": "İş Arkadaşın", 
+                        "arapca": "جَيِّدٌ جِدًّا، أُتَابِعُ بَعْضَ الْأَعْمَالِ فَقَطْ.", 
+                        "turkce": "Oldukça iyi, sadece bazı işleri toparlıyorum." 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Sen", 
+                        "arapca": "وَأَنَا كَذَلِكَ. دَعْنَا نَشْرَبُ الْقَهْوَةَ لَاحِقًا!", 
+                        "turkce": "Ben de öyle. Sonra kahve içelim!" 
+                    },
+                    { 
+                        "tur": "video", 
+                        "isim": "İş Arkadaşın", 
+                        "arapca": "يَبْدُو هَذَا جَيِّدًا!", 
+                        "turkce": "Kulağa hoş geliyor! (Harika!)" 
+                    }
+                ]
+            },
+            {
+                "baslik": "Diyalog 2: Arkadaşla Kahve Molası",
+                "senaryo": "Yoğun bir haftanın ardından yakın bir arkadaşınla mola verip sohbet ediyorsunuz...",
+                "akis": [
+                    { 
+                        "tur": "video", 
+                        "isim": "Arkadaşın", 
+                        "arapca": "أَهْلًا! مَا الْجَدِيدُ عِنْدَكَ؟", 
+                        "turkce": "Selam! Neler yapıyorsun? (Sende ne var ne yok?)" 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Sen", 
+                        "arapca": "أَهْلًا! لَا شَيْءَ كَثِيرًا، كَالْمُعْتَادِ. وَأَنْتَ؟", 
+                        "turkce": "Selam! Pek bir şey yok, her zamanki gibi. Ya sen?" 
+                    },
+                    { 
+                        "tur": "video", 
+                        "isim": "Arkadaşın", 
+                        "arapca": "وَأَنَا أَيْضًا. كَانَ أُسْبُوعًا مُزْدَحِمًا.", 
+                        "turkce": "Ben de öyle. Yoğun bir haftaydı." 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Sen", 
+                        "arapca": "بِالضَّبْطِ! أَنَا سَعِيدٌ جِدًّا لِأَنَّنَا نَأْخُذُ قِسْطًا مِنَ الرَّاحَةِ.", 
+                        "turkce": "Hem de nasıl! Mola verdiğimize çok sevindim." 
+                    },
+                    { 
+                        "tur": "video", 
+                        "isim": "Arkadaşın", 
+                        "arapca": "وَأَنَا أَيْضًا. دَعْنَا نَسْتَرْخِي وَنَسْتَمْتِعُ بِهَذِهِ الْقَهْوَةِ.", 
+                        "turkce": "Ben de. Hadi rahatlayalım ve bu kahvenin tadını çıkaralım." 
+                    }
+                ]
+            }
+        ],
         "okuma_alistirmasi": {
-            "resim": "",
+            "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/97SvBNUNRwuf1JrdU6oN.png",
             "ses": "",
             "metinler": {
                 "basit": "سَيَبْنِي نَادِي مَانْشَسْتَر يُونَايْتِد مَلْعَبَ كُرَةِ قَدَمٍ جَدِيدًا يَتَّسِعُ لِمِائَةِ أَلْفِ مَقْعَدٍ. سَيَكُونُ الْأَكْبَرَ فِي الْمَمْلَكَةِ الْمُتَّحِدَةِ. يَقُولُ النَّادِي إِنَّهُ سَيَكُونُ أَفْضَلَ مَلْعَبٍ فِي الْعَالَمِ. يَعْتَقِدُونَ أَنَّهُ سَيُسَاعِدُ الْمَمْلَكَةَ الْمُتَّحِدَةَ. سَيَجْلِبُ الْكَثِيرَ مِنَ الْأَمْوَالِ كُلَّ عَامٍ. سَيُسَاعِدُ الْمَلْعَبُ أَيْضًا أُولْد تْرَافُورْد مِنْ خِلَالِ تَوْفِيرِ فُرَصِ عَمَلٍ وَمَنَازِلَ جَدِيدَةٍ. يَقُولُ السِّير جِيم رَاتْكْلِيف إِنَّ الْمَلْعَبَ الْقَدِيمَ جَيِّدٌ جِدًّا وَلَكِنَّهُ قَدِيمٌ أَيْضًا. سَيَكُونُ الْمَلْعَبُ الْجَدِيدُ بِجِوَارِهِ، لِذَلِكَ سَيَبْقَى تَارِيخُ النَّادِي. تُرِيدُ الْحُكُومَةُ مُسَاعَدَةَ شَمَالِ إِنْجِلْتِرَا، وَهَذَا الْمَلْعَبُ مُهِمٌّ. يَأْمُلُ مَانْشَسْتَر يُونَايْتِد أَنْ يَكُونَ مَكَانًا خَاصًّا، مِثْلَ وِيمْبْلِي.",
