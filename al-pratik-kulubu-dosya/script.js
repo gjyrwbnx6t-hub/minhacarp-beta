@@ -1,38 +1,75 @@
 document.addEventListener("DOMContentLoaded", function() {
     
+    const icerikAlani = document.querySelector('.main-content'); 
+    const tumEgzersizButonlari = document.querySelectorAll('.ex-btn');
+    
+    // KULLANICININ HANGİ SEKMEDE OLDUĞUNU TUTAN HAFIZA DEĞİŞKENİ
+    let aktifEgzersizTuru = null; 
+
+    // --- 0. KISIM: İLK AÇILIŞ EKRANINI TEMİZLEME VE HOŞ GELDİN MESAJI ---
+    // HTML'de açık unutulmuş menüleri zorla kapat
+    document.querySelectorAll('.exercise-list').forEach(list => list.style.display = "none");
+    document.querySelectorAll('.day-header .arrow').forEach(arrow => arrow.textContent = "▼");
+    document.querySelectorAll('.ex-btn').forEach(btn => btn.classList.remove('active-ex'));
+    
+    // Ekrana temiz bir karşılama mesajı bas
+    icerikAlani.innerHTML = `
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 70vh; text-align: center; animation: fadeIn 0.5s;">
+            <span style="font-size: 80px; margin-bottom: 20px;">👋</span>
+            <h2 style="color: #1a5c83; font-size: 32px; margin-bottom: 10px;">Eğitime Hoş Geldiniz!</h2>
+            <p style="color: #666; font-size: 18px; max-width: 500px;">Arapça çalışmaya başlamak için sol menüden bir gün ve egzersiz türü seçin.</p>
+        </div>
+    `;
+
     // --- 1. KISIM: Sidebar (Açılır Kapanır) Menü Mantığı ---
+    
+    // Haftalar İçin Akıllı Akordeon
     const weekHeaders = document.querySelectorAll('.accordion-header');
     weekHeaders.forEach(header => {
         header.addEventListener('click', function() {
             const content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-                this.querySelector('.arrow').textContent = "▼";
-            } else {
+            const isCurrentlyOpen = content.style.display === "block";
+
+            // Diğer tüm haftaları kapat
+            document.querySelectorAll('.accordion-content').forEach(c => c.style.display = "none");
+            document.querySelectorAll('.accordion-header .arrow').forEach(a => a.textContent = "▼");
+
+            // Tıklanan zaten açık değilse aç
+            if (!isCurrentlyOpen) {
                 content.style.display = "block";
                 this.querySelector('.arrow').textContent = "▲";
             }
         });
     });
 
+    // Günler İçin Akıllı Akordeon ve Hafıza Sistemi
     const dayHeaders = document.querySelectorAll('.day-header');
     dayHeaders.forEach(header => {
         header.addEventListener('click', function() {
             const content = this.nextElementSibling;
-            if (content.style.display === "block" || content.style.display === "") {
-                content.style.display = "none";
-                this.querySelector('.arrow').textContent = "▼";
-            } else {
+            const isCurrentlyOpen = content.style.display === "block";
+
+            // Diğer tüm günleri kapat
+            document.querySelectorAll('.exercise-list').forEach(list => list.style.display = "none");
+            document.querySelectorAll('.day-header .arrow').forEach(arrow => arrow.textContent = "▼");
+
+            if (!isCurrentlyOpen) {
+                // Tıklanan günü aç
                 content.style.display = "block";
                 this.querySelector('.arrow').textContent = "▲";
+
+                // HAFIZA SİSTEMİ: Daha önce bir egzersiz (Örn: Diyaloglar) seçildiyse, yeni günde de onu otomatik aç
+                if (aktifEgzersizTuru) {
+                    const hedefButon = content.querySelector(`.ex-btn[data-tur="${aktifEgzersizTuru}"]`);
+                    if (hedefButon) {
+                        hedefButon.click(); // Butona tıklanmış gibi simüle et
+                    }
+                }
             }
         });
     });
 
     // --- 2. KISIM: AKILLI VE EVRENSEL KART YAZDIRMA ---
-    const icerikAlani = document.querySelector('.main-content'); 
-    const tumEgzersizButonlari = document.querySelectorAll('.ex-btn');
-
     function ekranaYazdir(veri, baslik, tur, secilenGun) {
         
         if (tur !== "kelime_alistirmasi" && (!veri || (Array.isArray(veri) && veri.length === 0) || Object.keys(veri).length === 0)) {
@@ -106,23 +143,20 @@ document.addEventListener("DOMContentLoaded", function() {
                 return kelimeHtml;
             }
 
-            // Metni kelime kelime tıklanabilir span'lara bölme fonksiyonu
             function metniTıklanabilirYap(metin) {
-                if (!metin) return ""; // Metin yoksa çökmeyi önler
+                if (!metin) return ""; 
                 return metin.split(' ').map(kelime => {
                     return `<span class="okuma-kelimesi" style="cursor: pointer; display: inline-block; padding: 2px 4px; border-radius: 4px; transition: 0.2s;">${kelime}</span>`;
                 }).join(' ');
             }
 
-            // Tıklama Olaylarını Dinleme ve Baloncuğu Kelimenin Altında Gösterme
             function kelimeTıklamalariniDinle() {
                 document.querySelectorAll('.okuma-kelimesi').forEach(span => {
                     span.addEventListener('mouseenter', function() { this.style.backgroundColor = '#eaf3f8'; });
                     span.addEventListener('mouseleave', function() { this.style.backgroundColor = 'transparent'; });
 
                     span.addEventListener('click', async function(e) {
-                        e.stopPropagation(); // Boşluğa tıklama olayının bunu hemen kapatmasını engeller
-
+                        e.stopPropagation(); 
                         let safKelime = this.innerText.replace(/[.,?!؛،]/g, '').trim();
 
                         let tooltip = document.getElementById('ceviri-tooltip');
@@ -158,7 +192,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         try {
                             const response = await fetch(`https://api.mymemory.translated.net/get?q=${safKelime}&langpair=ar|tr`);
                             const data = await response.json();
-                            
                             let ceviri = data.responseData.translatedText;
                             if(ceviri === safKelime || ceviri.includes("MYMEMORY WARNING")) {
                                 tooltip.innerHTML = `<span dir="rtl" style="color:#ffd700;">${safKelime}</span> : Bulunamadı`;
@@ -169,14 +202,11 @@ document.addEventListener("DOMContentLoaded", function() {
                             tooltip.innerHTML = "Bağlantı hatası.";
                         }
 
-                        window.ceviriZamanlayici = setTimeout(() => { 
-                            tooltip.style.display = 'none'; 
-                        }, 6000);
+                        window.ceviriZamanlayici = setTimeout(() => { tooltip.style.display = 'none'; }, 6000);
                     });
                 });
             }
 
-            // Sayfada boş bir yere tıklandığında baloncuğu kapat
             document.addEventListener('click', function(e) {
                 let tooltip = document.getElementById('ceviri-tooltip');
                 if (tooltip && !e.target.classList.contains('okuma-kelimesi')) {
@@ -187,7 +217,6 @@ document.addEventListener("DOMContentLoaded", function() {
             const metinAlani = document.getElementById('okumaMetniAlani');
             const kelimelerAlani = document.getElementById('dinamikKelimelerAlani');
             
-            // Sayfa yüklendiğinde metni bas ve dinleyicileri aktif et
             metinAlani.innerHTML = metniTıklanabilirYap(veri.metinler.basit);
             kelimelerAlani.innerHTML = kelimeleriCiz('basit');
             kelimeTıklamalariniDinle();
