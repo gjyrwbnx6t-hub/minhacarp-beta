@@ -290,8 +290,94 @@ const egitimMufredati = {
             { arapca: "لَسْتُ عَلَى مَا يُرَامُ.", turkce: "Pek iyi değil." },
             { arapca: "كَانَ مِنَ الْمُمْكِنِ أَنْ يَكُونَ أَفْضَلَ.", turkce: "Daha iyisi olabilirdi." }
         ],
+        "diyaloglar": [
+            {
+                "baslik": "Diyalog 1: Spor Sonrası Sohbet (Samimi)",
+                "senaryo": "Egzersiz sonrası yorgun ama enerjik iki arkadaşın karşılaşması ve ayaküstü sohbeti.",
+                "vagonOdagi": "Duygu ve Yoğunluk Vagonları",
+                "akis": [
+                    {
+                        "tur": "video",
+                        "isim": "Arkadaşın",
+                        "turkce": "Selam, n'aber? Bugün biraz yorgun görünüyorsun.",
+                        "arapca": "أَهْلًا، مَا الْأَخْبَارُ؟ تَبْدُو مُتْعَبًا نَوْعًا مَا الْيَوْمَ.",
+                        "vagonNotu": "نَوْعًا مَا (Naw'an mâ) -> Oldukça / Biraz (Orta seviye yoğunluk vagonu)."
+                    },
+                    {
+                        "tur": "kullanici",
+                        "isim": "Sen",
+                        "turkce": "Evet, öyleyim. Yorucu bir haftaydı. Sende her şey nasıl?",
+                        "arapca": "نَعَمْ، صحيح. كَانَ أُسْبُوعًا متعِبا. كَيْفَ الأمور مَعَكَ؟",
+                        "vagonNotu": "كَيْفَ كُلُّ الإمور مَعَكَ؟ -> Durumlar nasıl?"
+                    },
+                    {
+                        "tur": "video",
+                        "isim": "Arkadaşın",
+                        "turkce": "Şikayetim yok. Oldukça yoğundu, ama genel olarak çok kötü değildi.",
+                        "arapca": "مَاشِي الْحَالِ. كَانَ مُزْدَحِمًا إِلَى حَدِّ مَا، لَكِنْ لَيْسَ سَيِّئًا جِدًّا بِشَكْلٍ عَامٍّ.",
+                        "vagonNotu": "إِلَى حَدِّ مَا (İlâ haddin mâ) -> Oldukça / Bir dereceye kadar."
+                    },
+                    {
+                        "tur": "kullanici",
+                        "isim": "Sen",
+                        "turkce": "Bende de aynı. Hafta sonu için son derece hazırım!",
+                        "arapca": "وَأَنَا أَيْضًا. أَنَا مُسْتَعِدٌّ لِلْغَايَةِ لِعُطْلَةِ نِهَايَةِ الْأُسْبُوعِ!",
+                        "vagonNotu": "لِلْغَايَةِ (Lil-ğâye) -> Son derece / Çok (Duygusal zirve vagonu)."
+                    },
+                    {
+                        "tur": "video",
+                        "isim": "Arkadaşın",
+                        "turkce": "Ben de! Hadi bu kahvenin tadını çıkaralım ve biraz rahatlayalım.",
+                        "arapca": "وَأَنَا أَيْضًا! دَعْنَا نَسْتَمْتِع بِهَذِهِ الْقَهْوَةِ وَنَسْتَرح قَلِيلًا.",
+                        "vagonNotu": "نسترح (Nesterkhî) -> Rahatlayalım."
+                    }
+                ]
+            },
+            {
+                "baslik": "Diyalog 2: İş Etkinliğinde Tanışma (Resmi)",
+                "senaryo": "Profesyonel bir ortamda iş arkadaşınla sabah karşılaşması ve proje beklentisi.",
+                "vagonOdagi": "Nezaket ve Maksimum Vurgu Vagonları",
+                "akis": [
+                    {
+                        "tur": "video",
+                        "isim": "Meslektaşın",
+                        "turkce": "Günaydın, umarım bugün iyisinizdir.",
+                        "arapca": "صَبَاحُ الْخَيْرِ، أَرْجُو أَنْ تَكُونَ بِخَيْرٍ الْيَوْمَ.",
+                        "vagonNotu": "أَرْجُو أَنْ تَكُونَ (Ercû en tekûne) -> Umarım öylesinizdir (Resmi giriş)."
+                    },
+                    {
+                        "tur": "kullanici",
+                        "isim": "Sen",
+                        "turkce": "Günaydın! Çok iyiyim, teşekkür ederim. Ya siz?",
+                        "arapca": "صَبَاحُ النُّورِ! أَنَا بِخَيْرٍ جِدًّا، شُكْرًا لَكَ. وَكَيْفَ حَالُ حَضْرَتِكَ؟",
+                        "vagonNotu": "حَضْرَتِكَ (Hadratik) -> Zatıaliniz / Siz (Saygı ve resmiyet vagonu)."
+                    },
+                    {
+                        "tur": "video",
+                        "isim": "Meslektaşın",
+                        "turkce": "Ben de oldukça iyiyim, teşekkürler. Şimdiye kadar verimli bir sabahtı.",
+                        "arapca": "أَنَا جَيِّدٌ إِلَى حَدِّ مَا، شُكْرًا. كَانَ صَبَاحًا مُثْمِرًا حَتَّى الْآنَ.",
+                        "vagonNotu": "إِلَى حَدِّ مَا (İlâ haddin mâ) -> Oldukça (Resmi ortama uygun orta yoğunluk)."
+                    },
+                    {
+                        "tur": "kullanici",
+                        "isim": "Sen",
+                        "turkce": "Bunu duymak harika. Bugün projeyi tartışmayı gerçekten dört gözle bekliyorum.",
+                        "arapca": "هَذَا رَائِعٌ سَمَاعُهُ. أَتَطَلَّعُ حَقًّا لِمُنَاقَشَةِ الْمَشْرُوعِ الْيَوْمَ.",
+                        "vagonNotu": "حَقًّا (Haqqan) -> Gerçekten (Doğrulama ve samimiyet vagonu)."
+                    },
+                    {
+                        "tur": "video",
+                        "isim": "Meslektaşın",
+                        "turkce": "Ben de. Maksimum seviyede (aşırı derecede) ilginç olacağına inanıyorum.",
+                        "arapca": "وَأَنَا أَيْضًا. أَعْتَقِدُ أَنَّهُ سَيَكُونُ مُثِيرًا لِلِاهْتِمَامِ إِلَى أَقْصَى حَدٍّ.",
+                        "vagonNotu": "إِلَى أَقْصَى حَدٍّ (İlâ aqsâ haddin) -> Maksimum seviyede / Aşırı derecede."
+                    }
+                ]
+            }
+        ],
         "okuma_alistirmasi": {
-            "resim": "",
+            "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/BrVRrj5sTD5YGlLDeLbn.png",
             "ses": "",
             "metinler": {
                 "basit": "يَقُولُ الْمَسْؤُولُونَ إِنَّ إِثْيُوبْيَا وَإِرِتْرِيَا قَدْ تَتَقَاتَلَانِ مَرَّةً أُخْرَى. إِذَا فَعَلَتَا ذَلِكَ، فَسَيُعَانِي الْكَثِيرُ مِنَ النَّاسِ فِي الْقَرْنِ الْأَفْرِيقِيِّ. تَبْدَأُ الْمُشْكِلَةُ بَعْدَ حَرْبٍ فِي إِقْلِيمِ تِغْرَايْ فِي إِثْيُوبْيَا. تَبْدَأُ الْحَرْبُ فِي عَامِ ٢٠٢٠ وَتَسْتَمِرُّ عَامَيْنِ. تُسَاعِدُ إِرِتْرِيَا إِثْيُوبْيَا فِي مُحَارَبَةِ مَجْمُوعَةٍ تُسَمَّى الْجَبْهَةَ الشَّعْبِيَّةَ لِتَحْرِيرِ تِغْرَايْ. بَعْدَ الْحَرْبِ، تَعْقِدُ إِثْيُوبْيَا سَلَامًا مَعَ تِغْرَايْ، لَكِنَّ إِرِتْرِيَا لَيْسَتْ جُزْءًا مِنَ الِاتِّفَاقِ. الْآنَ، بَعْضُ النَّاسِ فِي تِغْرَايْ يُقَاتِلُونَ مَرَّةً أُخْرَى. قَدْ تَتَّخِذُ إِثْيُوبْيَا وَإِرِتْرِيَا جَوَانِبَ مُخْتَلِفَةً. كِلَا الْبَلَدَيْنِ يُرْسِلَانِ جُنُودًا إِلَى الْحُدُودِ. تُصْبِحُ إِرِتْرِيَا حُرَّةً مِنْ إِثْيُوبْيَا فِي عَامِ ١٩٩٣. يَتَقَاتَلُونَ مَرَّةً أُخْرَى فِي عَامِ ١٩٩٨ لَكِنَّهُمْ يَعْقِدُونَ سَلَامًا فِي عَامِ ٢٠١٨. الْآنَ، هُمَا لَيْسَا صَدِيقَيْنِ لِأَنَّ إِثْيُوبْيَا تَعْقِدُ سَلَامًا مَعَ تِغْرَايْ. تُرِيدُ إِثْيُوبْيَا أَيْضًا الْوُصُولَ إِلَى الْبَحْرِ، وَهُوَ مَا لَا يُعْجِبُ إِرِتْرِيَا.",

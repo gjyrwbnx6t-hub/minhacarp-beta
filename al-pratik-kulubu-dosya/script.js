@@ -1,18 +1,44 @@
 document.addEventListener("DOMContentLoaded", function() {
     
+    // --- 1. KISIM: Sidebar (Açılır Kapanır) Menü Mantığı ---
+    const weekHeaders = document.querySelectorAll('.accordion-header');
+    weekHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                this.querySelector('.arrow').textContent = "▼";
+            } else {
+                content.style.display = "block";
+                this.querySelector('.arrow').textContent = "▲";
+            }
+        });
+    });
+
+    const dayHeaders = document.querySelectorAll('.day-header');
+    dayHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            if (content.style.display === "block" || content.style.display === "") {
+                content.style.display = "none";
+                this.querySelector('.arrow').textContent = "▼";
+            } else {
+                content.style.display = "block";
+                this.querySelector('.arrow').textContent = "▲";
+            }
+        });
+    });
+
+    // --- 2. KISIM: AKILLI VE EVRENSEL KART YAZDIRMA ---
     const icerikAlani = document.querySelector('.main-content'); 
     const tumEgzersizButonlari = document.querySelectorAll('.ex-btn');
-    
-    // KULLANICININ HANGİ SEKMEDE OLDUĞUNU TUTAN HAFIZA DEĞİŞKENİ
     let aktifEgzersizTuru = null; 
 
-    // --- 0. KISIM: İLK AÇILIŞ EKRANINI TEMİZLEME VE HOŞ GELDİN MESAJI ---
-    // HTML'de açık unutulmuş menüleri zorla kapat
+    // İlk açılış temizliği
     document.querySelectorAll('.exercise-list').forEach(list => list.style.display = "none");
     document.querySelectorAll('.day-header .arrow').forEach(arrow => arrow.textContent = "▼");
     document.querySelectorAll('.ex-btn').forEach(btn => btn.classList.remove('active-ex'));
     
-    // Ekrana temiz bir karşılama mesajı bas
     icerikAlani.innerHTML = `
         <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 70vh; text-align: center; animation: fadeIn 0.5s;">
             <span style="font-size: 80px; margin-bottom: 20px;">👋</span>
@@ -21,55 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
     `;
 
-    // --- 1. KISIM: Sidebar (Açılır Kapanır) Menü Mantığı ---
-    
-    // Haftalar İçin Akıllı Akordeon
-    const weekHeaders = document.querySelectorAll('.accordion-header');
-    weekHeaders.forEach(header => {
-        header.addEventListener('click', function() {
-            const content = this.nextElementSibling;
-            const isCurrentlyOpen = content.style.display === "block";
-
-            // Diğer tüm haftaları kapat
-            document.querySelectorAll('.accordion-content').forEach(c => c.style.display = "none");
-            document.querySelectorAll('.accordion-header .arrow').forEach(a => a.textContent = "▼");
-
-            // Tıklanan zaten açık değilse aç
-            if (!isCurrentlyOpen) {
-                content.style.display = "block";
-                this.querySelector('.arrow').textContent = "▲";
-            }
-        });
-    });
-
-    // Günler İçin Akıllı Akordeon ve Hafıza Sistemi
-    const dayHeaders = document.querySelectorAll('.day-header');
-    dayHeaders.forEach(header => {
-        header.addEventListener('click', function() {
-            const content = this.nextElementSibling;
-            const isCurrentlyOpen = content.style.display === "block";
-
-            // Diğer tüm günleri kapat
-            document.querySelectorAll('.exercise-list').forEach(list => list.style.display = "none");
-            document.querySelectorAll('.day-header .arrow').forEach(arrow => arrow.textContent = "▼");
-
-            if (!isCurrentlyOpen) {
-                // Tıklanan günü aç
-                content.style.display = "block";
-                this.querySelector('.arrow').textContent = "▲";
-
-                // HAFIZA SİSTEMİ: Daha önce bir egzersiz (Örn: Diyaloglar) seçildiyse, yeni günde de onu otomatik aç
-                if (aktifEgzersizTuru) {
-                    const hedefButon = content.querySelector(`.ex-btn[data-tur="${aktifEgzersizTuru}"]`);
-                    if (hedefButon) {
-                        hedefButon.click(); // Butona tıklanmış gibi simüle et
-                    }
-                }
-            }
-        });
-    });
-
-    // --- 2. KISIM: AKILLI VE EVRENSEL KART YAZDIRMA ---
     function ekranaYazdir(veri, baslik, tur, secilenGun) {
         
         if (tur !== "kelime_alistirmasi" && (!veri || (Array.isArray(veri) && veri.length === 0) || Object.keys(veri).length === 0)) {
@@ -238,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
             });
 
-        // --- KELİME ALIŞTIRMASI MANTIĞI ---
+        // --- KELİME ALIŞTIRMASI MANTIĞI (5 MOD BİR ARADA) ---
         } else if (tur === "kelime_alistirmasi") {
             
             const kelimeler = (typeof egitimMufredati !== 'undefined' && egitimMufredati[secilenGun]) ? egitimMufredati[secilenGun]["kelime_alistirmasi"] : null;
@@ -463,8 +440,144 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById('btn-dy-sonraki').onclick = () => { dyIndeksi++; dogruYanlisModunuCiz(); };
             }
 
+            // 5. YENİ EKLENEN: EŞLEŞTİRME MODU
+            let eslestirmeSkoru = 0;
+            let eslestirmeSayfasi = 0;
+            const ciftBasinaKelime = 6; // Ekrana her seferinde 6 çift (12 kart) gelecek
+            
+            function eslestirmeModunuCiz() {
+                const baslangic = eslestirmeSayfasi * ciftBasinaKelime;
+                const aktifKelimeler = kelimeler.slice(baslangic, baslangic + ciftBasinaKelime);
+
+                if (aktifKelimeler.length === 0) {
+                    alistirmaIcerikAlani.innerHTML = `
+                        <div style="text-align: center; padding: 50px 20px; background: white; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                            <h2 style="color: #1a5c83; font-size: 32px; margin-bottom: 15px;">Tebrikler! 🎉</h2>
+                            <p style="font-size: 20px; color: #555;">Tüm eşleştirmeleri tamamladınız.</p>
+                            <h3 style="font-size: 28px; color: #28a745; margin: 20px 0;">Toplam Skorunuz: ${eslestirmeSkoru}</h3>
+                            <button id="btn-eslestirme-tekrar" class="btn btn-primary" style="padding: 12px 30px; font-size: 18px; border: none; background: #1a5c83; color: white; border-radius: 8px; cursor: pointer;">Tekrar Oyna</button>
+                        </div>
+                    `;
+                    document.getElementById('btn-eslestirme-tekrar').onclick = () => {
+                        eslestirmeSayfasi = 0;
+                        eslestirmeSkoru = 0;
+                        eslestirmeModunuCiz();
+                    };
+                    return;
+                }
+
+                // 6 kelimenin hem Arapça hem Türkçe kartlarını oluşturup karıştır
+                let kartlar = [];
+                aktifKelimeler.forEach((kelime, index) => {
+                    kartlar.push({ metin: kelime.arapca, tur: 'ar', id: index });
+                    kartlar.push({ metin: kelime.turkce, tur: 'tr', id: index });
+                });
+                kartlar.sort(() => Math.random() - 0.5);
+
+                let kartHtml = '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; width: 100%; max-width: 800px; margin: 0 auto;">';
+                kartlar.forEach((kart, i) => {
+                    // Arapça olanlara dir="rtl" ve farklı bir stil uygulayabiliriz
+                    const isAr = kart.tur === 'ar';
+                    kartHtml += `
+                        <div class="eslestirme-karti" data-id="${kart.id}" data-index="${i}" 
+                             style="background: white; border: 2px solid #e0e0e0; border-radius: 10px; padding: 20px 10px; text-align: center; cursor: pointer; font-size: ${isAr ? '22px' : '16px'}; font-weight: 600; color: #333; display: flex; align-items: center; justify-content: center; min-height: 80px; transition: all 0.2s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.05);"
+                             ${isAr ? 'dir="rtl"' : ''}>
+                            ${kart.metin}
+                        </div>
+                    `;
+                });
+                kartHtml += '</div>';
+
+                alistirmaIcerikAlani.innerHTML = `
+                    <div style="margin-top: 20px;">
+                        <h3 style="text-align:center; color:#666; margin-bottom: 20px;">Birbiriyle eşleşen kelimeleri bulun:</h3>
+                        ${kartHtml}
+                        <h3 style="text-align:center; margin-top:30px; color:#1a5c83;">Skor: ${eslestirmeSkoru}</h3>
+                    </div>
+                `;
+
+                let ilkSecim = null;
+                let eslesenSayisi = 0;
+                let kilitle = false; // Hatalı seçimde bekleme süresinde tıklamayı engeller
+
+                document.querySelectorAll('.eslestirme-karti').forEach(kartDiv => {
+                    kartDiv.addEventListener('click', function() {
+                        if (kilitle) return;
+                        if (this.classList.contains('eslesti')) return; // Zaten eşleşmiş olana tıklanmaz
+                        if (this === ilkSecim) return; // Kendisine 2 kere tıklanmaz
+
+                        // Seçilen karta mavi vurgu yap
+                        this.style.borderColor = '#1a5c83';
+                        this.style.backgroundColor = '#eaf3f8';
+
+                        if (!ilkSecim) {
+                            // Bu tıklanan ilk kart
+                            ilkSecim = this;
+                        } else {
+                            // Bu tıklanan ikinci kart, kontrol et!
+                            kilitle = true;
+                            const ikinciSecim = this;
+
+                            if (ilkSecim.getAttribute('data-id') === ikinciSecim.getAttribute('data-id')) {
+                                // DOĞRU EŞLEŞME
+                                ilkSecim.style.backgroundColor = '#d4edda';
+                                ilkSecim.style.borderColor = '#28a745';
+                                ilkSecim.style.color = '#155724';
+                                ilkSecim.classList.add('eslesti');
+
+                                ikinciSecim.style.backgroundColor = '#d4edda';
+                                ikinciSecim.style.borderColor = '#28a745';
+                                ikinciSecim.style.color = '#155724';
+                                ikinciSecim.classList.add('eslesti');
+
+                                eslestirmeSkoru += 10;
+                                eslesenSayisi++;
+                                ilkSecim = null;
+                                kilitle = false;
+
+                                // Tüm tahta eşleştiyse diğer sayfaya geç
+                                if (eslesenSayisi === aktifKelimeler.length) {
+                                    setTimeout(() => {
+                                        eslestirmeSayfasi++;
+                                        eslestirmeModunuCiz();
+                                    }, 800);
+                                }
+                            } else {
+                                // YANLIŞ EŞLEŞME
+                                ilkSecim.style.backgroundColor = '#f8d7da';
+                                ilkSecim.style.borderColor = '#dc3545';
+                                ikinciSecim.style.backgroundColor = '#f8d7da';
+                                ikinciSecim.style.borderColor = '#dc3545';
+                                
+                                // Biraz sarsıntı efekti (isteğe bağlı ama güzel durur)
+                                ilkSecim.style.transform = 'translate(-5px, 0)';
+                                ikinciSecim.style.transform = 'translate(5px, 0)';
+
+                                setTimeout(() => {
+                                    ilkSecim.style.backgroundColor = 'white';
+                                    ilkSecim.style.borderColor = '#e0e0e0';
+                                    ilkSecim.style.transform = 'none';
+                                    
+                                    ikinciSecim.style.backgroundColor = 'white';
+                                    ikinciSecim.style.borderColor = '#e0e0e0';
+                                    ikinciSecim.style.transform = 'none';
+
+                                    ilkSecim = null;
+                                    kilitle = false;
+                                }, 800);
+                            }
+                            
+                            // Skoru güncelle
+                            alistirmaIcerikAlani.querySelector('h3:last-child').innerHTML = `Skor: ${eslestirmeSkoru}`;
+                        }
+                    });
+                });
+            }
+
+            // Sayfa İlk Açıldığında Kartlar modunu tetikle
             kartlarModunuCiz();
 
+            // --- SEKME YÖNETİMİ (Artık Eşleştirme de var) ---
             const actionTabs = document.querySelectorAll('.action-tab');
             actionTabs.forEach(tab => {
                 tab.addEventListener('click', function() {
@@ -478,7 +591,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     else if (mod === 'ogrenme') { ogrenmeIndeksi=0; ogrenmeSkoru=0; ogrenmeModunuCiz(); }
                     else if (mod === 'coktan_secmeli') { coktanIndeksi=0; coktanSkor=0; coktanSecmeliModunuCiz(); }
                     else if (mod === 'dogru_yanlis') { dyIndeksi=0; dySkor=0; dogruYanlisModunuCiz(); }
-                    else { alistirmaIcerikAlani.innerHTML = `<div style="text-align:center; padding: 60px 20px; color: #555;"><h3>Bu mod (${this.innerText}) yapım aşamasındadır...</h3></div>`; }
+                    else if (mod === 'eslestirme') { eslestirmeSayfasi=0; eslestirmeSkoru=0; eslestirmeModunuCiz(); }
                 });
             });
 
@@ -672,6 +785,10 @@ document.addEventListener("DOMContentLoaded", function() {
         buton.addEventListener('click', function() {
             document.querySelectorAll('.ex-btn').forEach(btn => btn.classList.remove('active-ex'));
             this.classList.add('active-ex');
+            
+            // Tıklanan butonu HAFIZAYA al
+            aktifEgzersizTuru = this.getAttribute('data-tur');
+
             const secilenGun = this.getAttribute('data-gun'); 
             const secilenTur = this.getAttribute('data-tur'); 
 
