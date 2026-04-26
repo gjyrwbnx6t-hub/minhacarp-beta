@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const tumEgzersizButonlari = document.querySelectorAll('.ex-btn');
     let aktifEgzersizTuru = null; 
 
-    // İlk açılış temizliği
     document.querySelectorAll('.exercise-list').forEach(list => list.style.display = "none");
     document.querySelectorAll('.day-header .arrow').forEach(arrow => arrow.textContent = "▼");
     document.querySelectorAll('.ex-btn').forEach(btn => btn.classList.remove('active-ex'));
@@ -58,7 +57,9 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        // --- OKUMA ALIŞTIRMASI MANTIĞI ---
+        // =========================================================================
+        // --- OKUMA ALIŞTIRMASI MANTIĞI (KUSURSUZ ARAPÇA EŞLEŞTİRME MOTORU İLE) ---
+        // =========================================================================
         if (tur === "okuma_alistirmasi") {
             let htmlIcerik = `
                 <div class="content-header">
@@ -73,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <button class="seviye-btn" data-seviye="ileri" style="flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 5px; cursor: pointer; background-color: white; color: #333;">Advanced</button>
                     </div>
                     
-                    <div class="okuma-metni" id="okumaMetniAlani" style="font-size: 24px; line-height: 1.8; text-align: right; margin-bottom: 30px; padding: 20px; background-color: #f9f9f9; border-radius: 10px;" dir="rtl">
+                    <div class="okuma-metni" id="okumaMetniAlani" style="font-size: 24px; line-height: 1.8; text-align: right; margin-bottom: 30px; padding: 20px; background-color: #f9f9f9; border-radius: 10px; position: relative;" dir="rtl">
                     </div>
                     
                     <div class="ses-oynatici" style="text-align: center; margin-bottom: 40px; padding: 15px; background-color: #f5f5f5; border-radius: 8px;">
@@ -88,6 +89,10 @@ document.addEventListener("DOMContentLoaded", function() {
             `;
 
             icerikAlani.innerHTML = htmlIcerik;
+
+            const metinAlani = document.getElementById('okumaMetniAlani');
+            const kelimelerAlani = document.getElementById('dinamikKelimelerAlani');
+            let aktifSeviye = 'basit'; 
 
             function kelimeleriCiz(seviye) {
                 let kelimeHtml = "";
@@ -122,81 +127,153 @@ document.addEventListener("DOMContentLoaded", function() {
 
             function metniTıklanabilirYap(metin) {
                 if (!metin) return ""; 
-                return metin.split(' ').map(kelime => {
-                    return `<span class="okuma-kelimesi" style="cursor: pointer; display: inline-block; padding: 2px 4px; border-radius: 4px; transition: 0.2s;">${kelime}</span>`;
-                }).join(' ');
+                // Boşlukları ve satır atlamalarını koruyarak kelimeleri span içine al
+                return metin.split(/(\s+)/).map(parca => {
+                    if(parca.trim() === "") return parca; 
+                    return `<span class="okuma-kelimesi" style="cursor: pointer; display: inline-block; transition: 0.2s; border-radius: 4px; padding: 0 2px;">${parca}</span>`;
+                }).join('');
             }
 
-            function kelimeTıklamalariniDinle() {
-                document.querySelectorAll('.okuma-kelimesi').forEach(span => {
-                    span.addEventListener('mouseenter', function() { this.style.backgroundColor = '#eaf3f8'; });
-                    span.addEventListener('mouseleave', function() { this.style.backgroundColor = 'transparent'; });
-
-                    span.addEventListener('click', async function(e) {
-                        e.stopPropagation(); 
-                        let safKelime = this.innerText.replace(/[.,?!؛،]/g, '').trim();
-
-                        let tooltip = document.getElementById('ceviri-tooltip');
-                        if (!tooltip) {
-                            tooltip = document.createElement('div');
-                            tooltip.id = 'ceviri-tooltip';
-                            tooltip.style.position = 'absolute'; 
-                            tooltip.style.backgroundColor = '#1a5c83';
-                            tooltip.style.color = 'white';
-                            tooltip.style.padding = '8px 15px';
-                            tooltip.style.borderRadius = '8px';
-                            tooltip.style.boxShadow = '0 4px 10px rgba(0,0,0,0.2)';
-                            tooltip.style.zIndex = '9999';
-                            tooltip.style.fontSize = '18px';
-                            tooltip.style.fontWeight = '500';
-                            tooltip.style.whiteSpace = 'nowrap';
-                            document.body.appendChild(tooltip);
-                        }
-
-                        const rect = this.getBoundingClientRect();
-                        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-                        
-                        tooltip.style.top = `${rect.bottom + scrollTop + 8}px`;
-                        tooltip.style.left = `${rect.left + scrollLeft + (rect.width / 2)}px`;
-                        tooltip.style.transform = 'translateX(-50%)';
-
-                        tooltip.innerHTML = `⏳ Çevriliyor...`;
-                        tooltip.style.display = 'block';
-
-                        if (window.ceviriZamanlayici) clearTimeout(window.ceviriZamanlayici);
-
-                        try {
-                            const response = await fetch(`https://api.mymemory.translated.net/get?q=${safKelime}&langpair=ar|tr`);
-                            const data = await response.json();
-                            let ceviri = data.responseData.translatedText;
-                            if(ceviri === safKelime || ceviri.includes("MYMEMORY WARNING")) {
-                                tooltip.innerHTML = `<span dir="rtl" style="color:#ffd700;">${safKelime}</span> : Bulunamadı`;
-                            } else {
-                                tooltip.innerHTML = `<span dir="rtl" style="color:#ffd700;">${safKelime}</span> : ${ceviri}`;
-                            }
-                        } catch(err) {
-                            tooltip.innerHTML = "Bağlantı hatası.";
-                        }
-
-                        window.ceviriZamanlayici = setTimeout(() => { tooltip.style.display = 'none'; }, 6000);
-                    });
-                });
+            // 1. ADIM: HAREKE VE İŞARET TEMİZLEYİCİ
+            function arapcaTemizle(metin) {
+                if (!metin) return "";
+                return metin
+                    .replace(/[\u064B-\u065F\u0670\u0640]/g, '') // Tüm harekeleri ve uzatmaları siler
+                    .replace(/[أإآ]/g, 'ا') // Hemzeleri düz elif yapar
+                    .replace(/ة/g, 'ه')     // Kapalı Te'yi He harfine çevirir
+                    .replace(/ى/g, 'ي')     // Elif Maksura'yı Ye harfine çevirir
+                    .replace(/[^\u0621-\u064A]/g, '') // Harf dışındaki tüm işaretleri (nokta, virgül) atar
+                    .trim();
             }
+
+            // 2. ADIM: AKILLI EŞLEŞTİRME MOTORU (Zamir ve Ön Ek Toleranslı)
+            function kelimeEslesiyorMu(tiklananKelime, sozlukKelimesi) {
+                let t = arapcaTemizle(tiklananKelime);
+                let s = arapcaTemizle(sozlukKelimesi);
+
+                if (t === "" || s === "") return false;
+                
+                // Çok kısa sözlük kelimelerinin (Örn: في), uzun kelimelerin (Örn: مفيد) içinde tesadüfen eşleşmesini engelle
+                if (s.length <= 2 && t.length > s.length) return false;
+
+                // Birebir eşleşme varsa direkt kabul et
+                if (t === s) return true;
+
+                // Arapçada kelimelere bitişen izin verilen ön ve arka ekler:
+                const gecerliOnEkler = ["", "و", "ف", "ب", "ك", "ل", "ال", "بال", "فال", "كال", "لل", "وال"];
+                const gecerliArkaEkler = ["", "ه", "ها", "هم", "هن", "ك", "كم", "كن", "نا", "ي", "ني", "ات", "ون", "ين", "ان", "ا", "وا", "ت", "تي", "ته"];
+
+                // Eğer tıklanan kelimede, sözlükteki kelimenin kökü geçiyorsa fazlalıkları (ekleri) kontrol et
+                function kontrolEt(arananKok) {
+                    if (t.includes(arananKok)) {
+                        let parcalar = t.split(arananKok);
+                        if (parcalar.length !== 2) return false; // Birden fazla kez geçiyorsa hatalı bölme olmuştur
+                        return gecerliOnEkler.includes(parcalar[0]) && gecerliArkaEkler.includes(parcalar[1]);
+                    }
+                    return false;
+                }
+
+                if (kontrolEt(s)) return true;
+
+                // AKILLI "TE" DÖNÜŞÜMÜ: Eğer sözlük kelimesi "ه" (aslında ة) ile bitiyorsa, ek aldığında "ت" ye dönüşür.
+                // Örn: مساعدة (Sözlük: مساعده) -> لمساعدتها (Tıklanan: لمساعدتها). Son harfi "ت" yapıp tekrar dene:
+                if (s.endsWith('ه')) {
+                    let s_alternatif = s.slice(0, -1) + 'ت';
+                    if (kontrolEt(s_alternatif)) return true;
+                }
+
+                return false; // Hiçbir şekilde eşleşmedi
+            }
+
+            // Ekranda tek bir Tooltip kutusu oluşturalım
+            let tooltip = document.getElementById('ceviri-tooltip');
+            if (!tooltip) {
+                tooltip = document.createElement('div');
+                tooltip.id = 'ceviri-tooltip';
+                tooltip.style.cssText = `
+                    position: absolute; 
+                    background-color: #1a5c83; 
+                    color: white; 
+                    padding: 8px 16px; 
+                    border-radius: 8px; 
+                    box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+                    z-index: 99999; 
+                    white-space: nowrap; 
+                    display: none;
+                    pointer-events: none; 
+                `;
+                document.body.appendChild(tooltip);
+            }
+
+            // 3. ADIM: METİN ALANINI TEK NOKTADAN DİNLE (Event Delegation)
+            metinAlani.addEventListener('mouseover', function(e) {
+                const span = e.target.closest('.okuma-kelimesi');
+                if (span) span.style.backgroundColor = '#eaf3f8';
+            });
+            metinAlani.addEventListener('mouseout', function(e) {
+                const span = e.target.closest('.okuma-kelimesi');
+                if (span) span.style.backgroundColor = 'transparent';
+            });
+
+            metinAlani.addEventListener('click', function(e) {
+                const span = e.target.closest('.okuma-kelimesi');
+                if (!span) return;
+
+                e.stopPropagation(); // Tıklamanın dışarı taşıp balonu hemen kapatmasını engeller
+                
+                document.querySelectorAll('.okuma-kelimesi').forEach(s => s.style.backgroundColor = 'transparent');
+                span.style.backgroundColor = '#eaf3f8';
+                
+                let tiklananSafKelime = span.innerText;
+
+                // İçinde aranacak sözlükleri al (Zor Kelimeler + Gizli Okuma Sözlüğü)
+                let zorKelimeler = veri.zor_kelimeler && veri.zor_kelimeler[aktifSeviye] ? veri.zor_kelimeler[aktifSeviye] : [];
+                let gizliSozluk = veri.okuma_sozlugu || [];
+                let tumKelimeler = [...zorKelimeler, ...gizliSozluk];
+                
+                // Sözlükteki her bir kelimeyi bizim Akıllı Eşleştirme motorundan geçir
+                let bulunanKelime = tumKelimeler.find(k => kelimeEslesiyorMu(tiklananSafKelime, k.arapca));
+
+                // Baloncuğu konumlandır
+                const rect = span.getBoundingClientRect();
+                tooltip.style.top = `${rect.bottom + window.scrollY + 8}px`;
+                tooltip.style.left = `${rect.left + window.scrollX + (rect.width / 2)}px`;
+                tooltip.style.transform = 'translateX(-50%)';
+
+                if (bulunanKelime) {
+                    tooltip.innerHTML = `
+                        <div style="text-align:center;">
+                            <div dir="rtl" style="color:#ffd700; font-size:22px; font-weight:700; margin-bottom:2px;">${bulunanKelime.arapca}</div>
+                            <div style="color:white; font-size:16px; font-weight:500;">${bulunanKelime.turkce}</div>
+                        </div>
+                    `;
+                } else {
+                    // Test aşamasında kolaylık olsun diye bulamadığı kelimenin temiz halini ekranda göstersin
+                    tooltip.innerHTML = `<span style="font-size:14px; color:#e0e0e0;">Sözlükte yok (${arapcaTemizle(tiklananSafKelime)})</span>`;
+                }
+
+                tooltip.style.display = 'block';
+
+                if (window.ceviriZamanlayici) clearTimeout(window.ceviriZamanlayici);
+                window.ceviriZamanlayici = setTimeout(() => { 
+                    tooltip.style.display = 'none'; 
+                    span.style.backgroundColor = 'transparent';
+                }, 5000);
+            });
 
             document.addEventListener('click', function(e) {
-                let tooltip = document.getElementById('ceviri-tooltip');
-                if (tooltip && !e.target.classList.contains('okuma-kelimesi')) {
-                    tooltip.style.display = 'none';
+                if (tooltip && tooltip.style.display === 'block') {
+                    const span = e.target.closest('.okuma-kelimesi');
+                    if (!span) {
+                        tooltip.style.display = 'none';
+                        document.querySelectorAll('.okuma-kelimesi').forEach(s => s.style.backgroundColor = 'transparent');
+                    }
                 }
             });
 
-            const metinAlani = document.getElementById('okumaMetniAlani');
-            const kelimelerAlani = document.getElementById('dinamikKelimelerAlani');
-            
+            // İlk Yükleme
             metinAlani.innerHTML = metniTıklanabilirYap(veri.metinler.basit);
             kelimelerAlani.innerHTML = kelimeleriCiz('basit');
-            kelimeTıklamalariniDinle();
 
             const seviyeButonlari = document.querySelectorAll('.seviye-btn');
             seviyeButonlari.forEach(btn => {
@@ -208,13 +285,14 @@ document.addEventListener("DOMContentLoaded", function() {
                     this.style.backgroundColor = '#1a5c83';
                     this.style.color = 'white';
                     
-                    const secilenSeviye = this.getAttribute('data-seviye');
-                    metinAlani.innerHTML = metniTıklanabilirYap(veri.metinler[secilenSeviye]);
-                    kelimelerAlani.innerHTML = kelimeleriCiz(secilenSeviye);
-                    kelimeTıklamalariniDinle(); 
+                    aktifSeviye = this.getAttribute('data-seviye');
+                    metinAlani.innerHTML = metniTıklanabilirYap(veri.metinler[aktifSeviye]);
+                    kelimelerAlani.innerHTML = kelimeleriCiz(aktifSeviye);
+                    tooltip.style.display = 'none'; 
                 });
             });
 
+        // =========================================================================
         // --- KELİME ALIŞTIRMASI MANTIĞI (5 MOD BİR ARADA) ---
         } else if (tur === "kelime_alistirmasi") {
             
@@ -440,10 +518,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById('btn-dy-sonraki').onclick = () => { dyIndeksi++; dogruYanlisModunuCiz(); };
             }
 
-            // 5. YENİ EKLENEN: EŞLEŞTİRME MODU
+            // 5. EŞLEŞTİRME MODU
             let eslestirmeSkoru = 0;
             let eslestirmeSayfasi = 0;
-            const ciftBasinaKelime = 6; // Ekrana her seferinde 6 çift (12 kart) gelecek
+            const ciftBasinaKelime = 6; 
             
             function eslestirmeModunuCiz() {
                 const baslangic = eslestirmeSayfasi * ciftBasinaKelime;
@@ -466,7 +544,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     return;
                 }
 
-                // 6 kelimenin hem Arapça hem Türkçe kartlarını oluşturup karıştır
                 let kartlar = [];
                 aktifKelimeler.forEach((kelime, index) => {
                     kartlar.push({ metin: kelime.arapca, tur: 'ar', id: index });
@@ -476,7 +553,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 let kartHtml = '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; width: 100%; max-width: 800px; margin: 0 auto;">';
                 kartlar.forEach((kart, i) => {
-                    // Arapça olanlara dir="rtl" ve farklı bir stil uygulayabiliriz
                     const isAr = kart.tur === 'ar';
                     kartHtml += `
                         <div class="eslestirme-karti" data-id="${kart.id}" data-index="${i}" 
@@ -498,28 +574,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 let ilkSecim = null;
                 let eslesenSayisi = 0;
-                let kilitle = false; // Hatalı seçimde bekleme süresinde tıklamayı engeller
+                let kilitle = false; 
 
                 document.querySelectorAll('.eslestirme-karti').forEach(kartDiv => {
                     kartDiv.addEventListener('click', function() {
                         if (kilitle) return;
-                        if (this.classList.contains('eslesti')) return; // Zaten eşleşmiş olana tıklanmaz
-                        if (this === ilkSecim) return; // Kendisine 2 kere tıklanmaz
+                        if (this.classList.contains('eslesti')) return; 
+                        if (this === ilkSecim) return; 
 
-                        // Seçilen karta mavi vurgu yap
                         this.style.borderColor = '#1a5c83';
                         this.style.backgroundColor = '#eaf3f8';
 
                         if (!ilkSecim) {
-                            // Bu tıklanan ilk kart
                             ilkSecim = this;
                         } else {
-                            // Bu tıklanan ikinci kart, kontrol et!
                             kilitle = true;
                             const ikinciSecim = this;
 
                             if (ilkSecim.getAttribute('data-id') === ikinciSecim.getAttribute('data-id')) {
-                                // DOĞRU EŞLEŞME
                                 ilkSecim.style.backgroundColor = '#d4edda';
                                 ilkSecim.style.borderColor = '#28a745';
                                 ilkSecim.style.color = '#155724';
@@ -535,7 +607,6 @@ document.addEventListener("DOMContentLoaded", function() {
                                 ilkSecim = null;
                                 kilitle = false;
 
-                                // Tüm tahta eşleştiyse diğer sayfaya geç
                                 if (eslesenSayisi === aktifKelimeler.length) {
                                     setTimeout(() => {
                                         eslestirmeSayfasi++;
@@ -543,13 +614,11 @@ document.addEventListener("DOMContentLoaded", function() {
                                     }, 800);
                                 }
                             } else {
-                                // YANLIŞ EŞLEŞME
                                 ilkSecim.style.backgroundColor = '#f8d7da';
                                 ilkSecim.style.borderColor = '#dc3545';
                                 ikinciSecim.style.backgroundColor = '#f8d7da';
                                 ikinciSecim.style.borderColor = '#dc3545';
                                 
-                                // Biraz sarsıntı efekti (isteğe bağlı ama güzel durur)
                                 ilkSecim.style.transform = 'translate(-5px, 0)';
                                 ikinciSecim.style.transform = 'translate(5px, 0)';
 
@@ -567,17 +636,14 @@ document.addEventListener("DOMContentLoaded", function() {
                                 }, 800);
                             }
                             
-                            // Skoru güncelle
                             alistirmaIcerikAlani.querySelector('h3:last-child').innerHTML = `Skor: ${eslestirmeSkoru}`;
                         }
                     });
                 });
             }
 
-            // Sayfa İlk Açıldığında Kartlar modunu tetikle
             kartlarModunuCiz();
 
-            // --- SEKME YÖNETİMİ (Artık Eşleştirme de var) ---
             const actionTabs = document.querySelectorAll('.action-tab');
             actionTabs.forEach(tab => {
                 tab.addEventListener('click', function() {
@@ -786,7 +852,6 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelectorAll('.ex-btn').forEach(btn => btn.classList.remove('active-ex'));
             this.classList.add('active-ex');
             
-            // Tıklanan butonu HAFIZAYA al
             aktifEgzersizTuru = this.getAttribute('data-tur');
 
             const secilenGun = this.getAttribute('data-gun'); 
