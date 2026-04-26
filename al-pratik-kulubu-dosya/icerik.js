@@ -445,6 +445,80 @@ const egitimMufredati = {
             { arapca: "لَا يُمْكِنُنِي شُكْرُكَ بِمَا فِيهِ الْكِفَايَةُ.", turkce: "Ne kadar teşekkür etsem az." },
             { arapca: "أَنَا مَدِينٌ لَكَ.", turkce: "Sana borçluyum." }
         ],
+        "diyaloglar": [
+            {
+                "baslik": "Diyalog 1: Arkadaşa Teşekkür Etme",
+                "senaryo": "Bir arkadaşın bilgisayarındaki bir sorunu çözmene yardım etti ve ona teşekkür ediyorsun...",
+                "akis": [
+                    { 
+                        "tur": "video", 
+                        "isim": "Sen", 
+                        "arapca": "شُكْرًا لِمُسَاعَدَتِك لي فِي إصلاح حَاسُوبِي الْيَوْمَ. أنا ممتن لك جدا.", 
+                        "turkce": "Bugün bilgisayarımla ilgili yardım ettiğin için teşekkürler. Gerçekten minnettarım." 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Arkadaşın", 
+                        "arapca": "لَا تَقْلَقْ! لَمْ يَكُنْ أَمْرًا كَبِيرًا.", 
+                        "turkce": "Ne demek, dert etme! Büyütülecek bir şey değildi." 
+                    },
+                    { 
+                        "tur": "video", 
+                        "isim": "Sen", 
+                        "arapca": "بِجِدِّيَّةٍ، أَنْتَ أنقذتني. أصبحت مَدِينا لَكَ .", 
+                        "turkce": "Cidden, beni kurtardın. Sana borçlandım." 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Arkadaşın", 
+                        "arapca": "هَاهَا،  لَا شَيْءَ. فَقَطِ أكرمني قَهْوَةً فِي الْمَرَّةِ الْقَادِمَةِ!", 
+                        "turkce": "Haha, lafı bile olmaz. Bir dahakine bana bir kahve ısmarlarsın yeter!" 
+                    },
+                    { 
+                        "tur": "video", 
+                        "isim": "Sen", 
+                        "arapca": "اتَّفَقْنَا! شُكْرًا جزيلا.", 
+                        "turkce": "Anlaştık! Çok teşekkür ederim." 
+                    }
+                ]
+            },
+            {
+                "baslik": "Diyalog 2: İş Arkadaşına Teşekkür Etme",
+                "senaryo": "Bir meslektaşın raporunu hazırlamanda sana destek oldu ve minnettarlığını dile getiriyorsun...",
+                "akis": [
+                    { 
+                        "tur": "video", 
+                        "isim": "Sen", 
+                        "arapca": "شُكْرًا جَزِيلًا عَلَى مُسَاعَدَتِكَ فِي التَّقْرِيرِ. ما كنت أستطيع أن أَفْعَلَ ذَلِكَ بِدُونِكَ.", 
+                        "turkce": "Raporla ilgili yardımın için çok teşekkür ederim. Sen olmasaydın yapamazdım." 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Meslektaşın", 
+                        "arapca": "عَلَى الرُّحْبِ وَالسَّعَةِ! أَنَا سَعِيدٌ لِأَنَّنِي اسْتَطَعْتُ أن أساعدك.", 
+                        "turkce": "Rica ederim! Yardımcı olabildiğime sevindim." 
+                    },
+                    { 
+                        "tur": "video", 
+                        "isim": "Sen", 
+                        "arapca": "أُقَدِّرُ ذَلِكَ حَقًّا. لَقَدْ أبدى فَرْقًا كَبِيرًا.", 
+                        "turkce": "Gerçekten minnettarım. Çok büyük bir fark yarattı." 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Meslektaşın", 
+                        "arapca": "سَعِيدٌ بِالْمُسَاعَدَةِ. أَخْبِرْنِي إِذَا كُنْتَ بِحَاجَةٍ إِلَى أَيِّ شَيْءٍ آخَرَ.", 
+                        "turkce": "Seve seve (yardımcı oldum). Başka bir şeye ihtiyacın olursa bana haber ver." 
+                    },
+                    { 
+                        "tur": "video", 
+                        "isim": "Sen", 
+                        "arapca": "بِالتَّأْكِيدِ. شُكْرًا مُجَدَّدًا!", 
+                        "turkce": "Kesinlikle. Tekrar teşekkürler!" 
+                    }
+                ]
+            }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/C6Lgzmj7leA9Fm3uf841.png",
             "ses": "",
