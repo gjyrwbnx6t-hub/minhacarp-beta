@@ -646,6 +646,134 @@ const egitimMufredati = {
             { arapca: "أُرِيدُ إِرْجَاعَ هَذَا أَوْ اسْتِبْدَالَهُ.", turkce: "Bunu iade etmek/değiştirmek istiyorum." },
             { arapca: "أَتَفَرَّجُ فَقَطْ، شُكْرًا.", "turkce": "Sadece bakıyorum, teşekkürler." }
         ],
+        "diyaloglar": [
+            {
+                "baslik": "Diyalog 1: Mağazada Gömlek Deneme",
+                "senaryo": "Bir mağazadasınız ve beğendiğiniz bir gömleği denemek için satış görevlisiyle konuşuyorsunuz...",
+                "akis": [
+                    { 
+                        "tur": "video", 
+                        "isim": "Sen", 
+                        "arapca": "مَرْحَبًا! هَلْ عِنْدَكُمْ مَقَاسٌ أَصْغَرُ مِنْ هَذَا الْقَمِيصِ؟", 
+                        "turkce": "Merhaba! Bu gömleğin daha küçük bedeni var mı?" 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Satış Görevlisi", 
+                        "arapca": "دَعْنِي أَتَحَقَّقُ لَكَ. نَعَمْ، لَدَيْنَا مَقَاسٌ أَصْغَرُ.", 
+                        "turkce": "Sizin için kontrol edeyim. Evet, bir küçük bedenimiz var." 
+                    },
+                    { 
+                        "tur": "video", 
+                        "isim": "Sen", 
+                        "arapca": "مُمْتَازٌ! هَلْ يُمْكِنُنِي أن أجربه", 
+                        "turkce": "Harika! Deneyebilir miyim?" 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Satış Görevlisi", 
+                        "arapca": "بِالطَّبْعِ. الغرف هُنَاكَ.", 
+                        "turkce": "Elbette. Kabinler şurada." 
+                    },
+                    { 
+                        "tur": "video", 
+                        "isim": "Sen", 
+                        "arapca": "شُكْرًا! أُوه، بِكَمْ هَذَا؟", 
+                        "turkce": "Teşekkürler! Şey, peki bu ne kadar?" 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Satış Görevlisi", 
+                        "arapca": "سِعْرُهُ ٧٥ دُولَارًا.", 
+                        "turkce": "Fiyatı 75 dolar." 
+                    },
+                    { 
+                        "tur": "video", 
+                        "isim": "Sen", 
+                        "arapca": "رَائِعٌ. سَآخُذُهُ.", 
+                        "turkce": "Mükemmel. Alıyorum." 
+                    }
+                ]
+            },
+            {
+                "baslik": "Diyalog 2: Elektronik Mağazasında Hediye Seçimi",
+                "senaryo": "Bir elektronik mağazasındasınız ve bütçenize uygun bir hediye arıyorsunuz...",
+                "akis": [
+                    { 
+                        "tur": "video", 
+                        "isim": "Sen", 
+                        "arapca": "مَرْحَبًا! أَبْحَثُ عَنْ هَدِيَّةٍ. هَلْ عِنْدَكَ أَيُّ اقْتِرَاحَاتٍ؟", 
+                        "turkce": "Merhaba! Bir hediye arıyorum. Herhangi bir öneriniz var mı?" 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Satış Görevlisi", 
+                        "arapca": "أكيد! كَمْ مِيزَانِيَّتُكَ؟", 
+                        "turkce": "Tabii ki! Bütçeniz ne kadar?" 
+                    },
+                    { 
+                        "tur": "video", 
+                        "isim": "Sen", 
+                        "arapca": "حَوَالَيْ ٥٠ دُولَارًا.", 
+                        "turkce": "50 dolar civarı." 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Satış Görevlisi", 
+                        "arapca": "فِي هَذَا السِّعْرِ، لَدَيْنَا هَذِهِ السَّمَّاعَةُ اللَّاسِلْكِيَّةُ. سِعْرُهَا ٤٩٫٩٩ دُولَارًا، وَهِيَ مَطْلُوبَةٌ جِدًّا/كثير مطلوبة.", 
+                        "turkce": "Bu fiyat aralığında bu kablosuz hoparlörümüz var. Fiyatı 49.99 dolar ve çok popüler." 
+                    },
+                    { 
+                        "tur": "video", 
+                        "isim": "Sen", 
+                        "arapca": "يَبْدُو هَذَا جَيِّدًا. هَلْ هِيَ مُتَوَفِّرَةٌ فِي المتسودعِ؟", 
+                        "turkce": "Kulağa hoş geliyor. Stoklarınızda var mı?" 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Satış Görevlisi", 
+                        "arapca": "نَعَمْ، مُتَوَفِّرَةٌ. هَلْ تُرِيدُ مِنِّي أَنْ أُغَلِّفَهَا لَكَ كَهَدِيَّةٍ؟", 
+                        "turkce": "Evet, var. Sizin için hediye paketi yapmamı ister misiniz?" 
+                    }
+                ]
+            },
+            {
+                "baslik": "Diyalog 3: Sıkı Bir Pazarlık",
+                "senaryo": "Mağazada bir ürünün fiyatını düşürmek için esnafla tipik bir sokak pazarlığı yapıyorsunuz...",
+                "akis": [
+                    { 
+                        "tur": "video", 
+                        "isim": "Sen", 
+                        "arapca": "إِذًا، مَا هُوَ السِّعْرُ النِّهَائِيُّ يَا أُخْتِي؟", 
+                        "turkce": "Peki, son fiyatın ne olur abla?" 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Satış Görevlisi", 
+                        "arapca": "وَاللَّهِ هَذَا أَقَلُّ سِعْرٍ، لَا أَسْتَطِيعُ أَنْ أُنَزِّلَ أَكْثَرَ مِنْ ذَلِكَ.", 
+                        "turkce": "Vallahi bu en düşük fiyat, daha fazla inemem." 
+                    },
+                    { 
+                        "tur": "video", 
+                        "isim": "Sen", 
+                        "arapca": "لَكِنِ انْظُرِي، لَنْ آخُذَ فَاتُورَةً، وَلَنْ أَدْفَعَ بِالْبِطَاقَةِ، الدَّفْعُ نَقْدًا يَدًا بِيَدٍ!", 
+                        "turkce": "Ama bak, fiş almayacağım, kart kullanmayacağım, elden nakit vereceğim!" 
+                    },
+                    { 
+                        "tur": "kullanici", 
+                        "isim": "Satış Görevlisi", 
+                        "arapca": "حَسَنًا، لَا بَأْسَ، سَأَعْمَلُ لَكَ خَصْمًا بِـ ٥٠ لِيرَةٍ.", 
+                        "turkce": "Tamam, peki, sana 50 lira indirim yapacağım." 
+                    },
+                    { 
+                        "tur": "video", 
+                        "isim": "Sen", 
+                        "arapca": "٥٠ لِيرَةٍ؟ فَقَطْ؟ يَا شَيْخَةُ لَا تَكُونِي هَكَذَا! تَكْلِفَةُ هَذَا الشَّيْءِ ٢٠ لِيرَةٍ أَصْلًا، أَلَيْسَ كَذَلِكَ؟", 
+                        "turkce": "50 lira mı? Bu kadar mı? Hadi ama, yapma böyle! Bunun maliyeti zaten 20 lira falan değil mi?" 
+                    }
+                ]
+            }
+        ],
         "kelime_alistirmasi": [
             { "arapca": "أُمِّي", "turkce": "Benim annem" },
             { "arapca": "مِثْلُ امْرَأَةٍ عَصَبِيَّةٍ", "turkce": "Sinirli bir kadın gibi" },
