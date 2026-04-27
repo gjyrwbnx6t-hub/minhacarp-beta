@@ -635,15 +635,50 @@ const egitimMufredati = {
     "gun5": {
         "kelime_egzersizleri": [
             { arapca: "هَلْ لَدَيْكُمْ كَنْزَةٌ؟", turkce: "Sizde kazak var mı?" },
-            { arapca: "أَيْنَ يُمْكِنُنِي الْعُثُورُ عَلَى السَّرَاوِيلِ؟", turkce: "Pantolonları nerede bulabilirim?" },
+            { arapca: "أَيْنَ قِسْمُ الْبَنَاطِيلِ؟", "turkce": "Pantolonları nerede bulabilirim? (Pantolon reyonu nerede?)" },            
             { arapca: "أَنَا أُلْقِي نَظْرَةً فَقَطْ.", turkce: "Öylesine bakıyorum." },
-            { arapca: "أَبْحَثُ عَنْ سِرْوَالٍ قَصِيرٍ مِنَ الْجِينْزِ.", turkce: "Kot şort arıyorum." },
+            { arapca: "أَبْحَثُ عَنْ سِرْوَالٍ قَصِيرٍ.", turkce: "Kısa pantalon arıyorum." },
             { arapca: "كَمْ سِعْرُ هَذَا؟", turkce: "Bu ne kadar?" },
-            { arapca: "هَلْ عَلَيْهِ تَخْفِيضٌ؟", turkce: "İndirimde mi?" },
-            { arapca: "هَلْ يُمْكِنُنِي قِيَاسُهُ؟", turkce: "Deneyebilir miyim?" },
-            { arapca: "سَآخُذُهُ!", turkce: "Alıyorum." },
+            { arapca: "هَلْ هَذَا عَلَيْهِ عَرْضٌ؟", "turkce": "Bunda kampanya/teklif var mı?" },
+            { arapca: "مُمْكِن أُجَرِّبَ هَذَا؟", "turkce": "Bunu deneyebilir miyim?" },
+            { arapca: "أشتريه!", turkce: "Alıyorum." },
             { arapca: "هَلْ تَقْبَلُونَ الْبِطَاقَاتِ الائْتِمَانِيَّةَ؟", turkce: "Kredi kartı geçer mi?" },
-            { arapca: "أُرِيدُ إِرْجَاعَ هَذَا أَوْ اسْتِبْدَالَهُ.", turkce: "Bunu iade etmek/değiştirmek istiyorum." }
+            { arapca: "أُرِيدُ إِرْجَاعَ هَذَا أَوْ اسْتِبْدَالَهُ.", turkce: "Bunu iade etmek/değiştirmek istiyorum." },
+            { arapca: "أَتَفَرَّجُ فَقَطْ، شُكْرًا.", "turkce": "Sadece bakıyorum, teşekkürler." }
+        ],
+        "kelime_alistirmasi": [
+            { "arapca": "أُمِّي", "turkce": "Benim annem" },
+            { "arapca": "مِثْلُ امْرَأَةٍ عَصَبِيَّةٍ", "turkce": "Sinirli bir kadın gibi" },
+            { "arapca": "اللَّوْنُ الْأَزْرَقُ مِنْهَا", "turkce": "Bunların mavisi" },
+            { "arapca": "مَقَاسٌ أَصْغَرُ مِنْ هَذِهِ", "turkce": "Bunlardan bir tanesinin küçük bedeni" },
+            { "arapca": "كَنْزَةٌ", "turkce": "Kazak" },
+            { "arapca": "هَلْ عِنْدَكُمْ...؟", "turkce": "Sizde ... var mı?" },
+            { "arapca": "أَيْنَ يُمْكِنُنِي أَنْ أَجِدَ...؟", "turkce": "Nerede bulabilirim?" },
+            { "arapca": "بَنْطَلُونٌ", "turkce": "Pantolon" },
+            { "arapca": "كَنْزَةٌ بِقَبَّةٍ عَالِيَةٍ", "turkce": "Balıkçı kazak" },
+            { "arapca": "بُلُوزَةٌ حَرِيرِيَّةٌ", "turkce": "İpek bluz" },
+            { "arapca": "أَتَفَرَّجُ فَقَطْ / أُلْقِي نَظْرَةً فَقَطْ", "turkce": "Sadece bir göz gezdiriyorum, sadece bir göz atıyorum" },
+            { "arapca": "أَبْحَثُ عَنْ...", "turkce": "Arıyorum..." },
+            { "arapca": "بِكَمْ هَذَا؟ / كَمْ سِعْرُ هَذَا؟", "turkce": "Bu ne kadar?" },
+            { "arapca": "مُمْكِن أُجَرِّبهُ؟", "turkce": "Deneyebilir miyim? (Bedenini denerken)" },
+            { "arapca": "سَآخُذُهُ.", "turkce": "Bunu alıyorum." },
+            { "arapca": "هَلْ تَقْبَلُونَ الدَّفْعَ بِالْبِطَاقَةِ؟", "turkce": "Kredi kartı kabul ediyor musunuz?" },
+            { "arapca": "أُرِيدُ إِرْجَاعَ هَذَا.", "turkce": "Bunu iade etmek istiyorum." },
+            { "arapca": "أُرِيدُ تَبْدِيلَ هَذَا.", "turkce": "Bunu değiştirmek istiyorum." },
+            { "arapca": "مَحَلُّ للأَحْذِيَةٍ", "turkce": "Ayakkabı mağazası" },
+            { "arapca": "فِي مَحَلِّ للْأَحْذِيَةِ", "turkce": "Bir ayakkabı mağazasında" },
+            { "arapca": "مُوَظَّفُ الْمَتْجَرِ/المحل / الْبَائِعُ", "turkce": "Mağaza çalışanı" },
+            { "arapca": "أَيُّ خِدْمَةٍ؟ / أُسَاعِدُكَ؟", "turkce": "Size yardım edebilir miyim?" },
+            { "arapca": "الزَّبُونُ", "turkce": "Müşteri, alıcı" },
+            { "arapca": "نَعَمْ، بِالطَّبْعِ.", "turkce": "Evet, tabii ki." },
+            { "arapca": "بَعْدَ قَلِيلٍ/شوي", "turkce": "Bir süre sonra" },
+            { "arapca": "أَخْشَى أَنَّ مَقَاسَهُ غَيْرُ مُنَاسِبٍ لي.", "turkce": "Korkarım bunun bedeni bana uygun değil." },
+            { "arapca": "مُمْكِن/أريد مَقَاس أَكْبَر لَوْ سَمَحْتَ؟", "turkce": "Bir büyük bedenini alabilir miyim, lütfen?" },
+            { "arapca": "تَفَضَّلْ.", "turkce": "Buyurun" },
+            { "arapca": "بَعْدَ لَحَظَاتٍ", "turkce": "Biraz sonra" },
+            { "arapca": "مَقَاسُهَا مُمْتَازٌ. أشتريهَا.", "turkce": "Onlar mükemmel. Onları alıyorum." },
+            { "arapca": "كَيْفَ تُفَضِّلُ الدَّفْعَ؟", "turkce": "Nasıl ödemek istersiniz?" },
+            { "arapca": "هَلْ تَقْبَلُونَ بِطَاقَةَ فِيزَا؟", "turkce": "Visa kart kabul ediyor musunuz?" }
         ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/F7siNCLF82zM0IMiAZvJ.png",
@@ -758,7 +793,7 @@ const egitimMufredati = {
                 { "arapca": "يَشْعُرَ", "turkce": "Hisseder / Hissetmesi" },
                 { "arapca": "بِتَحَسُّنٍ", "turkce": "İyileşme / Daha iyi" }
             ]
-        },
+        }
     },
     "gun6": {
         "kelime_egzersizleri": [
