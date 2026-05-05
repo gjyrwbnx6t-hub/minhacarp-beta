@@ -1637,7 +1637,7 @@ const egitimMufredati = {
             { "arapca": "هَلْ تُرِيدُ أَنْ تَتْرُكَ رِسَالَةً؟", "turkce": "Mesaj bırakmak ister misiniz?" },
             { "arapca": "هَلْ يُمْكِنُكَ أَنْ تَقُولَ لَهُ أَنْ يَتَّصِلَ بِي؟", "turkce": "Beni geri aramasını söyler misiniz?" },
             { "arapca": "شُكْرًا لِاتِّصَالِكَ.", "turkce": "Aradığınız için teşekkürler." },
-            { "arapca": "عَائِشَةُ تَتَحَدَّثُ.", "turkce": "Ayşe konuşuyor. / Telefonda Ayşe." }
+            { "arapca": "عَائِشَةُ تَتَحَدَّثُ.", "turkce": "Ayşe konuşuyor. / Telefonda Ayşe." },
             { "arapca": "بِكُلِّ تَأْكِيدٍ.", "turkce": "Tabii ki, elbette." },
             { "arapca": "هَلْ مِنْ شَيْءٍ آخَرَ؟", "turkce": "Başka bir şey?" },
             { "arapca": "عَلَى الرَّحْبِ وَالسَّعَةِ.", "turkce": "Rica ederim, zevkle." },
