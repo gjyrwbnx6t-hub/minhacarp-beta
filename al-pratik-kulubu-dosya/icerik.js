@@ -1948,6 +1948,115 @@ const egitimMufredati = {
             { arapca: "كُنْتُ أَتَسَاءَلُ...", turkce: "Merak ediyorum da?" },
             { arapca: "أَتَّصِلُ لِكَيْ أَعْرِفَ.", turkce: "Telefonla arayıp soruyorsan – öğrenmek için arıyorum" }
         ],
+        "diyaloglar": [
+            {
+                "baslik": "Diyalog 1: Kütüphanede Günlük Konuşma",
+                "senaryo": "Arkadaşınızla bir kütüphanedesiniz. Proje için bir kaynak arıyorsunuz ama doğru kitabı bulamıyorsunuz. Arkadaşınıza sorarak yardım istemeye karar veriyorsunuz. Ortam sessiz ve rahat; konuşmalarınız kısık bir tonda ilerliyor.",
+                "akis": [
+                    {
+                        "tur": "video",
+                        "isim": "Sen",
+                        "arapca": "هَلْ لَدَيْكَ فِكْرَةٌ عَنْ مَكَانِ كُتُبِ عِلْمِ النَّفْسِ؟",
+                        "turkce": "Psikoloji kitaplarının nerede olduğu hakkında bir fikrin var mı?"
+                    },
+                    {
+                        "tur": "kullanici",
+                        "isim": "أَحْمَد",
+                        "arapca": "هُمم، أَظُنُّ أَنَّهَا فِي الطَّابِقِ الثَّانِي.",
+                        "turkce": "Hmm, sanırım ikinci kattalar."
+                    },
+                    {
+                        "tur": "video",
+                        "isim": "Sen",
+                        "arapca": "شُكْرًا! هَلْ تَعْرِفُ إِنْ كُنَّا نَحْتَاجُ إِلَى بِطَاقَةِ الْمَكْتَبَةِ لِاسْتِعَارَتِهَا؟",
+                        "turkce": "Teşekkürler! Onları ödünç almak için kütüphane kartına ihtiyacımız var mı, biliyor musun?"
+                    },
+                    {
+                        "tur": "kullanici",
+                        "isim": "أَحْمَد",
+                        "arapca": "نَعَمْ، نَحْتَاجُ إِلَيْهَا. وَلَكِنْ يُمْكِنُكَ الْحُصُولُ عَلَيْهَا مِنْ مَكْتَبِ الِاسْتِقْبَالِ.",
+                        "turkce": "Evet, ihtiyacımız var. Ama onu danışmadan alabilirsin."
+                    },
+                    {
+                        "tur": "video",
+                        "isim": "Sen",
+                        "arapca": "رَائِعٌ، هَذَا مُفِيدٌ. سَأَذْهَبُ لِأَتَأَكَّدَ الآنَ.",
+                        "turkce": "Harika, bu yardımcı oldu. Şimdi gidip kontrol edeceğim."
+                    }
+                ]
+            },
+            {
+                "baslik": "Diyalog 2: İş Görüşmesinde Resmî Bilgi Alma",
+                "senaryo": "Bir iş görüşmesindesiniz ve pozisyonla ilgili bazı detayları öğrenmek istiyorsunuz. Görüşmeyi yapan kişiye nazikçe sorular sorarak bilgi alıyorsunuz. Ortam profesyonel ve resmî.",
+                "akis": [
+                    {
+                        "tur": "video",
+                        "isim": "Sen",
+                        "arapca": "شُكْرًا عَلَى هَذِهِ الْمَعْلُومَاتِ. هَلْ يُمْكِنُنِي الِاسْتِفْسَارُ عَنْ سَاعَاتِ الْعَمَلِ؟",
+                        "turkce": "Bu bilgiler için teşekkür ederim. Çalışma saatleri hakkında bilgi alabilir miyim?"
+                    },
+                    {
+                        "tur": "kullanici",
+                        "isim": "Görüşmeci",
+                        "arapca": "بِالطَّبْعِ. سَاعَاتُ الْعَمَلِ مِنَ التَّاسِعَةِ صَبَاحًا إِلَى الْخَامِسَةِ مَسَاءً، مِنَ الِاثْنَيْنِ إِلَى الْجُمُعَةِ.",
+                        "turkce": "Elbette. Çalışma saatleri pazartesiden cumaya, sabah 9'dan akşam 5'e kadar."
+                    },
+                    {
+                        "tur": "video",
+                        "isim": "Sen",
+                        "arapca": "جَيِّدٌ أَنْ أَعْرِفَ ذَلِكَ. أَرَدْتُ أَنْ أَسْأَلَكُمْ: هَلْ تُوجَدُ بَرَامِجُ تَدْرِيبٍ لِلْمُوَظَّفِينَ؟",
+                        "turkce": "Bunu bilmek iyi oldu. Size sormak istedim: Çalışanlar için eğitim programları var mı?"
+                    },
+                    {
+                        "tur": "kullanici",
+                        "isim": "Görüşmeci",
+                        "arapca": "نَعَمْ، لَدَيْنَا دَوْرَاتٌ تَدْرِيبِيَّةٌ مُنْتَظِمَةٌ لِلْمُوَظَّفِينَ.",
+                        "turkce": "Evet, çalışanlar için düzenli eğitimlerimiz var."
+                    },
+                    {
+                        "tur": "video",
+                        "isim": "Sen",
+                        "arapca": "مُمْتَازٌ. لَوْ سَمَحْتُمْ، هَلْ يُمْكِنُكُمْ أَنْ تُخْبِرُونِي بِمَزِيدٍ مِنَ التَّفَاصِيلِ عَنِ الْفَرِيقِ؟",
+                        "turkce": "Harika. Rica etsem, ekip hakkında bana daha fazla bilgi verebilir misiniz?"
+                    },
+                    {
+                        "tur": "kullanici",
+                        "isim": "Görüşmeci",
+                        "arapca": "بِكُلِّ تَأْكِيدٍ. سَتَعْمَلُونَ مَعَ فَرِيقٍ مُكَوَّنٍ مِنْ خَمْسَةِ أَشْخَاصٍ ذَوِي خِبْرَةٍ.",
+                        "turkce": "Elbette. Beş deneyimli kişiden oluşan bir ekiple çalışacaksınız."
+                    }
+                ]
+            }
+        ],
+        "kelime_alistirmasi": [
+            { "arapca": "هَلْ يُمْكِنُكَ أَنْ تُخْبِرَنِي؟", "turkce": "Söyleyebilir misin?" },
+            { "arapca": "هَلْ يُمْكِنُكُمْ أَنْ تُخْبِرُونِي؟", "turkce": "Söyleyebilir misiniz?" },
+            { "arapca": "أَوَدُّ أَنْ أَعْرِفَ.", "turkce": "Bilmek isterdim. / Bilmek isterim." },
+            { "arapca": "هَلْ تَعْرِفُ؟", "turkce": "Biliyor musun?" },
+            { "arapca": "هَلْ لَدَيْكَ فِكْرَةٌ عَنْ ...؟", "turkce": "... ile ilgili bir fikrin var mı?" },
+            { "arapca": "هَلْ يُمْكِنُ أَنْ يُخْبِرَنِي أَحَدٌ ...؟", "turkce": "Birisi bana ... söyleyebilir mi?" },
+            { "arapca": "هَلْ يُمْكِنُ أَنْ يُخْبِرَنِي أَحَدٌ؟", "turkce": "Birisi bana söyleyebilir mi?" },
+            { "arapca": "لَا أَدْرِي إِنْ كُنْتَ تَعْرِفُ، وَلَكِنْ ...", "turkce": "Biliyor musun bilmem ama..." },
+            { "arapca": "كان عند فضول ...", "turkce": "Merak ediyorum da... / Merak ediyordum da..." },
+            { "arapca": "أَنَا أَتَّصِلُ لِأَعْرِفَ ...", "turkce": "Öğrenmek için arıyorum." },
+            { "arapca": "رَسْمٌ إِضَافِيٌّ", "turkce": "Ek ücret." },
+            { "arapca": "آخِرُ فَاتُورَةٍ", "turkce": "En son fatura." },
+            { "arapca": "مَزِيدٌ مِنَ التَّفَاصِيلِ", "turkce": "Daha fazla detay." },
+            { "arapca": "أَرَى / يُرِي", "turkce": "Göstermek." },
+            { "arapca": "طَرِيقٌ", "turkce": "Yol." },
+            { "arapca": "مَحَطَّةُ قِطَارٍ", "turkce": "Tren istasyonu." },
+            { "arapca": "قَرِيبٌ مِنْ هُنَا.", "turkce": "Buraya yakın." },
+            { "arapca": "اعْبُرِ الشَّارِعَ.", "turkce": "Caddenin karşısına geç." },
+            { "arapca": "اِنْعَطِفْ يَسَارًا عِنْدَ الزَّاوِيَةِ.", "turkce": "Köşeden sola dön." },
+            { "arapca": "عَلَى الْجَانِبِ الْأَيْمَنِ.", "turkce": "Sağ tarafta." },
+            { "arapca": "بِالْمُنَاسَبَةِ، خَطَرَ فِي/بـ بَالِي ...", "turkce": "Bu arada, aklıma gelmişken..." },
+            { "arapca": "طبعا!.", "turkce": "Tabii ki, elbette." },
+            { "arapca": "هُنَاكَ", "turkce": "Orada." },
+            { "arapca": "صَرْفُ الْعُمْلَةِ", "turkce": "Döviz bozdurmak." },
+            { "arapca": "سَأَلَ / يَسْأَلُ", "turkce": "Sormak." },
+            { "arapca": "وَجَدَ / يَجِدُ", "turkce": "Bulmak." },
+            { "arapca": "شُكْرًا لِمُسَاعَدَتِكَ.", "turkce": "Yardım ettiğin için teşekkür ederim." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/KOW7l47mMuujXag28P3p.png",
             "ses": "",
