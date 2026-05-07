@@ -6,6 +6,74 @@
     <title>Eğitimler - Minhac Arp</title>
     <link rel="stylesheet" href="style-egzersiz.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .reading-box {
+            position: relative; 
+            padding: 45px 20px 20px 20px; 
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-top: 20px;
+            min-height: 200px;
+        }
+
+        #translate-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 5px 15px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            color: #333;
+            z-index: 10;
+            transition: all 0.2s ease;
+        }
+
+        #translate-btn:hover {
+            background: #e2e6ea;
+        }
+
+        #reading-text[data-lang="tr"] {
+            direction: ltr;
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        #reading-text[data-lang="ar"] {
+            direction: rtl;
+            text-align: right;
+            font-size: 22px; 
+            line-height: 1.8;
+        }
+
+        .reading-level-tabs {
+            margin-top: 15px;
+        }
+
+        .reading-level-tab {
+            border: none;
+            border-radius: 6px;
+            padding: 8px 14px;
+            cursor: pointer;
+            font-weight: 600;
+            background: #f1f3f5;
+            color: #333;
+            transition: all 0.2s ease;
+        }
+
+        .reading-level-tab:hover {
+            background: #e2e6ea;
+        }
+
+        .reading-level-tab.active {
+            background: #222;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
 
@@ -35,7 +103,7 @@
                     </div>
 
                     <div class="day-item">
-                        <button class="day-header">2.Gün: Zihninin Arapça'ya Kodla - Nasılsın Demenin Yolları <span class="arrow">▼</span></button>
+                        <button class="day-header">2.Gün: Zihnini Arapça'ya Kodla - Nasılsın Demenin Yolları <span class="arrow">▼</span></button>
                         <ul class="exercise-list" style="display: none;">
                             <li><button class="ex-btn" data-gun="gun2" data-tur="kelime_egzersizleri">Kelime Egzersizleri</button></li>
                             <li><button class="ex-btn" data-gun="gun2" data-tur="diyaloglar">Diyaloglar</button></li>
@@ -383,14 +451,38 @@
                     <button class="action-tab">Eşleştirme</button>
                 </div>
 
-                <div class="flashcard-container">
+                <div id="okuma-alistirmasi-alani" style="display: none;">
+                
+                <div class="action-tabs reading-level-tabs">
+                    <button class="reading-level-tab active" data-seviye="basit">Basit</button>
+                    <button class="reading-level-tab" data-seviye="orta">Orta</button>
+                    <button class="reading-level-tab" data-seviye="ileri">İleri</button>
+                </div>
+
+                <div class="reading-box"> 
+                    <button id="translate-btn" onclick="toggleTranslation()" title="Türkçe/Arapça Değiştir">
+                        <span id="btn-text">TR</span>
+                    </button>
+                
+                    <p id="reading-text" data-lang="ar">
+                        Arapça metin buraya gelecek...
+                    </p>
+                </div>
+                
+                <div class="bottom-controls" style="margin-top: 20px;">
+                    <button class="btn btn-primary">Alıştırmayı Tamamla</button>
+                </div>
+
+            </div>
+
+                <div id="flashcard-alani" class="flashcard-container">
                     <div class="flashcard">
                         <span class="status-badge">✓ Öğrenildi</span>
                         <h1 class="word">مرحباً <span class="audio-icon">🔊</span></h1>
                     </div>
                 </div>
 
-                <div class="bottom-controls">
+                <div id="flashcard-controls" class="bottom-controls">
                     <button class="btn btn-outline">Önceki</button>
                     <button class="btn btn-outline">Biliyorum</button>
                     <button class="btn btn-primary">Sonraki</button>
@@ -401,5 +493,286 @@
     </div>
     <script src="icerik.js"></script>
     <script src="script.js"></script>
+    <script>
+        /*
+            Bu bölüm sadece bu HTML dosyasındaki okuma/çeviri tarafını sağlamlaştırır.
+            Mevcut sayfa mantığını bozmaz:
+            - Hafta/gün menüsü aynı kalır.
+            - Kelime kartları aynı kalır.
+            - Okuma alıştırması seçilince okuma alanı görünür, kart alanı gizlenir.
+            - Başka egzersiz seçilince kart alanı geri gelir.
+            - Çeviri artık demo metinle gerçek metni ezmez.
+        */
+
+        let isTurkish = false;
+        let aktifSeviye = "basit";
+
+        function normalizeKey(value) {
+            return String(value || "")
+                .trim()
+                .toLowerCase()
+                .replaceAll("ı", "i")
+                .replaceAll("ğ", "g")
+                .replaceAll("ü", "u")
+                .replaceAll("ş", "s")
+                .replaceAll("ö", "o")
+                .replaceAll("ç", "c");
+        }
+
+        function getAktifGun() {
+            const aktifButon = document.querySelector(".ex-btn.active-ex");
+            return aktifButon ? aktifButon.dataset.gun : "gun1";
+        }
+
+        function getAktifTur() {
+            const aktifButon = document.querySelector(".ex-btn.active-ex");
+            return aktifButon ? aktifButon.dataset.tur : "kelime_alistirmasi";
+        }
+
+        function getReadingTextElement() {
+            return document.getElementById("reading-text");
+        }
+
+        function resetTranslationState() {
+            const textElement = getReadingTextElement();
+            const btnText = document.getElementById("btn-text");
+
+            isTurkish = false;
+
+            if (btnText) {
+                btnText.innerText = "TR";
+            }
+
+            if (textElement) {
+                textElement.setAttribute("data-lang", "ar");
+            }
+        }
+
+        function setReadingContent(arabicText, turkishText) {
+            const textElement = getReadingTextElement();
+
+            if (!textElement) return;
+
+            textElement.dataset.ar = arabicText || "";
+            textElement.dataset.tr = turkishText || "";
+            textElement.innerText = arabicText || "Arapça metin bulunamadı.";
+            textElement.setAttribute("data-lang", "ar");
+
+            resetTranslationState();
+        }
+
+        function readNestedValue(obj, keys) {
+            let current = obj;
+
+            for (const key of keys) {
+                if (!current || typeof current !== "object") return null;
+                current = current[key];
+            }
+
+            return current;
+        }
+
+        function extractReadingPair(candidate) {
+            if (!candidate || typeof candidate !== "object") return null;
+
+            const arabicText =
+                candidate.ar ||
+                candidate.arapca ||
+                candidate.arabic ||
+                candidate.metin ||
+                candidate.text ||
+                candidate.icerik ||
+                candidate[aktifSeviye];
+
+            const turkishText =
+                candidate.tr ||
+                candidate.turkce ||
+                candidate.turkish ||
+                candidate.ceviri ||
+                candidate.translation ||
+                candidate[aktifSeviye + "_tr"];
+
+            if (!arabicText && !turkishText) return null;
+
+            return {
+                ar: arabicText || "",
+                tr: turkishText || ""
+            };
+        }
+
+        function findReadingPairFromKnownSources(gun, seviye) {
+            /*
+                Bu fonksiyon icerik.js dosyandaki değişken adını kesin bilmeden
+                yaygın veri şekillerini denemek için var.
+
+                Desteklenen örnek yapılar:
+
+                window.okumaMetinleri = {
+                    gun1: {
+                        basit: { ar: "...", tr: "..." },
+                        orta: { ar: "...", tr: "..." },
+                        ileri: { ar: "...", tr: "..." }
+                    }
+                }
+
+                veya:
+
+                window.icerikler = {
+                    gun1: {
+                        okuma_alistirmasi: {
+                            basit: { arapca: "...", turkce: "..." }
+                        }
+                    }
+                }
+            */
+
+            const sources = [
+                window.okumaMetinleri,
+                window.okumaMetinleriData,
+                window.icerikler,
+                window.icerik,
+                window.egzersizIcerikleri,
+                window.data
+            ].filter(Boolean);
+
+            const pathsToTry = [
+                [gun, seviye],
+                [gun, "okuma_alistirmasi", seviye],
+                [gun, "okumaAlistirmasi", seviye],
+                ["okuma_alistirmasi", gun, seviye],
+                ["okumaAlistirmasi", gun, seviye],
+                [seviye],
+                [gun]
+            ];
+
+            for (const source of sources) {
+                for (const path of pathsToTry) {
+                    const value = readNestedValue(source, path);
+                    const pair = extractReadingPair(value);
+
+                    if (pair) return pair;
+                }
+            }
+
+            return null;
+        }
+
+        function loadReadingContent() {
+            const textElement = getReadingTextElement();
+            if (!textElement) return;
+
+            const gun = getAktifGun();
+            const pair = findReadingPairFromKnownSources(gun, aktifSeviye);
+
+            if (pair) {
+                setReadingContent(pair.ar, pair.tr);
+                return;
+            }
+
+            /*
+                Dışarıdaki script.js zaten metni yüklediyse onu bozmayalım.
+                Ancak data-ar yoksa mevcut Arapça metni data-ar olarak saklayalım.
+            */
+            if (!textElement.dataset.ar && textElement.innerText.trim()) {
+                textElement.dataset.ar = textElement.innerText.trim();
+            }
+
+            resetTranslationState();
+        }
+
+        function toggleTranslation() {
+            const textElement = getReadingTextElement();
+            const btnText = document.getElementById("btn-text");
+
+            if (!textElement || !btnText) return;
+
+            const arabicText = textElement.dataset.ar || textElement.innerText.trim();
+            const turkishText = textElement.dataset.tr || "";
+
+            if (!isTurkish) {
+                if (!turkishText) {
+                    /*
+                        Eski koddaki demo metin burada gerçek metni eziyordu.
+                        Türkçe çeviri yoksa metni değiştirmiyoruz.
+                    */
+                    btnText.innerText = "TR";
+                    return;
+                }
+
+                textElement.innerText = turkishText;
+                textElement.setAttribute("data-lang", "tr");
+                btnText.innerText = "AR";
+                isTurkish = true;
+            } else {
+                textElement.innerText = arabicText;
+                textElement.setAttribute("data-lang", "ar");
+                btnText.innerText = "TR";
+                isTurkish = false;
+            }
+        }
+
+        function showReadingArea() {
+            const readingArea = document.getElementById("okuma-alistirmasi-alani");
+            const flashcardArea = document.getElementById("flashcard-alani");
+            const flashcardControls = document.getElementById("flashcard-controls");
+
+            if (readingArea) readingArea.style.display = "block";
+            if (flashcardArea) flashcardArea.style.display = "none";
+            if (flashcardControls) flashcardControls.style.display = "none";
+
+            loadReadingContent();
+        }
+
+        function showFlashcardArea() {
+            const readingArea = document.getElementById("okuma-alistirmasi-alani");
+            const flashcardArea = document.getElementById("flashcard-alani");
+            const flashcardControls = document.getElementById("flashcard-controls");
+
+            if (readingArea) readingArea.style.display = "none";
+            if (flashcardArea) flashcardArea.style.display = "block";
+            if (flashcardControls) flashcardControls.style.display = "flex";
+
+            resetTranslationState();
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const exerciseButtons = document.querySelectorAll(".ex-btn");
+            const levelButtons = document.querySelectorAll(".reading-level-tab");
+
+            exerciseButtons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    exerciseButtons.forEach(btn => btn.classList.remove("active-ex"));
+                    button.classList.add("active-ex");
+
+                    const tur = button.dataset.tur;
+
+                    if (tur === "okuma_alistirmasi") {
+                        showReadingArea();
+                    } else {
+                        showFlashcardArea();
+                    }
+                });
+            });
+
+            levelButtons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    levelButtons.forEach(btn => btn.classList.remove("active"));
+                    button.classList.add("active");
+
+                    aktifSeviye = button.dataset.seviye || normalizeKey(button.innerText);
+                    loadReadingContent();
+                });
+            });
+
+            /*
+                Sayfa ilk açıldığında aktif egzersiz neyse görünümü ona göre ayarla.
+            */
+            if (getAktifTur() === "okuma_alistirmasi") {
+                showReadingArea();
+            } else {
+                showFlashcardArea();
+            }
+        });
+    </script>
 </body>
 </html>
