@@ -155,8 +155,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>
 
                     <div class="ses-oynatici" style="text-align: center; margin-bottom: 40px; padding: 15px; background-color: #f5f5f5; border-radius: 8px;">
-                        <audio controls style="width: 100%; height: 40px;">
-                            <source src="${guvenliMetin(veri.ses || '')}" type="audio/mpeg">
+                        <audio id="okuma-ses-oynatici" controls style="width: 100%; height: 40px;">
+                            <source id="okuma-ses-kaynagi" src="${guvenliMetin(veri.sesler && veri.sesler['basit'] ? veri.sesler['basit'] : (veri.ses || ''))}" type="audio/mpeg">
                             Tarayıcınız ses elementini desteklemiyor.
                         </audio>
                     </div>
@@ -214,46 +214,66 @@ document.addEventListener("DOMContentLoaded", function() {
                 }).join('');
             }
 
+            // 1. ADIM: HAREKE VE İŞARET TEMİZLEYİCİ (GELİŞTİRİLDİ)
             function arapcaTemizle(metin) {
                 if (!metin) return "";
 
                 return String(metin)
-                    .replace(/[\u064B-\u065F\u0670\u0640]/g, '')
-                    .replace(/[أإآ]/g, 'ا')
-                    .replace(/ة/g, 'ه')
-                    .replace(/ى/g, 'ي')
-                    .replace(/[^\u0621-\u064A]/g, '')
+                    .replace(/[\u064B-\u065F\u0670\u0640]/g, '') // Harekeleri ve uzatmaları sil
+                    .replace(/[أإآ]/g, 'ا') // Hemzeli elifleri düzelt
+                    .replace(/ة/g, 'ه')     // Kapalı Te'yi He yap
+                    .replace(/ى/g, 'ي')     // Elif Maksura'yı Ye yap
+                    .replace(/[^\u0621-\u064A\s]/g, '') // Arapça harfler ve BOŞLUK dışındaki her şeyi sil (\s boşlukları korur)
+                    .replace(/\s+/g, ' ')   // Fazla boşlukları teke düşür
                     .trim();
             }
 
+            // 2. ADIM: AKILLI EŞLEŞTİRME MOTORU (YENİ VE KUSURSUZ)
             function kelimeEslesiyorMu(tiklananKelime, sozlukKelimesi) {
                 const t = arapcaTemizle(tiklananKelime);
                 const s = arapcaTemizle(sozlukKelimesi);
 
                 if (t === "" || s === "") return false;
-                if (s.length <= 2 && t.length > s.length) return false;
                 if (t === s) return true;
 
-                const gecerliOnEkler = ["", "و", "ف", "ب", "ك", "ل", "ال", "بال", "فال", "كال", "لل", "وال"];
-                const gecerliArkaEkler = ["", "ه", "ها", "هم", "هن", "ك", "كم", "كن", "نا", "ي", "ني", "ات", "ون", "ين", "ان", "ا", "وا", "ت", "تي", "ته"];
+                // Genişletilmiş Ön Ekler (Fiil çekimleri, bağlaçlar, gelecek zaman kipleri eklendi)
+                const gecerliOnEkler = ["", "و", "ف", "ب", "ك", "ل", "ال", "بال", "فال", "كال", "لل", "وال", "ي", "ت", "ن", "ا", "سي", "ست", "سن", "سا", "وس", "فس"];
+                // Genişletilmiş Arka Ekler (İyelik, çoğul, ikil, dişil ekleri artırıldı)
+                const gecerliArkaEkler = ["", "ه", "ها", "هم", "هن", "ك", "كم", "كن", "نا", "ي", "ني", "ات", "ون", "ين", "ان", "ا", "وا", "ت", "تي", "ته", "تم", "تما", "تن"];
 
-                function kontrolEt(arananKok) {
-                    if (!t.includes(arananKok)) return false;
-
-                    const parcalar = t.split(arananKok);
+                function ekleriKontrolEt(kelime, kok) {
+                    if (!kelime.includes(kok)) return false;
+                    const parcalar = kelime.split(kok);
                     if (parcalar.length !== 2) return false;
-
                     return gecerliOnEkler.includes(parcalar[0]) && gecerliArkaEkler.includes(parcalar[1]);
                 }
 
-                if (kontrolEt(s)) return true;
-
-                if (s.endsWith('ه')) {
-                    const sAlternatif = s.slice(0, -1) + 'ت';
-                    if (kontrolEt(sAlternatif)) return true;
+                // A Durumu: Sözlükteki kelime TEK BİR KELİME ise
+                if (!s.includes(' ')) {
+                    if (s.length <= 2 && t.length > s.length) return false; // "في" gibi kısa bağlaçların alakasız kelimelerde tetiklenmesini önle
+                    
+                    if (ekleriKontrolEt(t, s)) return true;
+                    
+                    // Kapalı Te (ه -> ت) dönüşümü kontrolü (Örn: مكتبه -> مكتبتي)
+                    if (s.endsWith('ه')) {
+                        if (ekleriKontrolEt(t, s.slice(0, -1) + 'ت')) return true;
+                    }
+                    return false;
+                } 
+                // B Durumu: Sözlükteki kelime BİR ÖBEK/DEYİM (birden fazla kelime) ise
+                else {
+                    const sKelimeleri = s.split(' ');
+                    // Kullanıcı öbeğin içindeki kilit bir kelimeye tıkladıysa, öbeği göster
+                    for (let i = 0; i < sKelimeleri.length; i++) {
+                        const parcaS = sKelimeleri[i];
+                        if (parcaS.length <= 2) continue; // "في", "من" gibi kısa bağlaçlara tıklayınca tüm öbeği getirme
+                        
+                        if (t === parcaS) return true;
+                        if (ekleriKontrolEt(t, parcaS)) return true;
+                        if (parcaS.endsWith('ه') && ekleriKontrolEt(t, parcaS.slice(0, -1) + 'ت')) return true;
+                    }
+                    return false;
                 }
-
-                return false;
             }
 
             let tooltip = document.getElementById('ceviri-tooltip');
@@ -387,7 +407,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     metinAlani.style.textAlign = "right";
                     metinAlani.style.fontSize = "24px";
 
-                    metinAlani.innerHTML = metniTıklanabilirYap(veri.metinler[aktifSeviye]);
+                    metinAlani.innerHTML = metniTiklanabilirYap(veri.metinler[aktifSeviye]);
                     kelimelerAlani.innerHTML = kelimeleriCiz(aktifSeviye);
                     tooltip.style.display = 'none'; 
 
