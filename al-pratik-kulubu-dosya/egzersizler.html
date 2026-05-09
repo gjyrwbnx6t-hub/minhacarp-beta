@@ -78,9 +78,12 @@
 <body>
 
     <header class="top-header">
+        <button class="mobile-menu-btn" onclick="toggleMobileSidebar()" aria-label="Menüyü aç/kapat">☰</button>
         <div class="logo">MİNHAC<span>ARP</span></div>
         <div class="user-profile">U</div>
     </header>
+
+    <div class="sidebar-overlay" onclick="closeMobileSidebar()"></div>
 
     <div class="app-container">
         
@@ -771,6 +774,19 @@
                 showReadingArea();
             } else {
                 showFlashcardArea();
+            }
+        });
+              function toggleMobileSidebar() {
+            document.body.classList.toggle("sidebar-open");
+        }
+
+        function closeMobileSidebar() {
+            document.body.classList.remove("sidebar-open");
+        }
+
+        document.addEventListener("click", function (event) {
+            if (event.target.closest(".ex-btn") && window.innerWidth <= 768) {
+                closeMobileSidebar();
             }
         });
     </script>

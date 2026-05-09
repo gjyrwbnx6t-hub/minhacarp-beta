@@ -79,6 +79,46 @@ const egitimMufredati = {
                 ]
             }
         ],
+        "kelime_alistirmasi": [
+            { "arapca": "مَرْحَبًا.", "turkce": "Merhaba." },
+            { "arapca": "أَهْلًا.", "turkce": "Selam." },
+            { "arapca": "أَهْلًا وَسَهْلًا.", "turkce": "Selam. / Hoş geldin." },
+            { "arapca": "سَلَامٌ.", "turkce": "Selam." },
+            { "arapca": "السَّلَامُ عَلَيْكُمْ.", "turkce": "Selam." },
+
+            { "arapca": "مَعَ السَّلَامَةِ.", "turkce": "Güle güle, hoşça kal." },
+            { "arapca": "إِلَى اللِّقَاءِ.", "turkce": "Hoşça kal." },
+            { "arapca": "نَرَاكَ لَاحِقًا.", "turkce": "Görüşürüz." },
+            { "arapca": "اِعْتَنِ بِنَفْسِكَ.", "turkce": "Kendine iyi bak, dikkat et." },
+            { "arapca": "يَوْمُكَ سَعِيدٌ.", "turkce": "İyi günler." },
+            { "arapca": "نَهَارُكَ سَعِيدٌ.", "turkce": "İyi günler." },
+
+            { "arapca": "كَيْفَ تَسِيرُ الْأُمُورُ؟", "turkce": "Nasıl gidiyor?" },
+            { "arapca": "كَيْفَ حَالُكَ؟ لَمْ نَلْتَقِ مُنْذُ فَتْرَةٍ.", "turkce": "Görüşmeyeli nasılsın?" },
+            { "arapca": "مَا الْأَخْبَارُ؟", "turkce": "Naber?" },
+            { "arapca": "مَاذَا كُنْتَ تَفْعَلُ مُنْذُ آخِرِ مَرَّةٍ؟", "turkce": "Görüşmeyeli neler yapıyorsun?" },
+
+            { "arapca": "أَنَا زَيْنَبُ.", "turkce": "Ben Jenny." },
+            { "arapca": "أَنَا يُوسُفُ.", "turkce": "Ben Mike." },
+            { "arapca": "تَشَرَّفْتُ بِمَعْرِفَتِكَ.", "turkce": "Tanıştığıma memnun oldum." },
+            { "arapca": "سَعِدْتُ بِرُؤْيَتِكَ مَرَّةً أُخْرَى.", "turkce": "Seni yeniden görmek güzel." },
+            { "arapca": "نَعَمْ، بِالضَّبْطِ.", "turkce": "Evet aynen." },
+            { "arapca": "وَأَنَا كَذَلِكَ.", "turkce": "Aynı şekilde, aynen." },
+
+            { "arapca": "أَمْسِ.", "turkce": "Dün." },
+            { "arapca": "الْيَوْمَ.", "turkce": "Bugün." },
+            { "arapca": "غَدًا.", "turkce": "Yarın." },
+            { "arapca": "هَذَا الْأُسْبُوعَ.", "turkce": "Bu hafta." },
+            { "arapca": "هَذَا الشَّهْرَ.", "turkce": "Bu ay." },
+            { "arapca": "الْأُسْبُوعَ الْمَاضِيَ.", "turkce": "Geçen hafta." },
+            { "arapca": "الشَّهْرَ الْمَاضِيَ.", "turkce": "Geçen ay." },
+            { "arapca": "الْأُسْبُوعَ الْقَادِمَ.", "turkce": "Gelecek hafta." },
+            { "arapca": "الشَّهْرَ الْقَادِمَ.", "turkce": "Gelecek ay." },
+            { "arapca": "السَّنَةَ الْقَادِمَةَ.", "turkce": "Gelecek yıl." },
+            { "arapca": "كُلَّ أُسْبُوعٍ.", "turkce": "Her hafta." },
+            { "arapca": "كُلَّ شَهْرٍ / شَهْرِيًّا.", "turkce": "Her ay / aylık." },
+            { "arapca": "كُلَّ سَنَةٍ / سَنَوِيًّا.", "turkce": "Her yıl / yıllık." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/22U6VjoGKaInRdjObNBu.png",
             "sesler": {
@@ -229,6 +269,34 @@ const egitimMufredati = {
                     }
                 ]
             }
+        ],
+        "kelime_alistirmasi": [
+            { "arapca": "مَسَاءٌ", "turkce": "Akşam." },
+            { "arapca": "مِدْفَأَةٌ / مَوْقِدٌ", "turkce": "Şömine, ocak." },
+            { "arapca": "قَضَى / يَقْضِي", "turkce": "Harcamak, geçirmek; vakit geçirmek." },
+            { "arapca": "بِجَانِبِ الْمِدْفَأَةِ", "turkce": "Şömine başında." },
+            { "arapca": "سَنَقْضِي هَذَا الْمَسَاءَ بِجَانِبِ الْمِدْفَأَةِ.", "turkce": "Biz bu akşamı şömine başında geçireceğiz." },
+
+            { "arapca": "كَيْفَ حَالُكَ؟", "turkce": "Nasılsın?" },
+            { "arapca": "كَيْفَ تَسِيرُ الْأُمُورُ؟", "turkce": "Nasıl gidiyor? Ne var ne yok?" },
+            { "arapca": "مَاذَا تَفْعَلُ هَذِهِ الْأَيَّامَ؟", "turkce": "Neler yapıyorsun?" },
+            { "arapca": "مَا الْأَخْبَارُ؟", "turkce": "Naber?" },
+            { "arapca": "كَيْفَ تَسِيرُ الْحَيَاةُ؟", "turkce": "Hayat nasıl gidiyor?" },
+            { "arapca": "كَيْفَ حَالُكَ؟ لَمْ نَلْتَقِ مُنْذُ فَتْرَةٍ.", "turkce": "Görmeyeli nasılsın?" },
+            { "arapca": "كَيْفَ حَالُ عَائِلَتِكَ؟", "turkce": "Ailen nasıl?" },
+            { "arapca": "مَا الْجَدِيدُ؟", "turkce": "Naber?" },
+            { "arapca": "مَاذَا تَفْعَلُ؟ هَلْ هُنَاكَ شَيْءٌ جَدِيدٌ؟", "turkce": "Neler yapıyorsun, var mı yeni bir şeyler?" },
+            { "arapca": "مَاذَا كُنْتَ تَفْعَلُ مُؤَخَّرًا؟", "turkce": "Son zamanlarda neler yapıyorsun?" },
+            { "arapca": "مَاذَا تَفْعَلُ؟", "turkce": "Neler yapıyorsun?" },
+
+            { "arapca": "الْأُمُورُ رَائِعَةٌ.", "turkce": "Muhteşem gidiyor." },
+            { "arapca": "أَنَا بِخَيْرٍ.", "turkce": "İyiyim." },
+            { "arapca": "لَيْسَ سَيِّئًا جِدًّا.", "turkce": "Çok kötü değil." },
+            { "arapca": "لَا شَيْءَ كَثِيرٌ.", "turkce": "Pek bir şey yok." },
+            { "arapca": "مَا الْأَخْبَارُ؟", "turkce": "Haberler ne?" },
+            { "arapca": "كَالْعَادَةِ.", "turkce": "Her zamanki gibi." },
+            { "arapca": "نَفْسُ الشَّيْءِ.", "turkce": "Aynı." },
+            { "arapca": "كُلُّ شَيْءٍ كَالْعَادَةِ.", "turkce": "Her zamanki gibi." }
         ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/97SvBNUNRwuf1JrdU6oN.png",
@@ -390,12 +458,36 @@ const egitimMufredati = {
                 ]
             }
         ],
+        "kelime_alistirmasi": [
+            { "arapca": "اِبْنَتِي الصَّغِيرَةُ", "turkce": "Benim küçük kızım." },
+            { "arapca": "بِأَلْعَابِهَا", "turkce": "Onun oyuncakları ile." },
+            { "arapca": "فِي غُرْفَتِهَا", "turkce": "Onun odasında." },
+            { "arapca": "اِبْنَتِي الصَّغِيرَةُ تَلْعَبُ بِأَلْعَابِهَا فِي غُرْفَتِهَا.", "turkce": "Benim küçük kızım onun oyuncakları ile onun odasında oynuyor." },
+
+            { "arapca": "أَنَا بِخَيْرٍ، شُكْرًا.", "turkce": "İyiyim, teşekkürler." },
+            { "arapca": "وَأَنْتَ؟", "turkce": "Peki ya sen?" },
+            { "arapca": "أَنَا بِخَيْرٍ إِلَى حَدٍّ مَا.", "turkce": "Oldukça iyiyim." },
+            { "arapca": "لَيْسَ سَيِّئًا.", "turkce": "Kötü değil, fena değil." },
+            { "arapca": "رَائِعٌ.", "turkce": "Harika." },
+            { "arapca": "لَا يُمْكِنُ أَنْ أَكُونَ أَفْضَلَ مِنْ هَذَا.", "turkce": "Daha iyi olamazdı." },
+            { "arapca": "لَا أَشْكُو مِنْ شَيْءٍ.", "turkce": "Şikayetim yok." },
+
+            { "arapca": "كُنْتُ مَشْغُولًا مُنْذُ فَتْرَةٍ، وَلَا أَزَالُ مَشْغُولًا.", "turkce": "Bir süredir meşguldüm, hâlâ da meşgulüm." },
+            { "arapca": "كُنْتُ مَشْغُولًا.", "turkce": "Yoğundum." },
+            { "arapca": "كَالْعَادَةِ.", "turkce": "Her zamanki gibi." },
+            { "arapca": "نَفْسُ الشَّيْءِ كَالْعَادَةِ.", "turkce": "Aynı tas aynı hamam, aynen devam." },
+            { "arapca": "لَسْتُ بِخَيْرٍ كَثِيرًا.", "turkce": "Pek iyi değil." },
+            { "arapca": "كَانَ يُمْكِنُ أَنْ يَكُونَ أَفْضَلَ.", "turkce": "Daha iyi olabilirdi." },
+            { "arapca": "لَا شَيْءَ كَثِيرٌ.", "turkce": "Pek bir şey yok." },
+            { "arapca": "وَكَيْفَ حَالُكُمْ؟", "turkce": "Sizinkiler nasıl? / Siz nasılsınız?" },
+            { "arapca": "رَائِعٌ / مُمَيَّزٌ", "turkce": "Havalı." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/BrVRrj5sTD5YGlLDeLbn.png",
             "sesler": {
                 "basit": "ses_dosyalari/arapca_basit_3.mp3",
-                "orta": "ses_dosyalari/arapca_orta_1.mp3", 
-                "ileri": "ses_dosyalari/arapca_basit_1.mp3" 
+                "orta": "ses_dosyalari/arapca_orta_3.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_3.mp3"
             },
             "metinler": {
                 "basit": "يَقُولُ الْمَسْؤُولُونَ إِنَّهُ قَدْ تَنْدَلِعُ حَرْبٌ جَدِيدَةٌ بَيْنَ إِثْيُوبْيَا وَإِرِتْرِيَا. وَإِذَا حَدَثَ ذَلِكَ، فَسَيُعَانِي كَثِيرٌ مِنَ النَّاسِ فِي الْقَرْنِ الْأَفْرِيقِيِّ. بَدَأَتِ الْمُشْكِلَةُ بَعْدَ حَرْبٍ فِي إِقْلِيمِ تِغْرَايْ فِي إِثْيُوبْيَا. بَدَأَتِ الْحَرْبُ فِي عَامِ ٢٠٢٠، وَاسْتَمَرَّتْ عَامَيْنِ. سَاعَدَتْ إِرِتْرِيَا إِثْيُوبْيَا فِي قِتَالِ جَمَاعَةٍ تُسَمَّى جَبْهَةَ تَحْرِيرِ شَعْبِ تِغْرَايْ. بَعْدَ الْحَرْبِ، اتَّفَقَتْ إِثْيُوبْيَا مَعَ تِغْرَايْ عَلَى السَّلَامِ، لَكِنَّ إِرِتْرِيَا لَمْ تَكُنْ جُزْءًا مِنَ الِاتِّفَاقِ. وَالْآنَ، تُقَاتِلُ بَعْضُ الْجَمَاعَاتِ فِي تِغْرَايْ مَرَّةً أُخْرَى. وَقَدْ يَدْعَمُ كُلُّ بَلَدٍ طَرَفًا مُخْتَلِفًا. كَمَا يُرْسِلُ كُلُّ بَلَدٍ جُنُودًا إِلَى الْحُدُودِ. اِسْتَقَلَّتْ إِرِتْرِيَا عَنْ إِثْيُوبْيَا فِي عَامِ ١٩٩٣. ثُمَّ وَقَعَتْ حَرْبٌ جَدِيدَةٌ بَيْنَهُمَا فِي عَامِ ١٩٩٨، لَكِنَّهُمَا اتَّفَقَتَا عَلَى السَّلَامِ فِي عَامِ ٢٠١٨. الْآنَ، لَيْسَتِ الْعَلَاقَةُ بَيْنَهُمَا جَيِّدَةً، لِأَنَّ إِثْيُوبْيَا اتَّفَقَتْ عَلَى السَّلَامِ مَعَ تِغْرَايْ. تُرِيدُ إِثْيُوبْيَا أَيْضًا مَنْفَذًا إِلَى الْبَحْرِ، وَهَذَا لَا يُعْجِبُ إِرِتْرِيَا.",
@@ -539,12 +631,44 @@ const egitimMufredati = {
                 ]
             }
         ],
+        "kelime_alistirmasi": [
+            { "arapca": "مَعِدَةٌ / بَطْنٌ", "turkce": "Mide, karın." },
+            { "arapca": "أَلَمُ الْمَعِدَةِ / أَلَمُ الْبَطْنِ", "turkce": "Mide ağrısı, karın ağrısı." },
+            { "arapca": "بِسَبَبِ ...", "turkce": "-den dolayı." },
+            { "arapca": "بِسَبَبِ الْحَلِيبِ الْفَاسِدِ", "turkce": "Bozuk sütten dolayı." },
+
+            { "arapca": "شُكْرًا.", "turkce": "Teşekkürler." },
+            { "arapca": "أَشْكُرُكَ.", "turkce": "Teşekkür ederim." },
+            { "arapca": "شُكْرًا عَلَى ...", "turkce": "... için teşekkür ederim." },
+            { "arapca": "شُكْرًا جَزِيلًا.", "turkce": "Çok teşekkür ederim." },
+            { "arapca": "شُكْرًا مُقَدَّمًا.", "turkce": "Şimdiden teşekkürler." },
+            { "arapca": "شُكْرًا عَلَى أَيِّ حَالٍ.", "turkce": "Yine de teşekkürler." },
+            { "arapca": "أَلْفُ شُكْرٍ.", "turkce": "Milyonlarca kez teşekkürler." },
+            { "arapca": "شُكْرًا لِمُسَاعَدَتِي.", "turkce": "Bana yardım ettiğin için teşekkürler." },
+
+            { "arapca": "أَنَا مُمْتَنٌّ لَكَ جِدًّا.", "turkce": "Çok minnettarım, gerçekten minnettarım." },
+            { "arapca": "أَنَا مُمْتَنٌّ لَكَ حَقًّا.", "turkce": "Gerçekten minnettarım." },
+            { "arapca": "هَذَا لُطْفٌ كَبِيرٌ مِنْكُمْ.", "turkce": "Çok naziksiniz." },
+            { "arapca": "لَا أَعْرِفُ كَيْفَ أَشْكُرُكَ.", "turkce": "Ne kadar teşekkür etsem azdır." },
+            { "arapca": "أَنَا مَدِينٌ لَكَ.", "turkce": "Sana borçluyum." },
+            { "arapca": "أَنَا مَدِينٌ لَكَ بِاعْتِذَارٍ.", "turkce": "Sana bir özür borçluyum." },
+
+            { "arapca": "لَا تَقْلَقْ.", "turkce": "Endişelenme." },
+            { "arapca": "لَا عَجَبَ.", "turkce": "Şaşmamalı." },
+            { "arapca": "بِكُلِّ سُرُورٍ.", "turkce": "It's my pleasure. / Benim için bir zevk." },
+            { "arapca": "أَنْتَ لَطِيفٌ جِدًّا.", "turkce": "Çok naziksin." },
+            { "arapca": "ضَحِكَ بِخِفَّةٍ / يَضْحَكُ بِخِفَّةٍ", "turkce": "Kıkırdamak." },
+            { "arapca": "لَا تَذْكُرْ ذَلِكَ.", "turkce": "Lafını bile etme." },
+            { "arapca": "لَا شَيْءَ مُهِمًّا، عَلَى الرَّحْبِ وَالسَّعَةِ.", "turkce": "Önemli bir şey değildi, rica ederim." },
+            { "arapca": "لَفَعَلْتَ الشَّيْءَ نَفْسَهُ لَوْ كُنْتَ مَكَانِي.", "turkce": "Sen de olsan aynısını yapardın." },
+            { "arapca": "تَوَقَّفْ عَنْ ذَلِكَ!", "turkce": "Kes şunu!" }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/C6Lgzmj7leA9Fm3uf841.png",
             "sesler": {
                 "basit": "ses_dosyalari/arapca_basit_4.mp3",
-                "orta": "", 
-                "ileri": "" 
+                "orta": "ses_dosyalari/arapca_orta_4.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_4.mp3"
             },
             "metinler": {
                 "basit": "يُرَاقِبُ الْعُلَمَاءُ الشَّمْبَانْزِي الْبَرِّيَّ فِي أُوغَنْدَا. تَأْكُلُ هَذِهِ الْحَيَوَانَاتُ نَبَاتَاتٍ مُعَيَّنَةً لِتُسَاعِدَهَا عَلَى الشُّعُورِ بِتَحَسُّنٍ. وَيُمْكِنُ لِهَذِهِ النَّبَاتَاتِ أَنْ تُخَفِّفَ الْأَلَمَ وَتَقْتُلَ الْبَكْتِيرْيَا. رَاقَبَ الْبَاحِثُونَ الشَّمْبَانْزِي لِمُدَّةِ أَرْبَعِ سَنَوَاتٍ. كَانُوا يَتْبَعُونَهَا وَيُرَاقِبُونَ مَا تَأْكُلُهُ عِنْدَمَا تَمْرَضُ أَوْ تُصَابُ بِجُرْحٍ. ثُمَّ أَخَذُوا تِلْكَ النَّبَاتَاتِ وَاخْتَبَرُوهَا. وَيَعْتَقِدُونَ أَنَّ هَذَا قَدْ يُسَاعِدُ فِي إِيجَادِ أَدْوِيَةٍ جَدِيدَةٍ. تُظْهِرُ الدِّرَاسَةُ أَنَّ كَثِيرًا مِنَ النَّبَاتَاتِ تَقْتُلُ الْبَكْتِيرْيَا وَتُسَاعِدُ فِي تَخْفِيفِ الْأَلَمِ. وَهَذَا يَعْنِي أَنَّ الشَّمْبَانْزِي يَعْرِفُ أَيَّ النَّبَاتَاتِ يُمْكِنُ أَنْ تُسَاعِدَهُ. إِنَّهُ حَيَوَانٌ ذَكِيٌّ.",
@@ -837,9 +961,9 @@ const egitimMufredati = {
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/F7siNCLF82zM0IMiAZvJ.png",
             "sesler": {
-                "basit": "",
-                "orta": "", 
-                "ileri": "" 
+                "basit": "ses_dosyalari/arapca_basit_5.mp3",
+                "orta": "ses_dosyalari/arapca_orta_5.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_5.mp3"
             },
             "metinler": {
                 "basit": "عَادَ الْبَابَا فِرَانْسِيس إِلَى الْفَاتِيكَان بَعْدَ أَنْ بَقِيَ فِي الْمُسْتَشْفَى لِمُدَّةِ خَمْسَةِ أَسَابِيعَ. كَانَ فِي الْمُسْتَشْفَى بِسَبَبِ مَرَضٍ رِئَوِيٍّ يُسَمَّى الِالْتِهَابَ الرِّئَوِيَّ. يَبْلُغُ مِنَ الْعُمْرِ ٨٨ عَامًا، وَعَانَى مِنْ مَشَاكِلَ صِحِّيَّةٍ كَثِيرَةٍ. يَقُولُ الْأَطِبَّاءُ إِنَّهُ يَحْتَاجُ إِلَى شَهْرَيْنِ مِنَ الرَّاحَةِ. بَعْدَ أَنْ غَادَرَ الْمُسْتَشْفَى، لَوَّحَ بِيَدِهِ لِلنَّاسِ وَابْتَسَمَ لَهُمْ. كَانَ يَسْتَخْدِمُ كُرْسِيًّا مُتَحَرِّكًا، وَبَدَا ضَعِيفًا. شَكَرَ امْرَأَةً أَحْضَرَتْ لَهُ الزُّهُورَ. كَانَ صَوْتُهُ ضَعِيفًا بِسَبَبِ طُولِ مَرَضِهِ. وَيَقُولُ الْأَطِبَّاءُ إِنَّهُ سَيَحْتَاجُ إِلَى بَعْضِ الْوَقْتِ حَتَّى يَشْعُرَ بِتَحَسُّنٍ.",
@@ -1084,9 +1208,9 @@ const egitimMufredati = {
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/Iz6jO5yJbMnpUWOuJ9HI.png",
             "sesler": {
-                "basit": "",
-                "orta": "", 
-                "ileri": "" 
+                "basit": "ses_dosyalari/arapca_basit_6.mp3",
+                "orta": "ses_dosyalari/arapca_orta_6.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_6.mp3"
             },
             "metinler": {
                 "basit": "قَدْ تَخْسَرُ بِرِيزْبِن مُنَافَسَاتِ التَّنْسِ فِي الْأَلْعَابِ الْأُولُمْبِيَّةِ عَامَ ٢٠٣٢، إِذَا لَمْ تُحَسِّنْ مَلَاعِبَ التَّنْسِ فِيهَا. يُرِيدُ اِتِّحَادُ التِّنِسِ فِي كْوِينْزْلَانْد ١١٣ مِلْيُونَ دُولَارٍ لِبِنَاءِ مَلْعَبٍ رَئِيسِيٍّ أَكْبَرَ، وَمَلَاعِبَ أُخْرَى. فَالْمَكَانُ الْحَالِيُّ لَيْسَ كَبِيرًا بِمَا يَكْفِي. إِذَا لَمْ تُقَدِّمِ الْحُكُومَةُ الْمَالَ، فَقَدْ تُقَامُ مُنَافَسَاتُ التَّنْسِ فِي مِلْبُورْن. وَيَقُولُ اِتِّحَادُ التِّنِسِ فِي كْوِينْزْلَانْد إِنَّهُ لَا تُوجَدُ مِسَاحَةٌ كَافِيَةٌ وَلَا مَقَاعِدُ كَافِيَةٌ فِي بِرِيزْبِن. سَتُقَرِّرُ الْحُكُومَةُ مَا سَتَفْعَلُهُ بِحُلُولِ ٢٥ مَارِس. وَيَقُولُ بَعْضُ النَّاسِ فِي مِلْبُورْن إِنَّ مَدِينَتَهُمْ تَمْتَلِكُ مَلَاعِبَ أَفْضَلَ، وَإِنَّ مِلْبُورْن يُمْكِنُ أَنْ تَسْتَضِيفَ مُنَافَسَاتِ التَّنْسِ. تُرِيدُ حُكُومَةُ كْوِينْزْلَانْد أَنْ تَتَأَكَّدَ مِنْ أَنَّ الْوِلَايَةَ سَتَحْصُلُ عَلَى فَوَائِدَ جَيِّدَةٍ مِنْ اِسْتِضَافَةِ الْأَلْعَابِ.",
@@ -1314,12 +1438,91 @@ const egitimMufredati = {
         }
     },
     "gun7": {
+        "kelime_alistirmasi": [
+            { "arapca": "مَدْرَسَةٌ", "turkce": "Okul." },
+            { "arapca": "نَائِبُ الْمُدِيرِ", "turkce": "Müdür yardımcısı." },
+            { "arapca": "بِصِفَةِ / كَـ", "turkce": "Olarak." },
+            { "arapca": "عَمِلَ / يَعْمَلُ", "turkce": "Çalışmak." },
+            { "arapca": "اِمْرَأَةٌ", "turkce": "Kadın." },
+            { "arapca": "دَوَّنَ / يُدَوِّنُ، مُلَاحَظَةٌ", "turkce": "Not etmek, not." },
+            { "arapca": "تَرَكَ / يَتْرُكُ", "turkce": "Ayrılmak, terk etmek, vazgeçmek." },
+            { "arapca": "ذَهَبَ / يَذْهَبُ", "turkce": "Gitmek, hareket etmek." },
+            { "arapca": "اِبْنَةٌ", "turkce": "Kız evlat." },
+            { "arapca": "مُحَامٍ", "turkce": "Avukat." },
+            { "arapca": "فَعَلَ / يَفْعَلُ", "turkce": "Yapmak, etmek." },
+            { "arapca": "أَرَادَ / يُرِيدُ", "turkce": "İstemek." },
+            { "arapca": "بَائِعُ الْحَلِيبِ", "turkce": "Sütçü." },
+            { "arapca": "حَلِيبٌ", "turkce": "Süt." },
+            { "arapca": "كُلَّ صَبَاحٍ", "turkce": "Her sabah." },
+            { "arapca": "أَحْضَرَ / يُحْضِرُ", "turkce": "Getirmek." },
+            { "arapca": "حَدِيقَةٌ", "turkce": "Bahçe." },
+            { "arapca": "كَرَزٌ", "turkce": "Kiraz." },
+            { "arapca": "جَمَعَ / يَجْمَعُ، اِخْتَارَ / يَخْتَارُ", "turkce": "Toplamak, seçmek." },
+            { "arapca": "حَافِلَةُ الْمَدْرَسَةِ", "turkce": "Okul servisi." },
+            { "arapca": "طَالِبٌ", "turkce": "Öğrenci." },
+            { "arapca": "تَكَلَّمَ / يَتَكَلَّمُ", "turkce": "Konuşmak." },
+            { "arapca": "شُرْفَةٌ", "turkce": "Balkon." },
+            { "arapca": "رَأْسٌ", "turkce": "Baş, kafa." },
+            { "arapca": "أَصِيصٌ", "turkce": "Saksı." },
+            { "arapca": "سَقَطَ / يَسْقُطُ", "turkce": "Düşmek." },
+            { "arapca": "قُرْحَةٌ", "turkce": "Ülser." },
+            { "arapca": "مَعِدَةٌ / بَطْنٌ", "turkce": "Mide, karın." },
+            { "arapca": "مَتْجَرٌ / دُكَّانٌ", "turkce": "Mağaza, dükkân." },
+            { "arapca": "خِزَانَةٌ / مَجْلِسُ الْوُزَرَاءِ", "turkce": "Kabine, dolap, bakanlar kurulu." },
+            { "arapca": "اِشْتَرَى / يَشْتَرِي", "turkce": "Satın almak." },
+            { "arapca": "صَاحِبُ الْبَيْتِ", "turkce": "Ev sahibi." },
+            { "arapca": "شُوكُولَاتَةٌ", "turkce": "Çikolata." },
+            { "arapca": "قَدَّمَ / يُقَدِّمُ", "turkce": "Teklif etmek, sunmak, ikram etmek." },
+            { "arapca": "مَنْطِقَةُ النُّزْهَةِ", "turkce": "Piknik alanı." },
+            { "arapca": "هَادِئٌ", "turkce": "Sakin, sessiz." },
+            { "arapca": "زَاوِيَةٌ", "turkce": "Köşe." },
+            { "arapca": "تَحَدَّثَ / يَتَحَدَّثُ", "turkce": "Sohbet etmek." },
+            { "arapca": "كَلْبٌ", "turkce": "Köpek." },
+            { "arapca": "بَيْتٌ / مَنْزِلٌ", "turkce": "Ev, konut." },
+            { "arapca": "حَفِظَ / يَحْفَظُ", "turkce": "Korumak, saklamak, muhafaza etmek." },
+            { "arapca": "رِوَايَةٌ / جَدِيدٌ", "turkce": "Roman, yeni." },
+            { "arapca": "خَيَالٌ", "turkce": "Hayal gücü, hayal." },
+            { "arapca": "نَمَا / يَنْمُو", "turkce": "Gelişmek, büyümek." },
+            { "arapca": "مَرْآبٌ / وَرْشَةُ تَصْلِيحٍ", "turkce": "Garaj, tamirhane." },
+            { "arapca": "مِرْوَحَةٌ", "turkce": "Fan, vantilatör, yelpaze." },
+            { "arapca": "شَغَّلَ / يُشَغِّلُ، أَدَارَ / يُدِيرُ، رَكَضَ / يَرْكُضُ", "turkce": "Çalıştırmak, işletmek, koşmak." },
+            { "arapca": "طِفْلٌ / وَلَدٌ", "turkce": "Çocuk, evlat." },
+            { "arapca": "خَمْسَةٌ", "turkce": "Beş." },
+            { "arapca": "لُعْبَةُ كُرَةٍ", "turkce": "Topla oynanan oyun." },
+            { "arapca": "لَعِبَ / يَلْعَبُ، عَزَفَ / يَعْزِفُ", "turkce": "Oynamak, çalmak." },
+            { "arapca": "بُرْتُقَالٌ / بُرْتُقَالِيٌّ", "turkce": "Portakal, turuncu." },
+            { "arapca": "فَرِيقٌ / مَجْمُوعَةٌ", "turkce": "Takım, grup." },
+            { "arapca": "مُسَابَقَةٌ / مُنَافَسَةٌ", "turkce": "Yarışma, rekabet." },
+            { "arapca": "خِلَالَ / طُولَ", "turkce": "Boyunca." },
+            { "arapca": "بِشَكْلٍ سَيِّئٍ / بِطَرِيقَةٍ غَيْرِ كَافِيَةٍ", "turkce": "Kötü bir şekilde, yetersizce." },
+            { "arapca": "لِقَاحٌ", "turkce": "Aşı." },
+            { "arapca": "جَدِيدٌ", "turkce": "Yeni." },
+            { "arapca": "فَيْرُوسٌ", "turkce": "Virüs." },
+            { "arapca": "ضِدَّ", "turkce": "Karşı." },
+            { "arapca": "غَيْرُ فَعَّالٍ", "turkce": "Etkisiz." },
+            { "arapca": "بَقِيَ / يَبْقَى", "turkce": "Kalmak." },
+            { "arapca": "شُجَاعٌ / جَرِيءٌ", "turkce": "Korkusuz, cesur." },
+            { "arapca": "جُنْدِيٌّ", "turkce": "Asker." },
+            { "arapca": "لِـ / بِسَبَبِ / لِأَنَّ / خِلَالَ", "turkce": "İçin, nedeniyle, çünkü, boyunca." },
+            { "arapca": "شَهْرٌ", "turkce": "Ay, takvim ayı." },
+            { "arapca": "نَاضَلَ مِنْ أَجْلِ / يُنَاضِلُ مِنْ أَجْلِ", "turkce": "İçin savaşmak, mücadele etmek." },
+            { "arapca": "شَرِكَةٌ / شَرَاكَةٌ", "turkce": "Şirket, ortaklık." },
+            { "arapca": "كَهْرَبَاءُ", "turkce": "Elektrik." },
+            { "arapca": "غَدًا صَبَاحًا", "turkce": "Yarın sabah." },
+            { "arapca": "اِعْتِبَارًا مِنْ / مِنْذُ", "turkce": "-den itibaren." },
+            { "arapca": "قَطَعَ / يَقْطَعُ، أَوْقَفَ / يُوقِفُ", "turkce": "Kesmek, kapatmak, durdurmak." },
+            { "arapca": "مَشْبُوهٌ / مُرِيبٌ", "turkce": "Şüpheli, kuşkulu." },
+            { "arapca": "طَرْدٌ / حُزْمَةٌ، غَلَّفَ / يُغَلِّفُ", "turkce": "Paket, paketlemek." },
+            { "arapca": "سَائِقٌ", "turkce": "Sürücü, şoför." },
+            { "arapca": "طَرِيقٌ / شَارِعٌ", "turkce": "Yol, cadde." },
+            { "arapca": "وَجَدَ / يَجِدُ، عَثَرَ عَلَى / يَعْثُرُ عَلَى، اِكْتَشَفَ / يَكْتَشِفُ", "turkce": "Bulmak, rastlamak, keşfetmek." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/IzKM6XB6ah49FlRkzvFW.png",
             "sesler": {
-                "basit": "",
-                "orta": "", 
-                "ileri": "" 
+                "basit": "ses_dosyalari/arapca_basit_7.mp3",
+                "orta": "ses_dosyalari/arapca_orta_7.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_7.mp3"
             },
             "metinler": {
                 "basit": "يُرِيدُ الرَّئِيسُ الْأُوكْرَانِيُّ زِيلِينْسْكِي وَقْفَ الْقِتَالِ مَعَ رُوسْيَا لِفَتْرَةٍ قَصِيرَةٍ، لَكِنَّهُ يَحْتَاجُ إِلَى مَزِيدٍ مِنَ الْمَعْلُومَاتِ. وَيَقُولُ إِنَّهُ سَيُوقِفُ الْهَجَمَاتِ عَلَى مُنْشَآتِ الطَّاقَةِ الرُّوسِيَّةِ، إِذَا أَوْقَفَتْ رُوسْيَا هَجَمَاتِهَا أَيْضًا. قَالَ زِيلِينْسْكِي ذَلِكَ بَعْدَ مُحَادَثَةٍ بَيْنَ الرَّئِيسِ الْأَمْرِيكِيِّ تْرَامْب وَالرَّئِيسِ الرُّوسِيِّ بُوتِين. لَكِنَّ رُوسْيَا لَا تَزَالُ تُهَاجِمُ أُوكْرَانْيَا بَعْدَ الْمُحَادَثَةِ. يَعْتَقِدُ زِيلِينْسْكِي أَنَّ رُوسْيَا تُرِيدُ إِطَالَةَ الْحَرْبِ. وَيَقُولُ بُوتِين إِنَّهُ لَنْ يُوقِفَ الْقِتَالَ إِذَا اسْتَمَرَّ الْغَرْبُ فِي مُسَاعَدَةِ أُوكْرَانْيَا. أَمَّا تْرَامْب، فَيَقُولُ إِنَّ بُوتِين لَمْ يَطْلُبْ ذَلِكَ. لَنْ تُهَاجِمَ رُوسْيَا مَحَطَّاتِ الْكَهْرَبَاءِ فِي أُوكْرَانْيَا لِمُدَّةِ ٣٠ يَوْمًا، لَكِنَّ الْوَضْعَ فِي أَمَاكِنَ أُخْرَى لَا يَزَالُ خَطِيرًا. لَا يَثِقُ النَّاسُ فِي أُوكْرَانْيَا بِرُوسْيَا. وَسَتُجْرَى مُحَادَثَاتٌ إِضَافِيَّةٌ قَرِيبًا.",
@@ -1729,9 +1932,9 @@ const egitimMufredati = {
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/J3ZdH2PLuwJZwnfoUV5I.png",
             "sesler": {
-                "basit": "",
-                "orta": "", 
-                "ileri": "" 
+                "basit": "ses_dosyalari/arapca_basit_8.mp3",
+                "orta": "ses_dosyalari/arapca_orta_8.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_8.mp3"
             },
             "metinler": {
                 "basit": "تَقُولُ نِيلُوفَر مِيرْشَنْت إِنَّهُ يُمْكِنُنَا أَنْ نَعْمَلَ وَأَنْ نَبْقَى أَصِحَّاءَ فِي الْوَقْتِ نَفْسِهِ. لَدَيْهَا فِكْرَةٌ بَسِيطَةٌ، وَهِيَ: اجْتِمَاعَاتٌ أَثْنَاءَ الْمَشْيِ. بَدَلًا مِنَ الْجُلُوسِ، يُمْكِنُنَا أَنْ نَمْشِيَ وَنَتَحَدَّثَ. فَالْجُلُوسُ لِوَقْتٍ طَوِيلٍ مُضِرٌّ بِالصِّحَّةِ، وَيُمْكِنُ أَنْ يُسَبِّبَ الْمَرَضَ لِلنَّاسِ. أَمَّا الْمَشْيُ، فَيُسَاعِدُنَا عَلَى الشُّعُورِ بِتَحَسُّنٍ. جَرَّبَتْ مِيرْشَنْت أَوَّلَ اجْتِمَاعٍ أَثْنَاءَ الْمَشْيِ عِنْدَمَا دَعَاهَا شَخْصٌ إِلَيْهِ. فِي الْبِدَايَةِ، كَانَ الْأَمْرُ غَرِيبًا. وَلَكِنَّهَا أَحَبَّتِ الْفِكْرَةَ. الْآنَ، تَمْشِي مَسَافَاتٍ كَثِيرَةً كُلَّ أُسْبُوعٍ أَثْنَاءَ الْعَمَلِ. وَتُسَاعِدُهَا هَذِهِ الِاجْتِمَاعَاتُ عَلَى التَّفْكِيرِ بِشَكْلٍ أَفْضَلَ، وَعَلَى الْبَقَاءِ نَشِيطَةً. تَقُولُ إِنَّهُ لَا يَجِبُ أَنْ نَتَوَقَّفَ عَنِ الْعَمَلِ لِنَكُونَ أَصِحَّاءَ. يُمْكِنُنَا أَنْ نَفْعَلَ الْأَمْرَيْنِ مَعًا. فَالْمَشْيُ وَالْكَلَامُ يُسَاعِدَانِ النَّاسَ عَلَى الْحُصُولِ عَلَى أَفْكَارٍ جَدِيدَةٍ، وَعَلَى الشُّعُورِ بِالرَّاحَةِ.",
@@ -2111,9 +2314,9 @@ const egitimMufredati = {
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/KOW7l47mMuujXag28P3p.png",
             "sesler": {
-                "basit": "",
-                "orta": "", 
-                "ileri": "" 
+                "basit": "ses_dosyalari/arapca_basit_9.mp3",
+                "orta": "ses_dosyalari/arapca_orta_9.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_9.mp3"
             },
             "metinler": {
                 "basit": "لِمَهْرَجَانِ جِنِيف السِّينَمَائِيِّ الدَّوْلِيِّ بَرْنَامَجٌ يُسَمَّى أَيَّامَ التَّأْثِيرِ. يَسْتَقْبِلُ هَذَا الْبَرْنَامَجُ ١٠٠ فِيلْمٍ، ثُمَّ يَخْتَارُ الْمِهْرَجَانُ ١٢ فِيلْمًا مِنْهَا. أَحَدُ هَذِهِ الْأَفْلَامِ هُوَ فِيلْمُ «أَطْفَالُ الْعَسَلِ». وَهُوَ فِيلْمٌ عَنْ شَعْبِ الْهَادْزَا فِي تَنْزَانْيَا. يُرِيدُ هَذَا الشَّعْبُ الْحِفَاظَ عَلَى لُغَتِهِ. شَعْبُ الْهَادْزَا مِنْ أَقْدَمِ الشُّعُوبِ الَّتِي تَصِيدُ وَتَجْمَعُ الثِّمَارَ. يَعِيشُونَ فِي الطَّبِيعَةِ، لَكِنَّ الْحَيَاةَ الْحَدِيثَةَ تُغَيِّرُ أَشْيَاءَ كَثِيرَةً فِي حَيَاتِهِمْ. جِيغَار غَانَاتْرَا هُوَ مُخْرِجُ الْفِيلْمِ. يَقُولُ إِنَّ شَعْبَ الْهَادْزَا يُرِيدُ أَنْ يَعْرِفَ النَّاسُ قِصَّتَهُ الْحَقِيقِيَّةَ. فِي الْمِهْرَجَانِ، يَلْتَقِي صُنَّاعُ الْأَفْلَامِ بِأَشْخَاصٍ يُمْكِنُهُمْ أَنْ يُسَاعِدُوهُمْ. وَتُشَارِكُ سِيمُونَا نِيكْمَانُوفَا فِي هَذَا الْفِيلْمِ. تُرِيدُ أَنْ تُسَاعِدَ شَعْبَ الْهَادْزَا عَلَى الْحِفَاظِ عَلَى لُغَتِهِ وَأَرْضِهِ.",
@@ -2451,9 +2654,9 @@ const egitimMufredati = {
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/MuH7xRzZhI03Uv8x5vls.png",
             "sesler": {
-                "basit": "",
-                "orta": "", 
-                "ileri": "" 
+                "basit": "ses_dosyalari/arapca_basit_10.mp3",
+                "orta": "ses_dosyalari/arapca_orta_10.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_10.mp3"
             },
             "metinler": {
                 "basit": "مَلَابِسُ السِّبَاحَةِ مُهِمَّةٌ جِدًّا لِلسَّبَّاحِينَ. وَيَجْعَلُهَا الْمُصَمِّمُونَ أَفْضَلَ مَرَّةً بَعْدَ مَرَّةٍ. الْآنَ، وَقَبْلَ الْأَلْعَابِ الْأُولُمْبِيَّةِ، يَبْحَثُ الرِّيَاضِيُّونَ عَنْ أَفْضَلِ بَدَلَاتِ السِّبَاحَةِ. وَتَكُونُ بَدَلَاتُ السِّبَاحَةِ الْأُولُمْبِيَّةُ غَالِيَةً جِدًّا. تَضَعُ الْهَيْئَةُ الرِّيَاضِيَّةُ قَوَاعِدَ لِلْمَوَادِّ وَالتَّصَامِيمِ الَّتِي يُمْكِنُ لِلشَّرِكَاتِ أَنْ تَسْتَخْدِمَهَا. وَلَكِنَّ الشَّرِكَاتِ لَا تَزَالُ تُحَاوِلُ صُنْعَ أَفْضَلِ بَدَلَاتِ السِّبَاحَةِ. وَتَسْتَخْدِمُ هَذِهِ الشَّرِكَاتُ مَوَادَّ جَدِيدَةً. يَخْتَبِرُ السَّبَّاحُونَ بَدَلَاتٍ مُخْتَلِفَةً لِلْعُثُورِ عَلَى أَفْضَلِ بَدْلَةٍ. بَدْلَةُ «أَرِينَا» الْجَدِيدَةُ سَهْلَةُ اللُّبْسِ. يَحْتَاجُ السَّبَّاحُ إِلَى دَقِيقَتَيْنِ فَقَطْ لِارْتِدَائِهَا. أَمَّا فِي الْعَادَةِ، فَقَدْ يَحْتَاجُ إِلَى عَشْرِ دَقَائِقَ. تَجْعَلُكَ الْبَدْلَةُ تَشْعُرُ بِالْخِفَّةِ فِي الْمَاءِ. وَهِيَ تُقَلِّلُ الْفُقَاعَاتِ، مِمَّا يُسَاعِدُكَ عَلَى السِّبَاحَةِ بِسُرْعَةٍ أَكْبَرَ.",
@@ -2812,9 +3015,9 @@ const egitimMufredati = {
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/PlaSRSJ5XIbQGPaHLaxc.png",
             "sesler": {
-                "basit": "",
-                "orta": "", 
-                "ileri": "" 
+                "basit": "ses_dosyalari/arapca_basit_11.mp3",
+                "orta": "ses_dosyalari/arapca_orta_11.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_11.mp3"
             },
             "metinler": {
                 "basit": "يَضُمُّ مَتْحَفُ دَالِي فِي فْلُورِيدَا كَثِيرًا مِنَ اللَّوْحَاتِ وَالْمَنْحُوتَاتِ لِلْفَنَّانِ سَلْفَادُور دَالِي. دَالِي فَنَّانٌ مَشْهُورٌ، وَكَانَ يَرْسُمُ بِأُسْلُوبٍ يُشْبِهُ الْأَحْلَامَ. عَاشَ فِي الْقَرْنِ الْعِشْرِينَ. وَقَالَ ذَاتَ مَرَّةٍ إِنَّهُ لَنْ يَمُوتَ أَبَدًا. وَفَنُّهُ لَا يَزَالُ مَوْجُودًا حَتَّى الْيَوْمِ. يُقَدِّمُ الْمَتْحَفُ عَرْضًا خَاصًّا، يُمْكِنُ لِلنَّاسِ فِيهِ أَنْ يَشْعُرُوا كَأَنَّهُمْ دَاخِلَ لَوْحَاتِ دَالِي. تَعَلَّمَ دَالِي الرَّسْمَ مِثْلَ الْفَنَّانِينَ الْقُدَامَى، وَلَكِنَّهُ أَرَادَ أَنْ يَصْنَعَ شَيْئًا جَدِيدًا. لَوْحَتُهُ الشَّهِيرَةُ الَّتِي فِيهَا السَّاعَاتُ الذَّائِبَةُ مَوْجُودَةٌ فِي نِيُويُورْك، وَلَكِنَّ كَثِيرًا مِنْ أَعْمَالِهِ مَوْجُودٌ فِي فْلُورِيدَا. مَنَحَ الزَّوْجَانِ، إِلِينُور وَرَيْنُولْدْز مُورْس، مَجْمُوعَتَهُمَا لِلْمَدِينَةِ. اُفْتُتِحَ الْمَتْحَفُ فِي عَامِ ١٩٨٢، وَالْآنَ يَزُورُهُ كَثِيرٌ مِنَ النَّاسِ. لَا يَزَالُ فَنُّ دَالِي مُثِيرًا وَمُهِمًّا حَتَّى الْيَوْمِ.",
@@ -3305,9 +3508,9 @@ const egitimMufredati = {
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/Pm5Rb3ljZJESqB1pexm4.png",
             "sesler": {
-                "basit": "", // Basit metnin ses linki buraya
-                "orta": "",  // Orta metnin ses linki buraya
-                "ileri": ""  // İleri metnin ses linki buraya
+                "basit": "ses_dosyalari/arapca_basit_12.mp3",
+                "orta": "ses_dosyalari/arapca_orta_12.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_12.mp3"
             },
             "metinler": {
                 
@@ -3782,9 +3985,9 @@ const egitimMufredati = {
         "okuma_alistirmasi": {
             "resim": "",
             "sesler": {
-                "basit": "", // Basit metnin ses linki buraya
-                "orta": "",  // Orta metnin ses linki buraya
-                "ileri": ""  // İleri metnin ses linki buraya
+                "basit": "ses_dosyalari/arapca_basit_13.mp3",
+                "orta": "ses_dosyalari/arapca_orta_13.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_13.mp3"
             },
             "metinler": {
                 "basit": "أَلْعَابُ الْوَاقِعِ الِافْتِرَاضِيِّ لَمْ تَحُلَّ مَحَلَّ الْأَلْعَابِ التَّقْلِيدِيَّةِ. فَمَا زَالَ كَثِيرٌ مِنَ النَّاسِ يُحِبُّونَ أَلْعَابًا مَشْهُورَةً مِثْلَ «كُول أُوف دِيُوتِي». وَلَكِنَّ الْوَاقِعَ الِافْتِرَاضِيَّ يُقَدِّمُ تَجْرِبَةً مُخْتَلِفَةً. فِي أَلْعَابِ الْوَاقِعِ الِافْتِرَاضِيِّ، لَا يَجْلِسُ اللَّاعِبُ فَقَطْ. بَلْ يَتَحَرَّكُ وَيَقْفِزُ وَيُحَرِّكُ يَدَيْهِ. لِذَلِكَ، يُمْكِنُ أَنْ تَكُونَ هَذِهِ الْأَلْعَابُ مُسَلِّيَةً وَمُفِيدَةً لِلرِّيَاضَةِ فِي الْوَقْتِ نَفْسِهِ. هُنَاكَ خَمْسُ أَلْعَابٍ جَيِّدَةٍ لِمَنْ يُرِيدُ اللَّعِبَ وَالتَّحَرُّكَ مَعًا. أَوَّلُ لُعْبَةٍ هِيَ «بِيت سَابِر». فِي هَذِهِ اللُّعْبَةِ، يَحْمِلُ اللَّاعِبُ سَيْفَيْنِ ضَوْئِيَّيْنِ، وَيَقْطَعُ أَشْكَالًا تَأْتِي مَعَ الْمُوسِيقَى. اللُّعْبَةُ سَرِيعَةٌ وَمُمْتِعَةٌ، وَيُمْكِنُ لِلَّاعِبِ أَنْ يَخْتَارَ مُسْتَوًى سَهْلًا أَوْ صَعْبًا. اللُّعْبَةُ الثَّانِيَةُ هِيَ «بْلِيد أَنْد سُورْسِرِي». فِيهَا يُقَاتِلُ اللَّاعِبُ بِالسُّيُوفِ وَالسِّحْرِ فِي عَالَمٍ خَيَالِيٍّ. يَتَحَرَّكُ اللَّاعِبُ كَثِيرًا أَثْنَاءَ اللَّعِبِ، وَلِذَلِكَ قَدْ يَتْعَبُ وَيَتَعَرَّقُ. اللُّعْبَةُ الثَّالِثَةُ هِيَ «ذَا كْلَايْمب». فِي هَذِهِ اللُّعْبَةِ، يَتَسَلَّقُ اللَّاعِبُ الْجِبَالَ فِي الْوَاقِعِ الِافْتِرَاضِيِّ. يَرَى مَنَاظِرَ جَمِيلَةً، وَيَسْتَخْدِمُ يَدَيْهِ كَثِيرًا. هَذِهِ اللُّعْبَةُ جَيِّدَةٌ لِتَحْرِيكِ الْجِسْمِ، وَخَاصَّةً الْجُزْءَ الْعُلْوِيَّ مِنْهُ. اللُّعْبَةُ الرَّابِعَةُ هِيَ «غُورِيلَّا تَاغ». هِيَ لُعْبَةٌ بَسِيطَةٌ جِدًّا. يَلْعَبُ النَّاسُ فِيهَا كَأَنَّهُمْ غُورِيلَّات. يَرْكُضُونَ وَيَقْفِزُونَ وَيُطَارِدُونَ بَعْضُهُمْ بَعْضًا. هَذِهِ اللُّعْبَةُ مُنَاسِبَةٌ لِلرِّيَاضَةِ، وَمُمْتِعَةٌ مَعَ الْأَصْدِقَاءِ. اللُّعْبَةُ الْخَامِسَةُ هِيَ «دَانْس سِنْتْرَال». فِي هَذِهِ اللُّعْبَةِ، يَرْقُصُ اللَّاعِبُ مَعَ الْمُوسِيقَى. لِكُلِّ أُغْنِيَةٍ مُسْتَوَيَاتٌ مُخْتَلِفَةٌ. وَيَحْصُلُ اللَّاعِبُ عَلَى نِقَاطٍ إِذَا تَابَعَ الْحَرَكَاتِ بِشَكْلٍ جَيِّدٍ. قَدْ لَا يُصْبِحُ الْوَاقِعُ الِافْتِرَاضِيُّ أَشْهَرَ مِنَ الْأَلْعَابِ التَّقْلِيدِيَّةِ. وَلَكِنَّهُ يُعْطِي اللَّاعِبِينَ فُرْصَةً جَمِيلَةً: أَنْ يَلْعَبُوا وَيَتَحَرَّكُوا فِي الْوَقْتِ نَفْسِهِ. لِذَلِكَ، لَا حَاجَةَ إِلَى تَأْجِيلِ الرِّيَاضَةِ مِنْ أَجْلِ اللَّعِبِ. فِي الْوَاقِعِ الِافْتِرَاضِيِّ، يُمْكِنُكَ أَنْ تَفْعَلَ الْأَمْرَيْنِ مَعًا.",
@@ -4175,9 +4378,9 @@ const egitimMufredati = {
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/UpoTOUW7cCg14UlvGRiR.png",
             "sesler": {
-                "basit": "", // Basit metnin ses linki buraya
-                "orta": "",  // Orta metnin ses linki buraya
-                "ileri": ""  // İleri metnin ses linki buraya
+                "basit": "ses_dosyalari/arapca_basit_14.mp3",
+                "orta": "ses_dosyalari/arapca_orta_14.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_14.mp3"
             },
             "metinler": {
                 "basit": "رُودْرِيغُو دُوتِيرْتِي هُوَ الرَّئِيسُ السَّابِقُ لِلْفِلِبِّينِ. اِعْتَقَلَتْهُ الشُّرْطَةُ عِنْدَ عَوْدَتِهِ مِنْ هُونْغ كُونْغ. ثُمَّ نُقِلَ إِلَى لَاهَاي لِلْمُثُولِ أَمَامَ الْمَحْكَمَةِ. تَقُولُ الْمَحْكَمَةُ الْجِنَائِيَّةُ الدَّوْلِيَّةُ إِنَّ كَثِيرًا مِنَ النَّاسِ مَاتُوا خِلَالَ حَمْلَةِ دُوتِيرْتِي عَلَى الْمُخَدِّرَاتِ. بَعْضُ النَّاسِ سُعَدَاءُ بِاعْتِقَالِهِ، وَيَعْتَقِدُونَ أَنَّ هَذَا عَادِلٌ. لَكِنَّ مُحَامِيَهُ يَقُولُونَ إِنَّ الْمَحْكَمَةَ لَا تَمْلِكُ الْحَقَّ فِي اعْتِقَالِهِ. اِنْسَحَبَتِ الْفِلِبِّينُ مِنْ هَذِهِ الْمَحْكَمَةِ فِي عَامِ ٢٠١٩. وَبَعْضُ النَّاسِ يُرِيدُونَ عَوْدَةَ دُوتِيرْتِي إِلَى الْفِلِبِّينِ. هُمْ غَيْرُ رَاضِينَ، وَيُخَطِّطُونَ لِلِاحْتِجَاجِ. لَدَى النَّاسِ فِي الْفِلِبِّينِ آرَاءٌ مُخْتَلِفَةٌ. فَبَعْضُهُمْ يَرَى أَنَّ دُوتِيرْتِي قَائِدٌ جَيِّدٌ. وَآخَرُونَ يَرَوْنَ أَنَّهُ فَعَلَ أَشْيَاءَ سَيِّئَةً جِدًّا.",
@@ -4416,12 +4619,28 @@ const egitimMufredati = {
             { arapca: "قَدْ أَذْهَبُ إِلَى بُودْرُوم.", turkce: "Bodrum'a gidebilirim." },
             { arapca: "أُفَكِّرُ فِي الذَّهَابِ إِلَى بُودْرُوم.", turkce: "Bodrum'a gitmeyi düşünüyorum." }
         ],
+        "kelime_alistirmasi": [
+            { "arapca": "سَـ / سَوْفَ", "turkce": "-acağım / -eceğim." },
+            { "arapca": "أُخَطِّطُ لِـ ...", "turkce": "... planlıyorum." },
+            { "arapca": "آمُلُ أَنْ ...", "turkce": "... ümit ediyorum." },
+            { "arapca": "أُرِيدُ أَنْ ... / أَوَدُّ أَنْ ...", "turkce": "... isterim." },
+            { "arapca": "أُفَكِّرُ فِي ...", "turkce": "...-mayı düşünüyorum." },
+
+            { "arapca": "يَوْمُ السَّبْتِ", "turkce": "Cumartesi." },
+            { "arapca": "مُمْتِعٌ جِدًّا / مُسَلٍّ جِدًّا", "turkce": "Çok eğlenceli." },
+            { "arapca": "فِي أَيِّ سَاعَةٍ يَبْدَأُ؟", "turkce": "Saat kaçta başlıyor?" },
+            { "arapca": "مَنْ أَيْضًا؟", "turkce": "Başka kim?" },
+            { "arapca": "الْجَمِيعُ", "turkce": "Herkes." },
+            { "arapca": "مِنْ أَيْنَ تَعْرِفُ؟", "turkce": "Nereden biliyorsun?" },
+            { "arapca": "طَعَامٌ / أَكْلٌ", "turkce": "Yiyecek." },
+            { "arapca": "مَشْرُوبَاتٌ", "turkce": "İçecekler." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/Wd7tvgp1c3iTcpcWAQME.png",
             "sesler": {
-                "basit": "", // Basit metnin ses linki buraya
-                "orta": "",  // Orta metnin ses linki buraya
-                "ileri": ""  // İleri metnin ses linki buraya
+                "basit": "ses_dosyalari/arapca_basit_15.mp3",
+                "orta": "ses_dosyalari/arapca_orta_15.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_15.mp3"
             },
             "metinler": {
                 "basit": "غَالِبًا مَا نَسْتَخْدِمُ هَوَاتِفَنَا كَثِيرًا. وَلَكِنَّنَا نَعْلَمُ أَنَّ ذَلِكَ مُضِرٌّ بِصِحَّتِنَا. يَحْدُثُ هَذَا بِسَبَبِ مَادَّةٍ كِيمْيَائِيَّةٍ فِي دِمَاغِنَا تُسَمَّى الدُّوبَامِين. الدُّوبَامِينُ يَجْعَلُنَا نَشْعُرُ بِالسَّعَادَةِ وَالْحَمَاسِ. عِنْدَمَا نَتَصَفَّحُ هَوَاتِفَنَا، يُفْرِزُ دِمَاغُنَا الدُّوبَامِين. وَهَذَا يَجْعَلُنَا نُرِيدُ أَنْ نَفْعَلَ ذَلِكَ مَرَّةً أُخْرَى. لَكِنْ مَعَ مُرُورِ الْوَقْتِ، يَعْتَادُ دِمَاغُنَا عَلَى ذَلِكَ. وَيُفْرِزُ الدِّمَاغُ كَمِّيَّةً أَقَلَّ مِنَ الدُّوبَامِينِ. هَذَا قَدْ يَجْعَلُ التَّرْكِيزَ أَصْعَبَ، وَقَدْ يَجْعَلُ الِاسْتِمْتَاعَ بِالْأَنْشِطَةِ الْأُخْرَى أَصْعَبَ أَيْضًا. كَمَا أَنَّ اسْتِخْدَامَ الْأَجْهِزَةِ لِوَقْتٍ طَوِيلٍ قَدْ يَجْعَلُنَا نَشْعُرُ بِالتَّوَتُّرِ وَالْقَلَقِ.",
@@ -4648,9 +4867,34 @@ const egitimMufredati = {
             { arapca: "لَا أُطِيقُ لَعِبَ كُرَةِ الْقَدَمِ.", turkce: "Futbol oynamaya dayanamıyorum" },
             { arapca: "أَكْرَهُ لَعِبَ كُرَةِ الْقَدَمِ.", turkce: "Futbol oynamaktan nefret ediyorum" }
         ],
+        "kelime_alistirmasi": [
+            { "arapca": "أَنَا مُهْتَمٌّ جِدًّا بِـ ...", "turkce": "Gerçekten ilgileniyorum." },
+            { "arapca": "أَعِيشُ مِنْ أَجْلِ ...", "turkce": "... için yaşıyorum." },
+            { "arapca": "هَذَا مِنَ الْأَشْيَاءِ الَّتِي أُحِبُّهَا.", "turkce": "Bu benim işim. / Bu benim sevdiğim şey." },
+            { "arapca": "أَنَا مَجْنُونٌ بِـ ...", "turkce": "... için deli oluyorum." },
+
+            { "arapca": "لَسْتُ مِنْ كِبَارِ مُعْجَبِي ...", "turkce": "Ben ... büyük bir hayranı değilim." },
+            { "arapca": "هَذَا لَيْسَ مِنْ أُسْلُوبِي.", "turkce": "Bu benim tarzım değil." },
+            { "arapca": "لَا يَهُمُّنِي ذَلِكَ كَثِيرًا.", "turkce": "Bu gerçekten umurumda değil." },
+            { "arapca": "لَا أُوَافِقُ عَلَى ذَلِكَ.", "turkce": "Ben buna katılmıyorum." },
+            { "arapca": "لَا أُطِيقُ ...", "turkce": "... dayanamıyorum." },
+            { "arapca": "أَكْرَهُ ...", "turkce": "Nefret ederim." },
+
+            { "arapca": "مَا نَوْعُ الْمُوسِيقَى الَّذِي تُحِبُّهُ؟", "turkce": "Ne tür müzikten hoşlanırsın?" },
+            { "arapca": "مَا نَوْعُ بَرَامِجِ التِّلْفَازِ الَّذِي لَا تُطِيقُهُ؟", "turkce": "Ne tür TV programlarına dayanamazsın?" },
+            { "arapca": "مَا نَوْعُ السُّلُوكِيَّاتِ فِي الْمُجْتَمَعِ الَّتِي لَا تَهُمُّكَ؟", "turkce": "Toplumda ne tür davranışlar umurunda değil?" },
+            { "arapca": "مَا نَوْعُ الْأَفْلَامِ الَّذِي تُحِبُّهُ؟", "turkce": "Ne tür filmleri seversin?" },
+            { "arapca": "مَا نَوْعُ النَّاسِ الَّذِينَ تَكْرَهُهُمْ؟", "turkce": "Ne tür insanlardan nefret edersin?" },
+            { "arapca": "مَا نَوْعُ الْفُنُونِ الَّذِي لَيْسَ مِنْ أُسْلُوبِكَ؟", "turkce": "Ne tür sanatlar senin tarzın değil?" },
+            { "arapca": "مَا أَنْوَاعُ الرِّيَاضَاتِ الَّتِي تَهْتَمُّ بِهَا حَقًّا؟", "turkce": "Gerçekten ne tür sporlarla ilgileniyorsun?" }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/XD5T8XUxfTKZYZw4vj3M.png",
-            "ses": "",
+            "sesler": {
+                "basit": "ses_dosyalari/arapca_basit_16.mp3",
+                "orta": "ses_dosyalari/arapca_orta_16.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_16.mp3"
+            },
             "metinler": {
                 "basit": "سَيَتَحَقَّقُ الِاتِّحَادُ الدَّوْلِيُّ لِأَلْعَابِ الْقُوَى مِنْ جِنْسِ الرِّيَاضِيِّينَ الَّذِينَ يُرِيدُونَ الْمُشَارَكَةَ فِي فِئَةِ السَّيِّدَاتِ. وَيَجِبُ عَلَى الرِّيَاضِيِّينَ أَنْ يَخْضَعُوا لِاخْتِبَارٍ. يَقُولُ رَئِيسُ الِاتِّحَادِ، سِيبَاسْتِيَان كُو، إِنَّ هَذَا الْأَمْرَ مُهِمٌّ لِحِمَايَةِ الرِّيَاضَةِ النِّسَائِيَّةِ وَجَعْلِهَا عَادِلَةً. سَتُجْرَى الِاخْتِبَارَاتُ الْأُولَى فِي طُوكْيُو فِي شَهْرِ سِبْتَمْبِر. وَتَبْحَثُ الْمُنَظَّمَةُ عَنْ شَرِكَةٍ لِإِجْرَاءِ هَذِهِ الِاخْتِبَارَاتِ. سَيَخْضَعُ كُلُّ رِيَاضِيٍّ لِلِاخْتِبَارِ مَرَّةً وَاحِدَةً فَقَطْ. وَيَقُولُ كُو إِنَّ هَذِهِ قَاعِدَةٌ مُهِمَّةٌ. وَرُبَّمَا تَبْدَأُ رِيَاضَاتٌ أُخْرَى أَيْضًا فِي اسْتِخْدَامِ هَذِهِ الِاخْتِبَارَاتِ. بَعْضُ النَّاسِ لَا يُؤَيِّدُونَ هَذِهِ الْقَاعِدَةَ. أَمَّا الِاتِّحَادُ الدَّوْلِيُّ لِأَلْعَابِ الْقُوَى، فَيَقُولُ إِنَّ الِاخْتِبَارَاتِ بَسِيطَةٌ وَغَيْرُ مُؤْلِمَةٍ. وَلَكِنَّ بَعْضَ النَّاسِ مَا زَالُوا قَلِقِينَ مِنْهَا.",
                 "basit_tr": "World Athletics, kadınlar kategorisinde yarışmak isteyen sporcuların cinsiyetini kontrol edecek. Sporcular bir test yapmak zorunda olacak. Başkan Sebastian Coe, bunun kadın sporlarını güvenli ve adil tutmak için önemli olduğunu söylüyor. İlk testler Eylül ayında Tokyo’da yapılacak. Kuruluş, testleri yapacak bir şirket arıyor. Sporcular bu testi sadece bir kez yapacak. Coe, bunun önemli bir kural olduğunu söylüyor. Belki başka spor dalları da bu testleri kullanmaya başlayacak. Bazı insanlar bu kuralı sevmiyor. World Athletics, testlerin kolay olduğunu ve acı vermediğini söylüyor. Fakat bazı insanlar bu testler konusunda endişeli.",
@@ -4907,9 +5151,48 @@ const egitimMufredati = {
             { arapca: "لَا أَبْحَثُ عَنْ أَيِّ عَلَاقَةٍ جَادَّةٍ.", turkce: "Ciddi bir şeyler aramıyorum." },
             { arapca: "لَمْ أَتَجَاوَزْ شَرِيكِي السَّابِقَ تَمَامًا.", turkce: "Eski sevgilimi/eşimi hala unutamadım." }
         ],
+        "kelime_alistirmasi": [
+            { "arapca": "أَنَا أَعْزَبُ / أَنَا عَزْبَاءُ.", "turkce": "Bekarım." },
+            { "arapca": "لَدَيَّ حَبِيبٌ / لَدَيَّ حَبِيبَةٌ.", "turkce": "Erkek/kız arkadaşım var." },
+            { "arapca": "نَحْنُ مَخْطُوبَانِ.", "turkce": "Nişanlıyız." },
+            { "arapca": "سَنَتَزَوَّجُ فِي شَهْرِ يُونْيُو.", "turkce": "Haziran’da evleniyoruz." },
+            { "arapca": "أَنَا مُتَزَوِّجٌ / أَنَا مُتَزَوِّجَةٌ.", "turkce": "Evliyim." },
+            { "arapca": "أَنَا مُتَزَوِّجٌ مُنْذُ عَشْرِ سَنَوَاتٍ.", "turkce": "10 yıldır evliyim." },
+            { "arapca": "مُطَلَّقٌ / مُطَلَّقَةٌ", "turkce": "Boşanmış." },
+            { "arapca": "أَرْمَلُ / أَرْمَلَةٌ", "turkce": "Dul kalmış." },
+            { "arapca": "لَا أَبْحَثُ عَنْ عِلَاقَةٍ جَادَّةٍ.", "turkce": "Ciddi bir şeyler aramıyorum." },
+            { "arapca": "لَمْ أَنْسَ حَبِيبِي السَّابِقَ بَعْدُ / لَمْ أَنْسَ زَوْجِي السَّابِقَ بَعْدُ.", "turkce": "Eski sevgilimi/eşimi hâlâ unutamadım." },
+
+            { "arapca": "أَعْزَبُ / عَزْبَاءُ", "turkce": "Bekar." },
+            { "arapca": "زَوْجٌ", "turkce": "Erkek eş, koca." },
+            { "arapca": "زَوْجَةٌ", "turkce": "Kadın eş." },
+            { "arapca": "زَوَاجٌ", "turkce": "Evlilik." },
+
+            { "arapca": "أَوَّلًا", "turkce": "İlk olarak." },
+            { "arapca": "ثَانِيًا", "turkce": "İkinci olarak." },
+            { "arapca": "ثَالِثًا", "turkce": "Üçüncü olarak." },
+            { "arapca": "أَخِيرًا", "turkce": "Sonunda, son olarak." },
+
+            { "arapca": "بِرَأْيِي", "turkce": "Bence." },
+            { "arapca": "مِنْ وِجْهَةِ نَظَرِي", "turkce": "Benim düşünceme göre." },
+            { "arapca": "أَظُنُّ أَنَّ ...", "turkce": "Sanırım..." },
+            { "arapca": "رُبَّمَا / عَلَى الْأَغْلَبِ", "turkce": "Sanırım, herhalde, galiba." },
+            { "arapca": "بِالنِّسْبَةِ لِي", "turkce": "Bana göre." },
+
+            { "arapca": "كَمْ سَيُكَلِّفُ؟", "turkce": "Kaç paraya mal olur?" },
+            { "arapca": "عَادَةً", "turkce": "Genellikle." },
+            { "arapca": "فِي الْحَقِيقَةِ / فِي الْوَاقِعِ", "turkce": "Aslında." },
+            { "arapca": "يَرْتَدِي خَاتَمَ الزَّوَاجِ", "turkce": "Evlilik yüzüğü takmak." },
+            { "arapca": "أَكْبَرُ سِنًّا / أَقْدَمُ", "turkce": "Daha eski, daha yaşlı." },
+            { "arapca": "مُخْتَلِفٌ", "turkce": "Farklı." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/ZK7A9mdr1V3SFwZlW0ZP.png",
-            "ses": "",
+            "sesler": {
+                "basit": "ses_dosyalari/arapca_basit_17.mp3",
+                "orta": "ses_dosyalari/arapca_orta_17.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_17.mp3"
+            },
             "metinler": {
                 "basit": "عَثَرَتْ فَتَاةٌ بَرِيطَانِيَّةٌ وَوَالِدُهَا عَلَى أُحْفُورَةٍ كَبِيرَةٍ عَلَى شَاطِئٍ فِي سُومِرْسِيت فِي إِنْجِلْتِرَا. وَهِيَ عَظْمُ فَكٍّ. يَقُولُ الْعُلَمَاءُ إِنَّ هَذِهِ الْأُحْفُورَةَ تَعُودُ إِلَى كَائِنٍ بَحْرِيٍّ كَبِيرٍ. يُسَمَّى هَذَا الْكَائِنُ «إِكْثِيُوتَايْتَن سِيفِرْنِينْسِيس» Ichthyotitan severnensis. عَاشَ هَذَا الْكَائِنُ قَبْلَ ٢٠٢ مِلْيُونِ سَنَةٍ. وَكَانَ طُولُهُ حَوَالَيْ ٢٢ إِلَى ٢٦ مِتْرًا. كَانَ كَبِيرًا جِدًّا، وَقَرِيبًا مِنْ حَجْمِ الْحُوتِ الْأَزْرَقِ الْيَوْمَ. وَعَثَرَ الْعُلَمَاءُ عَلَى أُحْفُورَةٍ أُخْرَى فِي عَامِ ٢٠١٦. تُسَاعِدُنَا هَذِهِ الْأَحَافِيرُ عَلَى فَهْمِ الْحَيَاةِ فِي الْبَحْرِ قَبْلَ مَلَايِينِ السِّنِينَ. وَنَعْرِفُ مِنْهَا أَنَّ حَيَوَانَاتٍ مُخْتَلِفَةً كَثِيرَةً كَانَتْ تَعِيشُ فِي الْبَحْرِ فِي ذَلِكَ الْوَقْتِ. وَلَكِنْ قَبْلَ حَوَالَيْ ٢٠١ مِلْيُونِ سَنَةٍ، حَدَثَتْ كَارِثَةٌ كَبِيرَةٌ، وَمَاتَتْ كَثِيرٌ مِنْ هَذِهِ الْحَيَوَانَاتِ.",
                 "basit_tr": "İngiliz bir kız ve babası, İngiltere’nin Somerset bölgesindeki bir sahilde büyük bir fosil bulur. Bu fosil bir çene kemiğidir. Bilim insanları, bunun büyük bir deniz canlısına ait olduğunu söylüyor. Bu canlıya Ichthyotitan severnensis adı verilir. 202 milyon yıl önce yaşamıştır. Yaklaşık 22 ila 26 metre uzunluğundadır. Günümüzdeki mavi balina kadar büyüktür. Bilim insanları 2016 yılında başka bir fosil daha bulur. Bu fosiller, milyonlarca yıl önceki deniz yaşamını anlamamıza yardımcı olur. O dönemde denizde birçok farklı hayvanın yaşadığını biliyoruz. Fakat yaklaşık 201 milyon yıl önce büyük bir felaket onların hepsini yok eder.",
@@ -5132,9 +5415,33 @@ const egitimMufredati = {
             { arapca: "لَمْ تَنْسَ، أَلَيْسَ كَذَلِكَ؟", turkce: "Unutmadın, değil mi?" },
             { arapca: "غَابَ عَنْ بَالِي تَمَامًا!", turkce: "Tamamen aklımdan çıkmış!" }
         ],
+        "kelime_alistirmasi": [
+            { "arapca": "سَأَتَذَكَّرُ ذَلِكَ دَائِمًا.", "turkce": "Hep hatırlayacağım." },
+            { "arapca": "لَنْ أَنْسَى ذَلِكَ أَبَدًا.", "turkce": "Hiç unutmayacağım." },
+            { "arapca": "إِنْ كُنْتُ أَتَذَكَّرُ بِشَكْلٍ صَحِيحٍ، ...", "turkce": "Eğer doğru hatırlıyorsam..." },
+            { "arapca": "عَلَى حَسَبِ مَا أَتَذَكَّرُ، ...", "turkce": "Hatırladığım kadarıyla..." },
+            { "arapca": "أَتَذَكَّرُهُ بِشَكْلٍ غَامِضٍ.", "turkce": "Hayal meyal hatırlıyorum." },
+            { "arapca": "الكَلِمَةُ عَلَى طَرَفِ لِسَانِي.", "turkce": "Dilimin ucunda." },
+            { "arapca": "تَجَمَّدَ عَقْلِي.", "turkce": "Beynim durdu." },
+            { "arapca": "لَا يُذَكِّرُنِي هَذَا بِشَيْءٍ كَثِيرٍ.", "turkce": "Pek bir şey çağrıştırmıyor." },
+
+            { "arapca": "مِنْ فَضْلِكَ، تَذَكَّرْ.", "turkce": "Lütfen hatırla." },
+            { "arapca": "مِنْ فَضْلِكَ، لَا تَنْسَ.", "turkce": "Lütfen unutma." },
+            { "arapca": "أُرِيدُ أَنْ أُذَكِّرَكَ بِـ ...", "turkce": "... sana hatırlatmak isterim." },
+            { "arapca": "لَمْ تَنْسَ، أَلَيْسَ كَذَلِكَ؟", "turkce": "Unutmadın, değil mi?" },
+            { "arapca": "خَرَجَ مِنْ ذِهْنِي تَمَامًا.", "turkce": "Tamamen aklımdan çıkmış." },
+
+            { "arapca": "قَضَى كُلَّ صَيْفٍ فِي الْمُخَيَّمِ", "turkce": "Her yazı kampta geçirmek." },
+            { "arapca": "عِنْدَمَا كُنْتُ طِفْلًا", "turkce": "Ben çocukken." },
+            { "arapca": "كُنْتُ أُشَاهِدُهُ دَائِمًا فِي الْمَاضِي.", "turkce": "Eskiden hep izlerdim." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/ZtLPH9OaNqFNnp1ASZyh.png",
-            "ses": "",
+            "sesler": {
+                "basit": "ses_dosyalari/arapca_basit_18.mp3",
+                "orta": "ses_dosyalari/arapca_orta_18.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_18.mp3"
+            },
             "metinler": {
                 "basit": "سَتَبْدَأُ الدِّنِمَارْكُ تَطْبِيقَ الْخِدْمَةِ الْعَسْكَرِيَّةِ عَلَى النِّسَاءِ. وَسَيَحْدُثُ ذَلِكَ فِي وَقْتٍ أَبْكَرَ مِمَّا كَانَتِ الْحُكُومَةُ تُخَطِّطُ لَهُ. قَدْ تُضْطَرُّ النِّسَاءُ اللَّاتِي يَبْلُغْنَ ١٨ عَامًا بَعْدَ ١ يُولْيُو ٢٠٢٥ إِلَى الِانْضِمَامِ إِلَى الْجَيْشِ مِنْ عَامِ ٢٠٢٦. سَيَدْخُلُ الرِّجَالُ وَالنِّسَاءُ الآنَ فِي نِظَامِ الْقُرْعَةِ. فَإِذَا لَمْ يَتَطَوَّعْ عَدَدٌ كَافٍ مِنَ النَّاسِ، فَسَتَخْتَارُ الْقُرْعَةُ بَعْضَهُمْ. كَمَا سَتَجْعَلُ الدِّنِمَارْكُ مُدَّةَ الْخِدْمَةِ الْعَسْكَرِيَّةِ أَطْوَلَ، مِنْ أَرْبَعَةِ أَشْهُرٍ إِلَى أَحَدَ عَشَرَ شَهْرًا. تُنْفِقُ الْبِلَادُ مَالًا أَكْثَرَ عَلَى الْجَيْشِ بِسَبَبِ الْحَرْبِ فِي أُوكْرَانْيَا. لَا تُلْزِمُ دُوَلٌ أُورُوبِّيَّةٌ كَثِيرَةٌ النِّسَاءَ بِالْخِدْمَةِ الْعَسْكَرِيَّةِ، وَلَكِنَّ السُّوِيدَ وَالنُّرْوِيجَ تَفْعَلَانِ ذَلِكَ. وَهُنَاكَ دُوَلٌ أُخْرَى، مِثْلُ لَاتْفِيَا، تُفَكِّرُ فِي الْأَمْرِ. أَوْقَفَتْ دُوَلٌ كَثِيرَةٌ الْخِدْمَةَ الْعَسْكَرِيَّةَ بَعْدَ الْحَرْبِ الْبَارِدَةِ، وَلَكِنَّ بَعْضَهَا يُعِيدُهَا الآنَ. وَقَدْ تَجِدُ أَلْمَانْيَا صُعُوبَةً فِي فِعْلِ الشَّيْءِ نَفْسِهِ.",
                 "basit_tr": "Danimarka, kadınlar için askerlik hizmetini başlatacak. Bu, hükümetin planladığından daha erken olacak. 1 Temmuz 2024’ten sonra 18 yaşına giren kadınlar, 2026’dan itibaren orduya katılmak zorunda kalabilir. Artık erkekler ve kadınlar kura sistemine dahil olacak. Eğer yeterli sayıda kişi gönüllü olarak katılmak istemezse, kura ile bazı kişiler seçilecek. Danimarka ayrıca askerlik süresini dört aydan on bir aya çıkarıyor. Ülke, Ukrayna’daki savaş nedeniyle orduya daha fazla para harcıyor. Avrupa’da kadınları askere alan çok fazla ülke yok. Fakat İsveç ve Norveç bunu yapıyor. Letonya gibi bazı ülkeler de bunu düşünüyor. Soğuk Savaş’tan sonra birçok ülke zorunlu askerliği kaldırmıştı. Fakat şimdi bazı ülkeler bunu geri getiriyor. Almanya’nın aynı şeyi yapması zor olabilir.",
@@ -5377,9 +5684,25 @@ const egitimMufredati = {
             { arapca: "هَلْ يُمْكِنُكَ أَنْ تَمْنَحَنِي بِضْعَ دَقَائِقَ؟", turkce: "Bana ayıracak birkaç dakikan var mı?" },
             { arapca: "هَلْ يُمْكِنُكَ أَنْ تُسْدِيَ لِي مَعْرُوفًا؟", turkce: "Bana bir iyilik yapar mısın?" }
         ],
+        "kelime_alistirmasi": [
+            { "arapca": "أَحْتَاجُ إِلَى بَعْضِ الْمُسَاعَدَةِ.", "turkce": "Biraz yardıma ihtiyacım var." },
+            { "arapca": "هَلْ يُمْكِنُكَ أَنْ تُسَاعِدَنِي؟ / هَلْ يُمْكِنُكُمْ أَنْ تُسَاعِدُونِي؟", "turkce": "Bana yardımcı olur musun/musunuz?" },
+            { "arapca": "هَلْ تَسْتَطِيعُ مُسَاعَدَتِي؟", "turkce": "Yardımcı olabilir misin?" },
+            { "arapca": "هَلْ لَدَيْكَ بِضْعُ دَقَائِقَ لِي؟", "turkce": "Bana ayıracak birkaç dakikan var mı?" },
+            { "arapca": "هَلْ يُمْكِنُكَ أَنْ تُسْدِيَ إِلَيَّ مَعْرُوفًا؟", "turkce": "Bana bir iyilik yapar mısın?" },
+
+            { "arapca": "الْمَطْبَخُ الْعَالَمِيُّ", "turkce": "Dünya mutfağı." },
+            { "arapca": "رَسْمِيٌّ أَوْ يَوْمِيٌّ", "turkce": "Resmî ya da günlük." },
+            { "arapca": "اِسْتِئْجَارُ فِرْقَةٍ مُوسِيقِيَّةٍ لِلْعَزْفِ الْمُبَاشِرِ", "turkce": "Canlı bir grup kiralamak." },
+            { "arapca": "سَأَرُدُّ عَلَيْكَ لَاحِقًا.", "turkce": "Sana döneceğim." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/artEDlf36XEsp6Gw6DdH.png",
-            "ses": "",
+            "sesler": {
+                "basit": "ses_dosyalari/arapca_basit_19.mp3",
+                "orta": "ses_dosyalari/arapca_orta_19.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_19.mp3"
+            },
             "metinler": {
                 "basit": "تَقُولُ وِكَالَةُ نَاسَا إِنَّ مُسْتَوَى الْبَحْرِ ارْتَفَعَ أَكْثَرَ مِمَّا تَوَقَّعَ الْعُلَمَاءُ. فِي عَامِ ٢٠٢٤، تَوَقَّعَ الْعُلَمَاءُ أَنْ يَرْتَفِعَ مُسْتَوَى الْبَحْرِ بِمِقْدَارِ ٠٫٤٣ سَنْتِيمِتْرٍ. وَلَكِنَّهُ ارْتَفَعَ بِمِقْدَارِ ٠٫٥٩ سَنْتِيمِتْرٍ. حَدَثَ هَذَا لِأَنَّ مِيَاهَ الْمُحِيطِ أَصْبَحَتْ أَكْثَرَ حَرَارَةً، وَلِأَنَّ الْجَلِيدَ يَذُوبُ. وَكَانَ عَامُ ٢٠٢٤ أَشَدَّ عَامٍ حَرَارَةً عَلَى الْإِطْلَاقِ. عِنْدَمَا تَدْفَأُ مِيَاهُ الْمُحِيطِ، تَحْتَاجُ إِلَى مَسَاحَةٍ أَكْبَرَ. وَيَذُوبُ الْجَلِيدُ فِي الْجِبَالِ وَالْمَنَاطِقِ الْبَارِدَةِ، ثُمَّ يَصِلُ إِلَى الْبَحْرِ. تُرِيدُ بَعْضُ الدُّوَلِ إِيقَافَ هَذِهِ الْمُشْكِلَةِ، وَلَكِنَّ دُوَلًا أُخْرَى لَا تُسَاعِدُ كَمَا يَجِبُ. إِذَا أَصْبَحَتِ الْأَرْضُ أَكْثَرَ حَرَارَةً، فَسَيَرْتَفِعُ مُسْتَوَى الْبَحْرِ أَكْثَرَ. وَهَذَا قَدْ يَكُونُ خَطِيرًا عَلَى النَّاسِ الَّذِينَ يَعِيشُونَ بِالْقُرْبِ مِنَ الْبَحْرِ. يَقُولُ الْعُلَمَاءُ إِنَّ الدُّوَلَ يَجِبُ أَنْ تَعْمَلَ مَعًا لِمَنْعِ هَذِهِ الْمُشْكِلَةِ مِنَ الِازْدِيَادِ.",
                 "basit_tr": "NASA, deniz seviyelerinin bilim insanlarının beklediğinden daha fazla yükseldiğini söylüyor. 2024 yılında su seviyesinin 0,43 cm yükselmesini bekliyorlardı. Fakat deniz seviyesi 0,59 cm yükseldi. Bu durum, okyanusun çok ısınması ve buzların erimesi nedeniyle oluyor. 2024 aynı zamanda şimdiye kadarki en sıcak yıl oldu. Isınan okyanus suyu daha fazla alana ihtiyaç duyar. Ayrıca dağlardaki ve soğuk bölgelerdeki buzlar eriyerek denize karışır. Bazı ülkeler bu sorunu durdurmak istiyor. Fakat bazı ülkeler yardımcı olmuyor. Eğer Dünya daha fazla ısınırsa, deniz seviyesi daha da yükselecek. Bu durum, okyanus yakınlarında yaşayan insanlar için kötü olabilir. Bilim insanları, bunun olmasını durdurmak için ülkelerin birlikte çalışması gerektiğini söylüyor.",
@@ -5640,9 +5963,25 @@ const egitimMufredati = {
             { arapca: "مِنْ فَضْلِكَ، أَرْسِلْ لِي الْمَعْلُومَاتِ.", turkce: "Lütfen, bana bilgileri gönderin." },
             { arapca: "سَأَكُونُ مُمْتَنًّا لَوْ غَسَلْتَ الْأَطْبَاقَ.", turkce: "Bulaşıkları yıkarsan minnettar olurum." }
         ],
+        "kelime_alistirmasi": [
+            { "arapca": "هَلْ سَيُسَبِّبُ ذَلِكَ مُشْكِلَةً؟", "turkce": "Bu sorun olur mu?" },
+            { "arapca": "هَلْ يُمْكِنُكُمْ إِعَادَةُ ذَلِكَ، مِنْ فَضْلِكُمْ؟", "turkce": "Lütfen tekrar eder misiniz?" },
+            { "arapca": "هَلْ يُمْكِنُكُمْ أَنْ تُعِيدُوا ذَلِكَ، مِنْ فَضْلِكُمْ؟", "turkce": "Tekrar edebilir misiniz lütfen?" },
+            { "arapca": "مِنْ فَضْلِكَ / مِنْ فَضْلِكُمْ", "turkce": "Lütfen." },
+
+            { "arapca": "سَأَكُونُ مُمْتَنًّا لَكَ إِذَا غَسَلْتَ الْأَطْبَاقَ.", "turkce": "Bulaşıkları yıkarsan minnettar olurum." },
+            { "arapca": "هَلْ أَنَا مُخْطِئٌ؟", "turkce": "Yanılıyor muyum?" },
+            { "arapca": "حَانَ الْوَقْتُ.", "turkce": "Tam vaktiydi. / Artık zamanı gelmişti." },
+            { "arapca": "بِكُلِّ تَأْكِيدٍ.", "turkce": "Tabii ki." },
+            { "arapca": "وَأَيْضًا، كُنْتُ أَتَسَاءَلُ إِنْ كَانَ ...", "turkce": "Ayrıca, acaba..." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/bYQZ2f867QR7yaLPI5vw.png",
-            "ses": "",
+            "sesler": {
+                "basit": "ses_dosyalari/arapca_basit_20.mp3",
+                "orta": "ses_dosyalari/arapca_orta_20.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_20.mp3"
+            },
             "metinler": {
                 "basit": "تُغْلِقُ نَوَادٍ لَيْلِيَّةٌ كَثِيرَةٌ فِي الْمَمْلَكَةِ الْمُتَّحِدَةِ أَبْوَابَهَا. فَهِيَ لَا تُحَقِّقُ أَرْبَاحًا كَافِيَةً. لَا يَذْهَبُ الشَّبَابُ إِلَى النَّوَادِي اللَّيْلِيَّةِ كَمَا كَانُوا مِنْ قَبْلُ، لِأَنَّهَا أَصْبَحَتْ غَالِيَةً جِدًّا. وَلِذَلِكَ، يَذْهَبُ بَعْضُهُمْ إِلَى أَمَاكِنَ أَرْخَصَ، مِثْلَ الْحَانَاتِ. أَصْبَحَ بَعْضُ النَّاسِ يَشْرَبُونَ الْكُحُولَ أَقَلَّ، لِذَلِكَ لَا يُرِيدُونَ الذَّهَابَ إِلَى النَّوَادِي اللَّيْلِيَّةِ. تُحَاوِلُ بَعْضُ النَّوَادِي أَنْ تَتَغَيَّرَ. فَهِيَ تُقِيمُ لَيَالِيَ لِلْأَسْئِلَةِ وَالْمُسَابَقَاتِ، أَوْ تُوَفِّرُ أَمَاكِنَ خَالِيَةً مِنَ الْمَشْرُوبَاتِ الْكُحُولِيَّةِ. وَتَنْجَحُ بَعْضُ النَّوَادِي الصَّغِيرَةِ لِأَنَّهَا تُرَحِّبُ بِالْجَمِيعِ، مِثْلَ أَفْرَادِ مُجْتَمَعِ الْمِيمِ. هَذِهِ النَّوَادِي مُهِمَّةٌ لِلشَّبَابِ وَلِمُحِبِّي الْمُوسِيقَى.",
                 "basit_tr": "Birleşik Krallık’ta birçok gece kulübü kapanıyor. Yeterince para kazanamıyorlar. Gençler gece kulüplerine eskisi kadar gitmiyor. Çünkü çok pahalı. Bunun yerine barlar gibi daha ucuz yerlere gidiyorlar. Bazı insanlar daha az alkol tüketiyor. Bu yüzden gece kulüplerine gitmek istemiyorlar. Bazı gece kulüpleri değişmeye çalışıyor. Bilgi yarışması geceleri düzenliyorlar veya insanların alkol içmediği alanlar oluşturuyorlar. Bazı küçük kulüpler ise başarılı oluyor. Çünkü herkese destek oluyorlar. Örneğin LGBTQ+ bireyler için güvenli ve kapsayıcı alanlar sunuyorlar. Bu kulüpler gençler ve müzik severler için önemlidir.",
@@ -5865,9 +6204,31 @@ const egitimMufredati = {
         }
     },
     "gun21": {
+        "kelime_alistirmasi": [
+            { "arapca": "آسِفٌ لِلْمُقَاطَعَةِ، وَلَكِنْ ...", "turkce": "Böldüğüm için üzgünüm ama..." },
+            { "arapca": "عُذْرًا، هَلْ يُمْكِنُنِي التَّحَدُّثُ مَعَكُمْ لِدَقِيقَةٍ؟", "turkce": "Affedersiniz, sizinle bir dakika konuşabilir miyim?" },
+            { "arapca": "هَلْ لَدَيْكُمْ دَقِيقَةٌ؟", "turkce": "Bir dakikanız var mı?" },
+            { "arapca": "هَلْ يُمْكِنُنِي أَنْ أُقَاطِعَكُمْ لِلَحْظَةٍ؟", "turkce": "Araya girebilir miyim?" },
+            { "arapca": "آسِفٌ، أُرِيدُ فَقَطْ أَنْ أَقُولَ شَيْئًا.", "turkce": "Üzgünüm, sadece şunu söylemek istiyorum..." },
+
+            { "arapca": "هَلْ يُمْكِنُنَا أَنْ نَتَحَدَّثَ؟", "turkce": "Sizinle konuşabilir miyiz?" },
+            { "arapca": "هَلْ يُمْكِنُنَا أَنْ نَتَحَدَّثَ عَلَى انْفِرَادٍ؟", "turkce": "Sizinle özel konuşabilir miyiz?" },
+            { "arapca": "هَلْ يُمْكِنُنِي أَنْ أُضِيفَ شَيْئًا؟", "turkce": "Bir şey ekleyebilir miyim?" },
+            { "arapca": "هَلْ تُمَانِعُونَ إِذَا قُلْتُ شَيْئًا؟", "turkce": "Bir şey söylememin sakıncası var mı?" },
+            { "arapca": "لَا، تَفَضَّلْ، أَكْمِلْ.", "turkce": "Hayır, devam et." },
+
+            { "arapca": "هَلْ يُمْكِنُنِي أَنْ أَتَدَخَّلَ لِلَحْظَةٍ؟", "turkce": "Araya girebilir miyim?" },
+            { "arapca": "كَمَا قُلْتُ ...", "turkce": "Dediğim gibi..." },
+            { "arapca": "سَمِعَ بِالصُّدْفَةِ / يَسْمَعُ بِالصُّدْفَةِ", "turkce": "Kulak misafiri olarak işitmek." },
+            { "arapca": "عَلَى أَيِّ حَالٍ / مَهْمَا حَدَثَ", "turkce": "Ne olursa olsun, her durumda." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://firebasestorage.googleapis.com/v0/b/meta-ai-deploy.firebasestorage.app/o/news_images%2FDepositphotos_35422929_S.jpg?alt=media&token=583453c6-d03d-4f98-956e-30469397801c",
-            "ses": "",
+            "sesler": {
+                "basit": "ses_dosyalari/arapca_basit_21.mp3",
+                "orta": "ses_dosyalari/arapca_orta_21.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_21.mp3"
+            },
             "metinler": {
                 "basit": "هَذِهِ الْقِصَّةُ عَنْ رَاكُون. يَبْدَأُ الرَّاكُونُ بِتَسَلُّقِ مَبْنًى فِي مِينِيسُوتَا فِي الْوِلَايَاتِ الْمُتَّحِدَةِ. يَبْدَأُ ذَلِكَ يَوْمَ الِاثْنَيْنِ. يُحَاوِلُ النَّاسُ إِنْزَالَهُ، وَلَكِنَّ الْحَيَوَانَ لَا يُرِيدُ النُّزُولَ. يَسْتَمِرُّ فِي الصُّعُودِ. يُصْبِحُ الرَّاكُونُ مَشْهُورًا. وَيُرِيدُ النَّاسُ أَنْ يَعْرِفُوا كَيْفَ تَنْتَهِي قِصَّتُهُ. يَصْعَدُ الرَّاكُونُ حَتَّى الطَّابِقِ الثَّالِثِ وَالْعِشْرِينَ. وَيَسْتَرِيحُ هُنَاكَ لِفَتْرَةٍ. فِي صَبَاحِ الْأَرْبِعَاءِ، يَصِلُ إِلَى سَطْحِ الْمَبْنَى.",
                 "basit_tr": "Bu hikâye bir rakun hakkındadır. Rakun, ABD’nin Minnesota eyaletinde bir binaya tırmanmaya başlar. Bu olay pazartesi günü başlar. İnsanlar onu aşağı indirmeye çalışır. Fakat hayvan aşağı inmek istemez. Yukarı doğru tırmanmaya devam eder. Rakun kısa sürede popüler olur. İnsanlar onun hikâyesinin nasıl biteceğini merak eder. Rakun 23. kata kadar tırmanır. Orada bir süre dinlenir. Çarşamba sabahı ise binanın tepesine ulaşmayı başarır.",
@@ -6050,9 +6411,73 @@ const egitimMufredati = {
             { arapca: "كَلَّا، تَفَضَّلْ!", turkce: "Hayır, devam edin!" },
             { arapca: "هَلْ لِي أَنْ أُقَاطِعَ؟", turkce: "Araya girebilir miyim" }
         ],
+        "kelime_alistirmasi": [
+            { "arapca": "عَائِلَةٌ", "turkce": "Aile." },
+            { "arapca": "ضَغَطَ عَلَى شَخْصٍ / يَضْغَطُ عَلَى شَخْصٍ", "turkce": "Birine baskı yapmak." },
+            { "arapca": "قَرَارٌ", "turkce": "Karar." },
+            { "arapca": "تَخَرَّجَ / يَتَخَرَّجُ", "turkce": "Mezun olmak." },
+            { "arapca": "أُغُسْطُسُ", "turkce": "Ağustos." },
+            { "arapca": "طِفْلٌ", "turkce": "Çocuk." },
+            { "arapca": "أَرَادَ / يُرِيدُ", "turkce": "İstemek." },
+            { "arapca": "مُدِيرٌ", "turkce": "Yönetmen, müdür." },
+            { "arapca": "مُسَاعِدٌ", "turkce": "Asistan, yardımcı." },
+
+            { "arapca": "أَبْقَى شَخْصًا عَلَى اطِّلَاعٍ", "turkce": "Birini bilgilendirmeye devam etmek. / Keep somebody informed." },
+            { "arapca": "أَخْبَرَ / يُخْبِرُ، أَعْلَمَ / يُعْلِمُ", "turkce": "Bilgilendirmek." },
+            { "arapca": "مُهِمٌّ", "turkce": "Önemli." },
+            { "arapca": "اِجْتِمَاعٌ", "turkce": "Toplantı." },
+            { "arapca": "قَرَارٌ", "turkce": "Karar." },
+            { "arapca": "أَضَافَ / يُضِيفُ", "turkce": "Eklemek." },
+            { "arapca": "سَلَطَةٌ", "turkce": "Salata." },
+            { "arapca": "تَنَوُّعٌ", "turkce": "Çeşitlilik." },
+            { "arapca": "قَائِمَةُ الطَّعَامِ", "turkce": "Yemek listesi, menü." },
+
+            { "arapca": "الْأُسْبُوعَ الْمَاضِيَ", "turkce": "Geçen hafta." },
+            { "arapca": "ذَهَبَ / يَذْهَبُ", "turkce": "Gitmek." },
+            { "arapca": "بَنْكٌ / مَصْرِفٌ", "turkce": "Banka." },
+            { "arapca": "دَفَعَ / يَدْفَعُ", "turkce": "Ödemek." },
+            { "arapca": "دَيْنٌ ضَرِيبِيٌّ", "turkce": "Vergi borcu." },
+            { "arapca": "فَرِيقٌ", "turkce": "Takım, ekip." },
+            { "arapca": "أَدَارَ / يُدِيرُ", "turkce": "Yönetmek." },
+            { "arapca": "أَصْلَحَ / يُصْلِحُ", "turkce": "Düzeltmek." },
+            { "arapca": "مُشْكِلَةٌ", "turkce": "Sorun." },
+            { "arapca": "مَجْلِسُ الْإِدَارَةِ", "turkce": "Yönetim kurulu." },
+            { "arapca": "أَجَّلَ / يُؤَجِّلُ، وَضَعَ عَلَى الرَّفِّ", "turkce": "Rafa kaldırmak, ertelemek." },
+
+            { "arapca": "رُوسِيٌّ", "turkce": "Rus." },
+            { "arapca": "مَشْرُوعٌ", "turkce": "Proje." },
+            { "arapca": "حَرْبٌ", "turkce": "Savaş." },
+            { "arapca": "بَقِيَ / يَبْقَى", "turkce": "Kalmak." },
+            { "arapca": "مَلْجَأٌ", "turkce": "Sığınak." },
+            { "arapca": "طُولَ اللَّيْلِ", "turkce": "Bütün gece." },
+            { "arapca": "تَهْدِيدٌ", "turkce": "Tehdit." },
+            { "arapca": "إِعْصَارٌ", "turkce": "Kasırga." },
+            { "arapca": "أَخِيرًا / فِي النِّهَايَةِ", "turkce": "Sonunda." },
+            { "arapca": "أَقْنَعَ / يُقْنِعُ", "turkce": "İkna etmek." },
+            { "arapca": "عَنِيدٌ", "turkce": "İnatçı." },
+            { "arapca": "ذَهَبَ فِي عُطْلَةٍ / يَذْهَبُ فِي عُطْلَةٍ", "turkce": "Tatile çıkmak." },
+
+            { "arapca": "قَدِيمٌ / أَثَرِيٌّ", "turkce": "Eski, antik." },
+            { "arapca": "رُومَا", "turkce": "Roma." },
+            { "arapca": "مُجَالِدٌ", "turkce": "Gladyatör." },
+            { "arapca": "سَاحَةٌ / مَيْدَانٌ", "turkce": "Meydan, alan." },
+            { "arapca": "مَلَكَ / يَمْلِكُ، لَدَيْهِ", "turkce": "Sahip olmak." },
+            { "arapca": "فَاخِرٌ", "turkce": "Lüks." },
+            { "arapca": "رُخَامٌ", "turkce": "Mermer." },
+            { "arapca": "طُفُولَةٌ", "turkce": "Çocukluk." },
+            { "arapca": "مُرْهِقٌ / مُجْهِدٌ", "turkce": "Stresli, yorucu." },
+            { "arapca": "جَادٌّ / خَطِيرٌ", "turkce": "Ciddi." },
+            { "arapca": "أَخَذَ / يَأْخُذُ", "turkce": "Almak." },
+            { "arapca": "حَيَاةٌ", "turkce": "Hayat." },
+            { "arapca": "دَفَعَ / يَدْفَعُ", "turkce": "Ödemek." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/eVP88PKgyX7oO4tdcHr8.png",
-            "ses": "",
+            "sesler": {
+                "basit": "ses_dosyalari/arapca_basit_22.mp3",
+                "orta": "ses_dosyalari/arapca_orta_22.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_22.mp3"
+            },
             "metinler": {
                 "basit": "هَذِهِ الْقِصَّةُ عَنِ الْإِطَارَاتِ الْقَدِيمَةِ الَّتِي تُرْسِلُهَا الْمَمْلَكَةُ الْمُتَّحِدَةُ إِلَى الْهِنْدِ. مِنَ الْمُفْتَرَضِ أَنْ تُعِيدَ الْمَصَانِعُ الْهِنْدِيَّةُ تَدْوِيرَ هَذِهِ الْإِطَارَاتِ، وَلَكِنَّ هَذَا لَا يَحْدُثُ دَائِمًا. فَبَعْضُ النَّاسِ يَحْرِقُونَهَا. هَذَا يَضُرُّ بِالْبِيئَةِ وَبِصِحَّةِ النَّاسِ. وَتُبَاعُ بَعْضُ هَذِهِ الْإِطَارَاتِ فِي السُّوقِ السَّوْدَاءِ. يَعْرِفُ كَثِيرٌ مِنَ النَّاسِ فِي الْمَمْلَكَةِ الْمُتَّحِدَةِ هَذِهِ الْمُشْكِلَةَ. وَلَدَى حُكُومَةِ الْمَمْلَكَةِ الْمُتَّحِدَةِ قَوَانِينُ لِوَقْفِهَا، وَلَكِنَّهَا مَا زَالَتْ تَحْدُثُ. فِي الْهِنْدِ، تُحْرَقُ الْإِطَارَاتُ فِي بَعْضِ الْأَمَاكِنِ بِشَكْلٍ غَيْرِ قَانُونِيٍّ. وَهَذَا أَمْرٌ خَطِيرٌ جِدًّا. عِنْدَمَا تَحْتَرِقُ الْإِطَارَاتُ، تُنْتِجُ غَازَاتٍ وَمَوَادَّ كِيمْيَائِيَّةً ضَارَّةً. وَقَدْ تُصِيبُ هَذِهِ الْمَوَادُّ النَّاسَ بِالْمَرَضِ. تَقَعُ حَوَادِثُ فِي هَذِهِ الْأَمَاكِنِ، وَأَحْيَانًا يَمُوتُ بَعْضُ النَّاسِ. وَفِي بَعْضِ مَنَاطِقِ الْهِنْدِ، يَلْعَبُ الْأَطْفَالُ بِالْقُرْبِ مِنْ أَمَاكِنِ حَرْقِ الْإِطَارَاتِ. هَذِهِ مُشْكِلَةٌ خَطِيرَةٌ، وَلَكِنَّ بَعْضَ النَّاسِ يُوَاصِلُونَ بَيْعَ الْإِطَارَاتِ. تَأْتِي إِطَارَاتٌ كَثِيرَةٌ مِنَ الْمَمْلَكَةِ الْمُتَّحِدَةِ، وَلَكِنَّهَا تَأْتِي أَيْضًا مِنْ دُوَلٍ أُخْرَى. يَجِبُ عَلَى حُكُومَةِ الْمَمْلَكَةِ الْمُتَّحِدَةِ أَنْ تُوقِفَ هَذِهِ التِّجَارَةَ الْخَطِيرَةَ.",
                 "basit_tr": "Bu hikâye, Birleşik Krallık’ın Hindistan’a gönderdiği eski lastikler hakkındadır. Hindistan’daki fabrikaların bu lastikleri geri dönüştürmesi gerekir. Fakat bu gerçekleşmiyor. İnsanlar lastikleri yakıyor. Bu durum doğaya ve insanların sağlığına zarar veriyor. Karaborsa bu lastikleri satıyor. Birleşik Krallık’taki birçok kişi bunu biliyor. Birleşik Krallık hükümetinin bunu durdurmak için kuralları var. Fakat yine de bu olay devam ediyor. Hindistan’da bazı yerlerde lastikler yasa dışı şekilde yakılıyor. Bu çok tehlikelidir. Lastik yakmak zararlı gazlar ve kimyasallar üretir. Bunlar insanları hasta eder. Bu yerlerde kazalar yaşanıyor ve bazen insanlar ölüyor. Hindistan’ın bazı bölgelerinde çocuklar yanan lastiklerin yakınında oynuyor. Bu sorun ciddi bir sorundur. Fakat insanlar lastikleri satmaya devam ediyor. Birçok lastik Birleşik Krallık’tan geliyor. Ama başka ülkelerden gelen lastikler de var. Birleşik Krallık hükümeti bu tehlikeli işi durdurmalıdır.",
@@ -6321,9 +6746,31 @@ const egitimMufredati = {
             { arapca: "ابْذُلْ قُصَارَى جُهْدِكَ.", turkce: "En iyi denemeni yap." },
             { arapca: "عَمَلٌ رَائِعٌ!", turkce: "İyi iş!" }
         ],
+        "kelime_alistirmasi": [
+            { "arapca": "اِسْتَمِرَّ، أَنْتَ تُبْلِي بَلَاءً حَسَنًا.", "turkce": "İyi gidiyorsun, aynen devam et." },
+            { "arapca": "أَحْسَنْتَ، اِسْتَمِرَّ هَكَذَا.", "turkce": "Aferin, böyle devam et." },
+            { "arapca": "كَانَتْ مُحَاوَلَةً جَيِّدَةً.", "turkce": "Güzel bir denemeydi." },
+            { "arapca": "كَانَ عَمَلًا جَيِّدًا.", "turkce": "Güzel bir çalışmaydı." },
+            { "arapca": "هَذَا تَطَوُّرٌ حَقِيقِيٌّ.", "turkce": "Bu gerçek bir gelişme." },
+            { "arapca": "أَنْتَ عَلَى الطَّرِيقِ الصَّحِيحِ.", "turkce": "Doğru yoldasın." },
+            { "arapca": "لَقَدْ أَوْشَكْتَ عَلَى النَّجَاحِ.", "turkce": "Neredeyse yaptın." },
+            { "arapca": "أَنْتَ تَتَقَدَّمُ بِشَكْلٍ رَائِعٍ.", "turkce": "Harika gidiyorsun." },
+            { "arapca": "لَا تَسْتَسْلِمْ!", "turkce": "Vazgeçme!" },
+            { "arapca": "لَا تَسْتَسْلِمْ، اِصْبِرْ.", "turkce": "Vazgeçme, dayan." },
+            { "arapca": "تَسْتَطِيعُ فِعْلَ ذَلِكَ.", "turkce": "Bunu yapabilirsin." },
+            { "arapca": "اِبْذُلْ قُصَارَى جُهْدِكَ.", "turkce": "Elinden gelenin en iyisini yap." },
+            { "arapca": "عَمَلٌ جَيِّدٌ!", "turkce": "İyi iş!" },
+            { "arapca": "لَقَدْ قُمْتَ بِعَمَلٍ رَائِعٍ.", "turkce": "Harika iş çıkardın." },
+            { "arapca": "دَعْنِي أَرَى.", "turkce": "Bakayım." },
+            { "arapca": "دَعْنِي أُفَكِّرُ.", "turkce": "Düşüneyim." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/fqNRs8VROHb8vTLJb4qg.png",
-            "ses": "",
+            "sesler": {
+                "basit": "ses_dosyalari/arapca_basit_23.mp3",
+                "orta": "ses_dosyalari/arapca_orta_23.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_23.mp3"
+            },
             "metinler": {
                 "basit": "وِيلْيَام بَاكْلَانْد عَالِمٌ بَرِيطَانِيٌّ. عَاشَ فِي الْقَرْنِ التَّاسِعَ عَشَرَ. كَانَ يَتَنَاوَلُ أَطْعِمَةً غَرِيبَةً فِي بَعْضِ الْوَلَائِمِ، مِثْلَ فَأْرٍ عَلَى قِطْعَةِ خُبْزٍ مُحَمَّصٍ. وَكَانَ بَاكْلَانْد يُرِيدُ أَنْ يَأْكُلَ كُلَّ حَيَوَانٍ عَلَى وَجْهِ الْأَرْضِ. كَانَ عَالِمًا ذَكِيًّا. دَرَسَ الصُّخُورَ وَالْأَحَافِيرَ، وَدَرَسَ فِي جَامِعَةِ أُوكْسْفُورْد. عَثَرَ عَلَى عِظَامٍ كَبِيرَةٍ لِلدِّينَاصُورِ مِيجَالُوصُور. وَسَاعَدَنَا ذَلِكَ عَلَى فَهْمِ الدِّينَاصُورَاتِ بِشَكْلٍ أَفْضَلَ. كَانَتْ زَوْجَتُهُ مَارِي تُسَاعِدُهُ. وَكَانَتْ تُحِبُّ الْعِلْمَ أَيْضًا. كَانَا يَسْتَمْتِعَانِ بِالْعِلْمِ مَعًا. لَمْ يَأْكُلْ بَاكْلَانْد كُلَّ الْحَيَوَانَاتِ الَّتِي أَرَادَ أَنْ يَأْكُلَهَا. وَلَكِنَّهُ أَظْهَرَ أَنَّ الْعِلْمَ يُمْكِنُ أَنْ يَكُونَ مُمْتِعًا.",
                 "basit_tr": "William Buckland, İngiliz bir bilim insanıdır. 19. yüzyılda yaşamıştır. Buckland’ın ilginç yemek davetleri vardır. Bu davetlerde tost ekmeği üzerinde fare gibi alışılmadık yiyecekler bulunur. Buckland, dünyadaki her hayvanı yemek ister. O zeki bir insandır. Kayaları ve fosilleri inceler. Oxford Üniversitesi’nde eğitim görür. Megalosaurus’un büyük kemiklerini bulur. Dinozorları çok daha iyi anlamamıza yardımcı olur. Eşi Mary de ona yardım eder. Mary de bilimi sever. Birlikte eğlenceli zaman geçirirler. Buckland yemek istediği bütün hayvanları yiyemez. Fakat bilimin eğlenceli olabileceğini gösterir.",
@@ -6549,9 +6996,21 @@ const egitimMufredati = {
             { arapca: "أُوصِي بِالذَّهَابِ إِلَى الطَّبِيبِ.", turkce: "Doktora gitmeyi tavsiye ederim." },
             { arapca: "هَلْ فَكَّرْتَ فِي شِرَاءِ حَاسُوبٍ جَدِيدٍ؟", turkce: "Yeni bir bilgisayar almayı düşündün mü?" }
         ],
+        "kelime_alistirmasi": [
+            { "arapca": "مَا رَأْيُكَ أَنْ نُجَرِّبَ شَيْئًا جَدِيدًا؟", "turkce": "Yeni bir şey denemeye ne dersin?" },
+            { "arapca": "لِمَاذَا لَا تَتَحَدَّثُ مَعَ مُدِيرِكَ؟", "turkce": "Neden patronunla konuşmuyorsun?" },
+            { "arapca": "رُبَّمَا يَجِبُ أَنْ نَقُومَ بِمَزِيدٍ مِنَ الْبَحْثِ.", "turkce": "Belki daha çok araştırma yapmamız gerekir." },
+            { "arapca": "أَنْصَحُكَ بِـ ...", "turkce": "Tavsiye ederim..." },
+            { "arapca": "هَلْ فَكَّرْتَ مِنْ قَبْلُ فِي ...؟", "turkce": "Hiç düşündün mü...?" },
+            { "arapca": "لَا أُفَضِّلُ ذَلِكَ.", "turkce": "Tercih etmem." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/gCME30No9JIkkI2B3a4a.png",
-            "ses": "",
+            "sesler": {
+                "basit": "ses_dosyalari/arapca_basit_24.mp3",
+                "orta": "ses_dosyalari/arapca_orta_24.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_24.mp3"
+            },
             "metinler": {
                 "basit": "إِيكُوبِيتْرُول شَرِكَةُ نِفْطٍ كَبِيرَةٌ فِي كُولُومْبِيَا. وَتُسَبِّبُ تَلَوُّثًا نِفْطِيًّا فِي أَمَاكِنَ كَثِيرَةٍ، مِثْلَ الْأَنْهَارِ وَالْأَرَاضِي الرَّطْبَةِ. يَجِدُ مُوَظَّفٌ مَعْلُومَاتٍ سِرِّيَّةً عَنْ تَسَرُّبَاتٍ نِفْطِيَّةٍ. وَلَا تَتَحَدَّثُ إِيكُوبِيتْرُول عَنْ بَعْضِ هَذِهِ التَّسَرُّبَاتِ. تَقُولُ الشَّرِكَةُ إِنَّهَا تَلْتَزِمُ بِالْقَوَانِينِ. وَلَكِنَّ أَنْدْرِيس يَرَى مِيَاهًا مُلَوَّثَةً، وَيُخْبِرُ النَّاسَ بِهَذَا الْأَمْرِ. لَاحِقًا، يَتَلَقَّى أَنْدْرِيس رَسَائِلَ تَهْدِيدٍ. وَلِذَلِكَ، يَضْطَرُّ إِلَى مُغَادَرَةِ كُولُومْبِيَا. فَلَيْسَ مِنَ الْآمِنِ أَنْ يَبْقَى هُنَاكَ. تُعَانِي صِنَاعَةُ النِّفْطِ فِي كُولُومْبِيَا مِنْ مَشَاكِلَ مَعَ أَشْخَاصٍ خَطِيرِينَ. وَالنَّاسُ الَّذِينَ يَتَحَدَّثُونَ عَنِ التَّلَوُّثِ لَيْسُوا فِي أَمَانٍ. يَتَلَقَّى بَعْضُهُمْ رَسَائِلَ تَهْدِيدٍ، وَيَمُوتُ بَعْضُهُمْ أَحْيَانًا. يَعِيشُ أَنْدْرِيس فِي أَلْمَانْيَا الآنَ. وَيَعْمَلُ لِحِمَايَةِ الطَّبِيعَةِ.",
                 "basit_tr": "Ecopetrol, Kolombiya’da büyük bir petrol şirketidir. Nehirler ve sulak alanlar gibi birçok yeri petrolle kirletir. Bir çalışan, petrol sızıntıları hakkında gizli bilgiler bulur. Ecopetrol bunların bazıları hakkında konuşmaz. Şirket ise kurallara uyduğunu söyler. Andrés kirli suyu görür ve insanlara bunu anlatır. Daha sonra onu korkutan mesajlar alır. Kolombiya’dan ayrılmak zorunda kalır. Orada kalması onun için güvenli değildir. Kolombiya’daki petrol sektöründe kötü insanlarla ilgili sorunlar vardır. Kirlilik hakkında konuşan insanlar güvende değildir. Bazıları korkutucu mesajlar alır. Bazıları ise hayatını kaybeder. Andrés şimdi Almanya’da yaşıyor. Doğal dünyaya yardım etmek için çalışıyor.",
@@ -6825,9 +7284,78 @@ const egitimMufredati = {
             { arapca: "لَدَيْنَا عَرْضٌ تَقْدِيمِيٌّ فِي الرَّابِعَ عَشَرَ. هَلْ يُمْكِنُكَ الْحُضُورُ؟", turkce: "14'ünde bir sunumumuz var. Katılabilir misiniz?" },
             { arapca: "أَوَدُّ أَنْ أَعْرِفَ لِمَاذَا ارْتَكَبْتَ كُلَّ هَذِهِ الْأَخْطَاءِ فِي هَذَا التَّقْرِيرِ.", turkce: "Bu raporda neden bu kadar çok hata yaptığını bilmek isterim." }
         ],
+        "kelime_alistirmasi": [
+            { "arapca": "قِسْمٌ", "turkce": "Bölüm." },
+            { "arapca": "وَرْشَةٌ", "turkce": "Atölye." },
+            { "arapca": "دَهَنَ / يَدْهَنُ، طِلَاءٌ", "turkce": "Boyamak, boya." },
+            { "arapca": "كَأْسٌ / زُجَاجٌ", "turkce": "Bardak, cam." },
+            { "arapca": "طَاوِلَةٌ", "turkce": "Masa." },
+            { "arapca": "كَسَرَ / يَكْسِرُ", "turkce": "Kırmak." },
+            { "arapca": "دُخُولٌ / مَدْخَلٌ", "turkce": "Giriş." },
+            { "arapca": "بَلَدٌ / دَوْلَةٌ", "turkce": "Ülke." },
+            { "arapca": "مَنَعَ / يَمْنَعُ", "turkce": "Yasaklamak." },
+            { "arapca": "جَدِيدٌ", "turkce": "Yeni." },
+            { "arapca": "إِصْدَارٌ", "turkce": "Versiyon, sürüm." },
+            { "arapca": "بَرْنَامَجٌ / بَرْمَجِيَّةٌ", "turkce": "Yazılım." },
+            { "arapca": "شَارَكَ / يُشَارِكُ", "turkce": "Paylaşmak." },
+            { "arapca": "سُلُوكٌ", "turkce": "Davranış." },
+            { "arapca": "قَبِلَ / يَقْبَلُ", "turkce": "Kabul etmek." },
+            { "arapca": "شُحْنَةٌ / طَرْدٌ", "turkce": "Kargo." },
+            { "arapca": "دُخُولٌ", "turkce": "Giriş." },
+            { "arapca": "عَبَّارَةٌ", "turkce": "Feribot." },
+            { "arapca": "أَغْلَقَ / يُغْلِقُ", "turkce": "Kapatmak." },
+            { "arapca": "الْأُسْبُوعَ الْقَادِمَ", "turkce": "Gelecek hafta." },
+            { "arapca": "أَزَالَ / يُزِيلُ", "turkce": "Çıkarmak, kaldırmak." },
+            { "arapca": "مَشْرُوعٌ", "turkce": "Proje." },
+            { "arapca": "رَسْمِيٌّ", "turkce": "Resmî." },
+            { "arapca": "إِعْلَانٌ", "turkce": "Duyuru." },
+            { "arapca": "فَعَلَ / يَفْعَلُ", "turkce": "Yapmak." },
+            { "arapca": "غَدًا", "turkce": "Yarın." },
+            { "arapca": "مِهْنَةٌ", "turkce": "Meslek." },
+            { "arapca": "أَنْهَى / يُنْهِي", "turkce": "Bitirmek." },
+            { "arapca": "الْيَوْمَ", "turkce": "Bugün." },
+            { "arapca": "اِنْتَظَرَ / يَنْتَظِرُ", "turkce": "Beklemek." },
+            { "arapca": "اِجْتِمَاعٌ", "turkce": "Toplantı." },
+            { "arapca": "دَجَاجٌ", "turkce": "Tavuk." },
+            { "arapca": "عَظْمٌ", "turkce": "Kemik." },
+            { "arapca": "أَعْطَى / يُعْطِي", "turkce": "Vermek." },
+            { "arapca": "كَلْبٌ", "turkce": "Köpek." },
+            { "arapca": "حَرْبٌ", "turkce": "Savaş." },
+            { "arapca": "رَاتِبٌ", "turkce": "Maaş." },
+            { "arapca": "مِسْطَرَةٌ", "turkce": "Cetvel." },
+            { "arapca": "دَمَارٌ / هَدْمٌ", "turkce": "Yıkım." },
+            { "arapca": "تَضَخُّمٌ", "turkce": "Enflasyon." },
+            { "arapca": "أَفْقَرَ / يُفْقِرُ", "turkce": "Fakirleştirmek." },
+            { "arapca": "مَوْقِدٌ / مِدْفَأَةٌ", "turkce": "Soba, ocak." },
+            { "arapca": "ذَهَبٌ", "turkce": "Altın." },
+            { "arapca": "آمِنٌ", "turkce": "Güvenli." },
+            { "arapca": "خِبْرَةٌ / تَجْرِبَةٌ", "turkce": "Deneyim." },
+            { "arapca": "كَبِيرٌ / مُهِمٌّ", "turkce": "Büyük, önemli." },
+            { "arapca": "تَعْلِيمٌ / تَدْرِيبٌ", "turkce": "Eğitim." },
+            { "arapca": "تَعَلُّمٌ", "turkce": "Öğrenme." },
+            { "arapca": "أَصْبَحَ / يُصْبِحُ", "turkce": "Olmak, hâline gelmek." },
+            { "arapca": "أَسْهَلُ", "turkce": "Daha kolay." },
+            { "arapca": "جَدِيدٌ", "turkce": "Yeni." },
+            { "arapca": "مُعَلِّمٌ / مُعَلِّمَةٌ", "turkce": "Öğretmen." },
+            { "arapca": "مُرَشَّحٌ / مُرَشَّحَةٌ", "turkce": "Aday." },
+            { "arapca": "اِنْتَظَرَ / يَنْتَظِرُ", "turkce": "Beklemek." },
+            { "arapca": "مُعَيَّنٌ / مُعَيَّنَةٌ", "turkce": "Atanmış." },
+            { "arapca": "مُتَطَوِّعٌ / مُتَطَوِّعَةٌ", "turkce": "Gönüllü." },
+            { "arapca": "مَدَى الْحَيَاةِ", "turkce": "Ömür boyu." },
+            { "arapca": "بَاقِي / مُتَبَقٍّ", "turkce": "Geri kalan." },
+            { "arapca": "سَهْلٌ", "turkce": "Kolay." },
+            { "arapca": "مَفْصُولٌ مِنَ الْعَمَلِ", "turkce": "İşten atılmış." },
+            { "arapca": "بَنَى / يَبْنِي", "turkce": "İnşa etmek." },
+            { "arapca": "حَيَاةٌ", "turkce": "Hayat." },
+            { "arapca": "أَحْبَطَ / يُحْبِطُ", "turkce": "Moralini bozmak." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/jDa6Z8aPlb2IHxcwN1YV.png",
-            "ses": "",
+            "sesler": {
+                "basit": "ses_dosyalari/arapca_basit_26.mp3",
+                "orta": "ses_dosyalari/arapca_orta_26.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_26.mp3"
+            },
             "metinler": {
                 "basit": "هَذَا خُبْزُ الشَّطَائِرِ. هُوَ طَرِيٌّ مِنَ الدَّاخِلِ، وَلَهُ قِشْرَةٌ رَقِيقَةٌ وَمُقَرْمِشَةٌ. يَحْتَوِي عَلَى دَقِيقِ الْقَمْحِ الْكَامِلِ، وَهَذَا يَجْعَلُهُ لَذِيذًا. وَمِنَ السَّهْلِ صُنْعُهُ فِي الْمَنْزِلِ بِمُكَوِّنَاتٍ قَلِيلَةٍ فَقَطْ. تَحْتَاجُ إِلَى الْمَاءِ، وَالْخَمِيرَةِ، وَالزَّبَادِي، وَالزَّيْتِ، وَنَوْعَيْنِ مِنَ الدَّقِيقِ. تَسْتَغْرِقُ الْخُطُوَاتُ بَعْضَ الْوَقْتِ، وَلَكِنَّ النَّتِيجَةَ خُبْزٌ طَازَجٌ وَلَذِيذٌ. أَوَّلًا، اخْلِطْ جَمِيعَ الْمُكَوِّنَاتِ. ثُمَّ دَعِ الْعَجِينَةَ تَرْتَاحُ لِمُدَّةِ ٣٠ دَقِيقَةً. بَعْدَ ذَلِكَ، مُدَّ الْعَجِينَةَ وَاطْوِهَا لِتُصْبِحَ أَفْضَلَ. افْعَلْ هَذَا مَرَّتَيْنِ، ثُمَّ انْتَظِرْ لِمُدَّةِ سَاعَتَيْنِ. شَكِّلِ الْعَجِينَةَ رَغِيفًا، ثُمَّ انْتَظِرْ سَاعَةً أُخْرَى. قَبْلَ الْخَبْزِ، اِصْنَعْ شَقًّا صَغِيرًا فِي أَعْلَى الْعَجِينَةِ. اخْبِزِ الرَّغِيفَ وَهُوَ مُغَطًّى أَوَّلًا، ثُمَّ اخْبِزْهُ مِنْ غَيْرِ غِطَاءٍ. عِنْدَمَا يَكُونُ الْخُبْزُ جَاهِزًا، يُصْدِرُ صَوْتًا مُمَيَّزًا عِنْدَ النَّقْرِ عَلَيْهِ. قِشْرَتُهُ رَقِيقَةٌ، وَدَاخِلُهُ طَرِيٌّ جِدًّا. دَعْهُ يَبْرُدْ قَبْلَ أَنْ تَأْكُلَهُ. هَذَا الْخُبْزُ مُنَاسِبٌ لِلشَّطَائِرِ، وَهُوَ لَذِيذٌ أَيْضًا مَعَ الزُّبْدَةِ.",
                 "basit_tr": "Bu sandviç ekmeğinin içi yumuşaktır. Dışında ince ve çıtır bir kabuk vardır. İçinde tam buğday unu bulunur. Bu da ekmeği daha lezzetli yapar. Evde sadece birkaç malzemeyle kolayca yapılabilir. Su, maya, yoğurt, yağ ve iki çeşit una ihtiyacınız vardır. Yapım aşamaları biraz zaman alır. Fakat ekmek taze ve güzel olur. Önce bütün malzemeleri karıştırın. Hamuru 30 dakika dinlendirin. Sonra hamuru çekip katlayın. Bu, hamurun daha iyi olmasını sağlar. Bunu iki kez yapın, sonra iki saat bekleyin. Hamura somun şekli verin ve bir saat daha bekleyin. Pişirmeden önce üstünü biraz kesin. Önce üzeri kapalı şekilde, sonra kapağı açarak pişirin. Ekmek hazır olduğunda, üzerine vurduğunuzda özel bir ses çıkarır. Kabuğu incedir ve içi çok yumuşaktır. Yemeden önce soğumasını bekleyin. Bu ekmek sandviç yapmak için ya da tereyağıyla yemek için çok güzeldir.",
@@ -7092,9 +7620,36 @@ const egitimMufredati = {
             { arapca: "عَلِقْتُ فِي مَطَرٍ غَزِيرٍ.", turkce: "Sağnak yağmura yakalandım." },
             { arapca: "أَعْتَقِدُ أَنَّ الْمَطَرَ يَخِفُّ.", turkce: "Hafifledi." }
         ],
+        "kelime_alistirmasi": [
+            { "arapca": "الطَّقْسُ الْيَوْمَ جَمِيلٌ وَدَافِئٌ.", "turkce": "Bugün hava güzel ve ılık." },
+            { "arapca": "الْجَوُّ حَارٌّ جِدًّا.", "turkce": "Kaynıyor hava." },
+            { "arapca": "هُنَاكَ مَوْجَةُ حَرٍّ.", "turkce": "Sıcak hava dalgası mevcut." },
+            { "arapca": "الشَّمْسُ حَارِقَةٌ جِدًّا.", "turkce": "Güneş bayağı yakıyor." },
+            { "arapca": "الْجَوُّ حَارٌّ وَرَطْبٌ.", "turkce": "Hava sıcak ve nemli." },
+            { "arapca": "الْجَوُّ بَارِدٌ قَلِيلًا.", "turkce": "Hafif serin/soğuk." },
+            { "arapca": "الْبَرْدُ قَارِسٌ.", "turkce": "Dondurucu soğuk." },
+            { "arapca": "دَرَجَةُ الْحَرَارَةِ تَنْخَفِضُ.", "turkce": "Sıcaklık düşüyor." },
+            { "arapca": "تَأَكَّدْ مِنْ أَنَّكَ تَرْتَدِي مَلَابِسَ دَافِئَةً.", "turkce": "Sıkı giydiğine emin ol." },
+            { "arapca": "نَتَوَقَّعُ طَقْسًا شِتَوِيًّا.", "turkce": "Kış havası bekliyoruz." },
+
+            { "arapca": "الْمَطَرُ يَنْزِلُ رَذَاذًا.", "turkce": "Çiseliyor." },
+            { "arapca": "الْمَطَرُ يَهْطِلُ بِغَزَارَةٍ.", "turkce": "Sağanak yağıyor." },
+            { "arapca": "الْمَطَرُ يَنْهَمِرُ بِشِدَّةٍ.", "turkce": "Bardaktan boşalırcasına yağıyor." },
+            { "arapca": "عَلِقْتُ فِي مَطَرٍ غَزِيرٍ.", "turkce": "Sağanak yağmura yakalandım." },
+            { "arapca": "أَظُنُّ أَنَّ الْمَطَرَ يَخِفُّ.", "turkce": "Sanırım yağmur hafifliyor." },
+            { "arapca": "يَبْدُو أَنَّهَا سَتُمْطِرُ قَرِيبًا.", "turkce": "Yakında yağmur yağacak gibi görünüyor." },
+
+            { "arapca": "هُنَاكَ رِيَاحٌ قَوِيَّةٌ.", "turkce": "Sert bir rüzgâr var." },
+            { "arapca": "هَذَا يَجْعَلُ الْجَوَّ بَارِدًا قَلِيلًا.", "turkce": "Bu biraz soğuk yapar." },
+            { "arapca": "الْجَوُّ غَائِمٌ مُنْذُ أَسَابِيعَ.", "turkce": "Haftalardır bulutlu." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/jFF9wN0eY1RU7eGDAHnO.png",
-            "ses": "",
+            "sesler": {
+                "basit": "ses_dosyalari/arapca_basit_26.mp3",
+                "orta": "ses_dosyalari/arapca_orta_26.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_26.mp3"
+            },
             "metinler": {
                 "basit": "أَوْقَفَتِ الْوِلَايَاتُ الْمُتَّحِدَةُ بَعْضَ التَّمْوِيلِ عَنْ رَادْيُو أُورُوبَّا الْحُرَّةِ / رَادْيُو الْحُرِّيَّةِ. وَيُرِيدُ الِاتِّحَادُ الْأُورُوبِّيُّ أَنْ يُسَاعِدَ. يُقَدِّمُ رَادْيُو أُورُوبَّا الْحُرَّةِ أَخْبَارًا مُهِمَّةً. وَهُوَ يُقَدِّمُ بَرَامِجَهُ بِـ ٢٧ لُغَةً. بَدَأَ عَمَلُهُ فِي زَمَنِ الْحَرْبِ الْبَارِدَةِ، وَمَرْكَزُهُ الْآنَ فِي بَرَاغ فِي جُمْهُورِيَّةِ التِّشِيكِ. يُقَدِّمُ الرَّادْيُو تَقَارِيرَ عَنْ أُوكْرَانْيَا، حَيْثُ تُسَيْطِرُ رُوسْيَا عَلَى بَعْضِ الْأَرَاضِي. وَفِي يَوْمِ الْجُمُعَةِ الْمَاضِي، أَوْقَفَ دُونَالْد تْرَامْب بَعْضَ التَّمْوِيلِ. قَالَ رَئِيسُ رَادْيُو أُورُوبَّا الْحُرَّةِ، سْتِيفِن كَابُوس، إِنَّ هَذَا الْقَرَارَ يُسَاعِدُ أَعْدَاءَ أَمْرِيكَا. تُرِيدُ جُمْهُورِيَّةُ التِّشِيكِ مِنَ الِاتِّحَادِ الْأُورُوبِّيِّ أَنْ يُسَاعِدَ هَذَا الرَّادْيُو. وَتَقُولُ السُّوِيدُ أَيْضًا إِنَّهُ مُهِمٌّ لِحِمَايَةِ حُرِّيَّةِ الدُّوَلِ وَالشُّعُوبِ. قَالَتْ كَايَا كَالَاس، مَسْؤُولَةُ السِّيَاسَةِ الْخَارِجِيَّةِ فِي الِاتِّحَادِ الْأُورُوبِّيِّ، إِنَّ الْعُثُورَ عَلَى الْمَالِ لَيْسَ سَهْلًا، لِأَنَّ جِهَاتٍ كَثِيرَةً تَحْتَاجُ إِلَى الْمُسَاعَدَةِ. وَلَكِنَّ وُزَرَاءَ الِاتِّحَادِ الْأُورُوبِّيِّ يُرِيدُونَ الْبَحْثَ عَنْ حَلٍّ.",
                 "basit_tr": "ABD, Radio Free Europe/Radio Liberty adlı kuruluşa para vermeyi durduruyor. Avrupa Birliği ise yardım etmek istiyor. RFE/RL önemli haberler sunar. Soğuk Savaş’tan beri Çek Cumhuriyeti’nin başkenti Prag’da çalışmaktadır. 27 dilde yayın yapar. Rusya’nın bazı toprakları ele geçirdiği Ukrayna’da da haber yapar. Geçen cuma Donald Trump bazı fonları durdurdu. RFE/RL’nin başkanı Stephen Capus, bunun Amerika’nın düşmanlarına yardım ettiğini söyledi. Çek Cumhuriyeti, Avrupa Birliği’nin RFE/RL’ye yardım etmesini istiyor. İsveç de bu radyonun ülkeleri ve insanları özgür tutmak için önemli olduğunu söylüyor. Avrupa Birliği liderlerinden Kaja Kallas, para bulmanın zor olduğunu söyledi. Çünkü yardıma ihtiyacı olan birçok grup var. Fakat Avrupa Birliği bakanları yine de denemek istiyor.",
@@ -7365,9 +7920,29 @@ const egitimMufredati = {
             { arapca: "كَانَتْ صَفْقَةً مُمْتَازَةً.", turkce: "İyi bir pazarlık" },
             { arapca: "كَانَ مَجَّانِيًّا تَقْرِيبًا.", turkce: "Neredeyse bedava!" }
         ],
+        "kelime_alistirmasi": [
+            { "arapca": "غَالٍ جِدًّا / يُسَاوِي ثَرْوَةً.", "turkce": "Çok pahalı, servet değerinde." },
+            { "arapca": "يُكَلِّفُ ثَرْوَةً.", "turkce": "Bir servete mal oluyor, aşırı pahalı." },
+            { "arapca": "بَاهِظُ الثَّمَنِ.", "turkce": "Aşırı pahalı." },
+            { "arapca": "لَا أَسْتَطِيعُ تَحَمُّلَ تَكْلِفَتِهِ.", "turkce": "Gücüm yetmez." },
+            { "arapca": "غَالِي الثَّمَنِ.", "turkce": "Fiyatlı, pahalı." },
+            { "arapca": "بِسِعْرٍ مُنَاسِبٍ.", "turkce": "Uygun fiyatlı." },
+            { "arapca": "أَرْخَصُ بِعِشْرِينَ فِي الْمِئَةِ.", "turkce": "%20 daha ucuz." },
+            { "arapca": "بِسِعْرٍ جَيِّدٍ.", "turkce": "İyi bir fiyata." },
+            { "arapca": "صَفْقَةٌ جَيِّدَةٌ.", "turkce": "İyi bir pazarlık, iyi bir fırsat." },
+            { "arapca": "كَأَنَّهُ مَجَّانِيٌّ تَقْرِيبًا!", "turkce": "Neredeyse bedava!" },
+
+            { "arapca": "أُرِيدُ أَنْ أَشْتَرِيَ كَنْزَةً جَامِعِيَّةً بِاللَّوْنِ الْعَنَّابِيِّ.", "turkce": "Bordo rengi bir üniversite kazağı almak istiyorum." },
+            { "arapca": "مِنْ فَضْلِكُمْ، اِنْظُرُوا إِلَى مُنْتَجَاتِ التَّخْفِيضَاتِ فِي الْمَمَرِّ الثَّانِي.", "turkce": "Lütfen ikinci koridordaki indirimli ürünlerimize bakın." },
+            { "arapca": "يُنَاسِبُكَ مَقَاسُهُ، وَلَيْسَ فَضْفَاضًا.", "turkce": "Size uyuyor ve bol değil." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/pVTbKl32xJqs3XMInuqm.png",
-            "ses": "",
+            "sesler": {
+                "basit": "ses_dosyalari/arapca_basit_27.mp3",
+                "orta": "ses_dosyalari/arapca_orta_27.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_27.mp3"
+            },
             "metinler": {
                 "basit": "بَجَعَةٌ تَطِيرُ فَوْقَ بُحَيْرَةٍ. يُوجَدُ غُصْنُ شَجَرَةٍ فِي طَرِيقِهَا. يَعْلَقُ رَأْسُ الْبَجَعَةِ فِي الْغُصْنِ. يَكُونُ جَسَدُهَا مُعَلَّقًا فِي الْهَوَاءِ، وَيُؤْلِمُهَا عُنُقُهَا. تَخَافُ الْبَجَعَةُ كَثِيرًا، وَتُحَرِّكُ جَنَاحَيْهَا بِسُرْعَةٍ. تُحَاوِلُ أَنْ تُنْقِذَ نَفْسَهَا، وَتُصْدِرُ أَصْوَاتًا عَالِيَةً. يَرَاهَا النَّاسُ بِالْقُرْبِ مِنَ الْبُحَيْرَةِ، وَيَشْعُرُونَ بِحُزْنٍ شَدِيدٍ. يَطْلُبُونَ الْمُسَاعَدَةَ، فَيَأْتِي فَرِيقُ الْإِنْقَاذِ بِسُرْعَةٍ. يُمْسِكُ رَجُلٌ بِجَسَدِ الْبَجَعَةِ، وَيَكْسِرُ الْغُصْنَ. بَعْدَ ذَلِكَ، يَأْخُذُ الْفَرِيقُ الْبَجَعَةَ إِلَى طَبِيبٍ بَيْطَرِيٍّ. تَكُونُ أَجْنِحَتُهَا وَرِجْلَاهَا مُصَابَةً. وَتَبْقَى الْبَجَعَةُ فِي مَكَانٍ دَافِئٍ. فِي الْبِدَايَةِ، تَكُونُ خَائِفَةً، وَلَكِنَّهَا تَشْعُرُ بِتَحَسُّنٍ بَعْدَ ذَلِكَ. بَعْدَ شَهْرَيْنِ، تُصْبِحُ قَوِيَّةً مَرَّةً أُخْرَى. يَأْخُذُهَا الْمُسَاعِدُونَ إِلَى الْبُحَيْرَةِ. تَنْتَظِرُ الْبَجَعَةُ قَلِيلًا، ثُمَّ تَطِيرُ إِلَى الْمَاءِ. تَأْتِي بَجَعَاتٌ أُخْرَى إِلَيْهَا، وَتَبْدُو سَعِيدَةً بِرُؤْيَةِ صَدِيقَتِهَا.",
                 "basit_tr": "Bir kuğu, bir gölün üzerinden uçuyor. Yolda bir ağaç dalı vardır. Kuğunun başı dala sıkışır. Vücudu havada kalır ve boynu acır. Kuğu çok korkar. Kanatlarını hızlı hızlı çırpar. Kurtulmaya çalışır. Yüksek sesler çıkarır. Gölün yakınındaki insanlar onu görür ve çok üzülürler. Yardım çağırırlar. Kurtarma ekibi hızlıca gelir. Bir adam kuğunun vücudunu tutar ve dalı kırar. Sonra ekip kuğuyu bir veterinere götürür. Kuğunun kanatları ve bacakları yaralanmıştır. Hayvan sıcak bir yerde kalır. Başta kuğu korkar, fakat daha sonra daha iyi hisseder. İki ay sonra tekrar güçlenir. Yardımcılar onu göle götürür. Kuğu biraz bekler, sonra suya doğru uçar. Diğer kuğular onun yanına gelir. Arkadaşlarını gördükleri için mutlu olurlar.",
@@ -7646,9 +8221,21 @@ const egitimMufredati = {
         }
     },
     "gun28": {
+        "kelime_alistirmasi": [
+            { "arapca": "أَرَدْتُ أَنْ أُعَرِّفَ بِنَفْسِي.", "turkce": "Kendimi tanıtmak istedim." },
+            { "arapca": "لَا أَظُنُّ أَنَّنَا تَعَارَفْنَا مِنْ قَبْلُ.", "turkce": "Daha önce tanıştığımızı düşünmüyorum." },
+            { "arapca": "أَوَدُّ أَنْ أَتَعَرَّفَ عَلَى ...", "turkce": "... ile tanışmak isterim." },
+            { "arapca": "هَلْ تَعَرَّفْتَ عَلَى ...؟", "turkce": "... ile tanıştınız mı? / Tanıştın mı?" },
+            { "arapca": "أَوَدُّ أَنْ أُعَرِّفَكَ عَلَى ...", "turkce": "Seni ... ile tanıştırmak isterim." },
+            { "arapca": "تَشَرَّفْتُ بِمَعْرِفَتِكَ.", "turkce": "Seni tanımak bir zevktir. / Tanıştığıma memnun oldum." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/yLkrCKKdaK5dl9jdDFCN.png",
-            "ses": "",
+            "sesler": {
+                "basit": "ses_dosyalari/arapca_basit_28.mp3",
+                "orta": "ses_dosyalari/arapca_orta_28.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_28.mp3"
+            },
             "metinler": {
                 "basit": "النُّحَاسُ مَعْدِنٌ بُنِّيٌّ مُحْمَرٌّ. يَسْتَخْدِمُهُ النَّاسُ فِي صُنْعِ الْأَسْلَاكِ. يُسَمِّيهِ الْخُبَرَاءُ «دُكْتُور نُحَاس»، لِأَنَّ سِعْرَهُ يُمْكِنُ أَنْ يُظْهِرَ مَدَى قُوَّةِ الِاقْتِصَادِ الْعَالَمِيِّ أَوْ ضَعْفِهِ. فِي هَذَا الْعَامِ، ارْتَفَعَتْ أَسْعَارُ النُّحَاسِ بِنِسْبَةِ ١٤٪ تَقْرِيبًا. وَعَادَةً، يَعْنِي هَذَا أَنَّ الِاقْتِصَادَ يَتَحَسَّنُ، وَأَنَّ الْمَصَانِعَ تَحْتَاجُ إِلَى مَزِيدٍ مِنَ النُّحَاسِ. تُحَاوِلُ الصِّينُ أَنْ تُسَاعِدَ النَّاسَ عَلَى شِرَاءِ أَشْيَاءَ أَكْثَرَ. وَهُنَاكَ أَيْضًا تَوَتُّرَاتٌ تِجَارِيَّةٌ بَيْنَ الْوِلَايَاتِ الْمُتَّحِدَةِ وَالصِّينِ وَأُورُوبَّا. كَانَ سِعْرُ النُّحَاسِ فِي السُّوقِ الْأَمْرِيكِيَّةِ مُخْتَلِفًا كَثِيرًا عَنْ سِعْرِهِ فِي سُوقِ لَنْدَنَ. فِي ١٠ فِبْرَايِر، كَانَ الْفَرْقُ ٩٢٠ دُولَارًا لِكُلِّ طُنٍّ مِتْرِيٍّ. وَبِحُلُولِ ٢٨ فِبْرَايِر، أَصْبَحَ الْفَرْقُ ٨١٦ دُولَارًا. هَذَا الْفَرْقُ مَا زَالَ مُرْتَفِعًا، وَلَكِنَّهُ أَقَلُّ مِنْ قَبْلُ. فَفِي الْعَادَةِ، كَانَ الْفَرْقُ بَيْنَ ٢٥٠ وَ٥٠٠ دُولَارٍ. لِذَلِكَ، رُبَّمَا لَا يَعْنِي ارْتِفَاعُ سِعْرِ النُّحَاسِ أَنَّ الِاقْتِصَادَ قَوِيٌّ. وَالْخُبَرَاءُ غَيْرُ مُتَأَكِّدِينَ مِنْ سَبَبِ تَغَيُّرِ السِّعْرِ.",
                 "basit_tr": "Bakır, kırmızı-kahverengi bir metaldir. İnsanlar onu kablo yapmak için kullanır. Uzmanlar bakıra Dr. Copper der. Çünkü bakırın fiyatı, dünya ekonomisinin iyi mi kötü mü gittiğini gösterebilir. Bu yıl bakır fiyatları neredeyse %14 arttı. Normalde bu, ekonominin iyileştiği ve fabrikaların daha fazla bakıra ihtiyaç duyduğu anlamına gelir. Çin, insanların daha fazla şey satın almasına yardımcı olmaya çalışıyor. ABD, Çin ve Avrupa arasında ticaretle ilgili sorunlar var. Çin ve Birleşik Krallık’taki bakır fiyatı arasında büyük bir fark vardı. 10 Şubat’ta bu fark metrik ton başına 920 dolardı. 28 Şubat’a gelindiğinde fark 816 dolara düştü. Bu hâlâ yüksek bir farktır, ama öncekinden daha düşüktür. Daha önce bu fark genellikle 250 ile 500 dolar arasındaydı. Belki de yüksek fiyat, ekonominin güçlü olduğu anlamına gelmiyordur. Uzmanlar fiyatın neden değiştiğinden emin değil.",
@@ -7919,9 +8506,25 @@ const egitimMufredati = {
             { arapca: "بَدَأْتُ أَنْسَى كَمَا يَفْعَلُ كِبَارُ السِّنِّ.", turkce: "Yaşlanıyorum..." },
             { arapca: "عَاشَ حَتَّى سِنٍّ مُتَقَدِّمَةٍ جِدًّا.", turkce: "Epey uzun yaşadı." }
         ],
+        "kelime_alistirmasi": [
+            { "arapca": "هُوَ فِي أَوَائِلِ الْعِشْرِينَاتِ.", "turkce": "O 20'lerin başında." },
+            { "arapca": "هُوَ فِي أَوَاخِرِ الثَّلَاثِينِيَّاتِ.", "turkce": "O 30'ların sonunda." },
+            { "arapca": "لَقَدْ بَلَغَ السَّادِسَةَ تَوًّا.", "turkce": "6'ya yeni bastı." },
+            { "arapca": "تَصَرَّفْ بِحَسَبِ سِنِّكَ.", "turkce": "Yaşına göre davran." },
+            { "arapca": "لَسْتُ شَابًّا كَمَا كُنْتُ مِنْ قَبْلُ.", "turkce": "Eskisi kadar genç değilim." },
+            { "arapca": "لَمْ أَفْقِدْ عَقْلِي بَعْدُ.", "turkce": "Henüz bunamadım." },
+            { "arapca": "لَيْسَ شَابًّا جِدًّا.", "turkce": "Pek genç değil." },
+            { "arapca": "هُوَ أَحْكَمُ مِنْ سِنِّهِ.", "turkce": "Yaşından daha akıllı." },
+            { "arapca": "حَالَةُ الشَّيْخُوخَةِ", "turkce": "Yaşlılık hâli." },
+            { "arapca": "لَقَدْ عَاشَ عُمْرًا طَوِيلًا.", "turkce": "Epey uzun yaşadı." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/yVmKZgdAxvfMmaqPnJax.png",
-            "ses": "",
+            "sesler": {
+                "basit": "ses_dosyalari/arapca_basit_29.mp3",
+                "orta": "ses_dosyalari/arapca_orta_29.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_29.mp3"
+            },
             "metinler": {
                 "basit": "الْأَسْبَسْتُوسُ مَادَّةٌ قَوِيَّةٌ. وَهِيَ مَوْجُودَةٌ فِي الْمَنَازِلِ وَفِي كَثِيرٍ مِنَ الْمَبَانِي الْقَدِيمَةِ. كَانَ النَّاسُ يَسْتَخْدِمُونَهُ لِأَنَّهُ لَا يَحْتَرِقُ بِسُهُولَةٍ. وَلَكِنْ بَعْدَ سَنَوَاتٍ كَثِيرَةٍ، عَرَفَ النَّاسُ أَنَّ الْأَسْبَسْتُوسَ خَطِيرٌ جِدًّا. عِنْدَمَا تَتَكَسَّرُ هَذِهِ الْمَادَّةُ، تَتَطَايَرُ أَلْيَافٌ صَغِيرَةٌ فِي الْهَوَاءِ. وَيُمْكِنُ أَنْ تُصِيبَ هَذِهِ الْأَلْيَافُ النَّاسَ بِالْمَرَضِ. إِذَا تَنَفَّسَ النَّاسُ هَذِهِ الْأَلْيَافَ، فَقَدْ يُصَابُونَ بِمَشَاكِلَ فِي الرِّئَةِ. تَوَقَّفَتْ دُوَلٌ كَثِيرَةٌ عَنْ اسْتِخْدَامِ الْأَسْبَسْتُوسِ، وَلَكِنَّ بَعْضَ الْمَبَانِي الْقَدِيمَةِ مَا زَالَتْ تَحْتَوِي عَلَيْهِ. عِنْدَمَا يُصْلِحُ الْعُمَّالُ الْمَبَانِي أَوْ يَهْدِمُونَهَا، يَجِبُ أَنْ يَكُونُوا حَذِرِينَ. يَرْتَدُونَ مَلَابِسَ خَاصَّةً، وَيَعْمَلُونَ بِطَرِيقَةٍ آمِنَةٍ. لَا تَزَالُ بَعْضُ الدُّوَلِ تَسْتَخْدِمُ الْأَسْبَسْتُوسَ لِأَنَّهُ رَخِيصٌ. وَلَكِنَّ الْأَطِبَّاءَ يَقُولُونَ إِنَّهُ مُضِرٌّ بِالصِّحَّةِ. إِذَا ظَنَّ النَّاسُ أَنَّ فِي بُيُوتِهِمْ أَسْبَسْتُوسَ، فَيَجِبُ أَلَّا يَلْمِسُوهُ. بَلْ يَجِبُ عَلَيْهِمْ أَنْ يَتَّصِلُوا بِالْخُبَرَاءِ لِإِزَالَتِهِ بِطَرِيقَةٍ آمِنَةٍ.",
                 "basit_tr": "Asbest güçlü bir malzemedir. Evlerde ve birçok eski binada bulunur. İnsanlar onu yanmadığı için kullanır. Fakat yıllar sonra insanlar asbestin çok tehlikeli olduğunu fark eder. Küçük parçaları havaya karışabilir ve insanları hasta edebilir. İnsanlar bu parçaları solursa akciğer problemleri yaşayabilir. Birçok ülke asbest kullanmayı bırakmıştır. Fakat bazı eski binalarda hâlâ asbest vardır. Binaları tamir eden ya da yıkan işçiler dikkatli olmalıdır. Özel kıyafetler giyerler ve güvenli şekilde çalışırlar. Bazı ülkeler asbesti hâlâ kullanıyor. Çünkü ucuzdur. Doktorlar asbestin sağlık için zararlı olduğunu söylüyor. İnsanlar evlerinde asbest olduğunu düşünürse ona dokunmamalıdır. Onu güvenli şekilde kaldırmaları için uzmanları çağırmalıdırlar.",
@@ -8171,9 +8774,20 @@ const egitimMufredati = {
             { arapca: "آسِفٌ، وَلَكِنْ يَجِبُ عَلَيَّ الذَّهَابُ.", turkce: "Üzgünüm, gitmem gerek." },
             { arapca: "أَعْتَذِرُ عَلَى مُقَاطَعَتِكَ، وَلَكِنْ عَلَيَّ الْمُغَادَرَةُ فَوْرًا.", turkce: "Böldüğüm için özür dilerim, ama kaçmam gerek." }
         ],
+        "kelime_alistirmasi": [
+            { "arapca": "كَانَ مِنَ اللَّطِيفِ أَنْ أَتَحَدَّثَ مَعَكَ.", "turkce": "Seninle sohbet etmek güzeldi." },
+            { "arapca": "حَسَنًا، لَقَدْ تَأَخَّرَ الْوَقْتُ.", "turkce": "Pekâlâ, geç oldu." },
+            { "arapca": "عَلَى أَيِّ حَالٍ، يَجِبُ أَنْ أَذْهَبَ.", "turkce": "Her neyse, gitmem gerek." },
+            { "arapca": "آسِفٌ، يَجِبُ أَنْ أَذْهَبَ.", "turkce": "Üzgünüm, gitmem gerek." },
+            { "arapca": "آسِفٌ لِلْمُقَاطَعَةِ، وَلَكِنْ يَجِبُ أَنْ أَذْهَبَ بِسُرْعَةٍ.", "turkce": "Böldüğüm için özür dilerim, ama kaçmam gerek." }
+        ],
         "okuma_alistirmasi": {
             "resim": "https://storage.googleapis.com/meta-ai-deploy.firebasestorage.app/news_images/zYJxhixzrtsMOC6pAm7E.png",
-            "ses": "",
+            "sesler": {
+                "basit": "ses_dosyalari/arapca_basit_30.mp3",
+                "orta": "ses_dosyalari/arapca_orta_30.mp3",
+                "ileri": "ses_dosyalari/arapca_zor_30.mp3"
+            },
             "metinler": {
                 "basit": "تُنْشِرُ حُكُومَةُ الْوِلَايَاتِ الْمُتَّحِدَةِ وَثَائِقَ سِرِّيَّةً جَدِيدَةً حَوْلَ اغْتِيَالِ الرَّئِيسِ جُون إِف كِينِيدِي فِي عَامِ ١٩٦٣. هُنَاكَ مَلَايِينُ الصَّفَحَاتِ عَنْ هَذِهِ الْقَضِيَّةِ. وَيُنْشَرُ الآنَ عَشَرَاتُ الْآلَافِ مِنَ الصَّفَحَاتِ الْجَدِيدَةِ. يَقُولُ بَعْضُ الْخُبَرَاءِ إِنَّ هَذِهِ الْوَثَائِقَ قَدْ تُظْهِرُ أَنَّ الرِّوَايَةَ الرَّسْمِيَّةَ لَيْسَتْ كَامِلَةً. يَعْتَقِدُ كَثِيرٌ مِنَ النَّاسِ أَنَّ لِي هَارْفِي أُوزْوَالْد لَمْ يَعْمَلْ وَحْدَهُ. وَيَقُولُ بَعْضُ الْأَطِبَّاءِ إِنَّ إِطْلَاقَ النَّارِ جَاءَ مِنْ جِهَتَيْنِ. وَيَعْتَقِدُ بَعْضُ النَّاسِ أَنَّ وِكَالَةَ الِاسْتِخْبَارَاتِ الْمَرْكَزِيَّةَ كَانَتْ تَعْرِفُ أَشْيَاءَ كَثِيرَةً عَنْ أُوزْوَالْد قَبْلَ الِاغْتِيَالِ. تُبْقِي وِكَالَةُ الِاسْتِخْبَارَاتِ الْمَرْكَزِيَّةُ بَعْضَ الْوَثَائِقِ سِرِّيَّةً. وَتَقُولُ إِنَّ ذَلِكَ مِنْ أَجْلِ الْأَمْنِ. لَكِنَّ كَثِيرًا مِنَ النَّاسِ يَعْتَقِدُونَ أَنَّ هُنَاكَ شَيْئًا مَخْفِيًّا. يَأْمُلُ النَّاسُ أَنْ تُظْهِرَ هَذِهِ الْوَثَائِقُ الْجَدِيدَةُ الْحَقِيقَةَ الْكَامِلَةَ حَوْلَ الِاغْتِيَالِ.",
                 "basit_tr": "ABD hükümeti, Başkan John F. Kennedy’nin 1963’teki ölümüyle ilgili yeni gizli belgeler paylaşıyor. Bu olayla ilgili altı milyon sayfa belge var. Başkan Trump 80.000 sayfayı yayımlıyor. Bazı uzmanlar, bu belgelerin resmî hikâyenin yanlış olduğunu gösterebileceğini söylüyor. Birçok insan, Lee Harvey Oswald’ın tek başına hareket etmediğine inanıyor. Doktorlar, ateşin iki farklı yönden geldiğini söylüyor. Bazı insanlar, CIA’in olaydan önce Oswald hakkında çok şey bildiğine inanıyor. CIA bazı belgeleri gizli tutuyor. Bunun güvenlik için olduğunu söylüyorlar. Fakat birçok insan onların bir şey sakladığını düşünüyor. İnsanlar, bu yeni belgelerin olay hakkındaki bütün gerçeği ortaya çıkaracağını umuyor.",
@@ -8398,6 +9012,79 @@ const egitimMufredati = {
             { arapca: "بِصِفَتِي شَخْصًا عَمِلَ مُعَلِّمًا لِلُّغَةِ الْإِنْجِلِيزِيَّةِ لِأَكْثَرَ مِنْ عَشْرِ سَنَوَاتٍ، يَجِبُ أَنْ أَقُولَ إِنَّهُ لَا يُمْكِنُكَ تَعَلُّمُ الْإِنْجِلِيزِيَّةِ مِنَ الْكُتُبِ.", turkce: "On yılı aşkın süredir İngilizce öğretmeni olarak çalışmış birisi olarak kitaplardan İngilizce öğrenemeyeceğinizi söylemeliyim." },
             { arapca: "الْأَبْجَدِيَّةُ الْمُسْتَخْدَمَةُ فِي اللُّغَةِ التُّرْكِيَّةِ هِيَ الْأَبْجَدِيَّةُ اللَّاتِينِيَّةُ.", turkce: "Türkçe'de kullanılan alfabe Latin alfabesidir." },
             { arapca: "إِيلُون مَاسْك، الَّذِي أَسَّسَ شَرِكَةَ سْبِيس إِكْس، هُوَ الشَّخْصُ الَّذِي أَحْيَا مَشْرُوعَ الرِّحْلَةِ إِلَى الْمِرِّيخِ.", turkce: "SpaceX şirketini kuran Elon Musk, Mars'a yolculuk projesini hayata geçiren kişidir." }
+        ],
+        "kelime_alistirmasi": [
+            { "arapca": "خَبَرٌ / أَخْبَارٌ", "turkce": "Haber, haberler." },
+            { "arapca": "أَعْطَى / يُعْطِي", "turkce": "Vermek." },
+            { "arapca": "صَدْمَةٌ / صَدَمَ / يَصْدِمُ", "turkce": "Şok, şok etmek." },
+            { "arapca": "عَمِيلٌ / زَبُونٌ / مُشْتَرٍ", "turkce": "Müşteri, alıcı." },
+            { "arapca": "اِشْتَرَى / يَشْتَرِي", "turkce": "Satın almak." },
+            { "arapca": "مُنْتَجٌ", "turkce": "Ürün." },
+            { "arapca": "عَلَى الْأَغْلَبِ", "turkce": "Büyük olasılıkla." },
+            { "arapca": "نَصَحَ / يَنْصَحُ", "turkce": "Tavsiye etmek." },
+            { "arapca": "اِتَّصَلَ / يَتَّصِلُ، بَحَثَ / يَبْحَثُ", "turkce": "Aramak." },
+
+            { "arapca": "تَرَكَ الشَّيْءَ مُتَّسِخًا", "turkce": "Kirli bırakmak." },
+            { "arapca": "صَالَةُ الرِّيَاضَةِ", "turkce": "Spor salonu." },
+            { "arapca": "هَدِيَّةٌ", "turkce": "Hediye." },
+            { "arapca": "فَتَحَ / يَفْتَحُ", "turkce": "Açmak." },
+            { "arapca": "قَاطِعُ الْكَهْرَبَاءِ", "turkce": "Elektrik şalteri." },
+            { "arapca": "صِمَامُ الْغَازِ", "turkce": "Gaz vanası." },
+            { "arapca": "شَغَّلَ / يُشَغِّلُ", "turkce": "Çalıştırmak." },
+            { "arapca": "مَوْقِدٌ / مِدْفَأَةٌ", "turkce": "Soba, ocak." },
+            { "arapca": "أَغْلَقَ / يُغْلِقُ، أَطْفَأَ / يُطْفِئُ", "turkce": "Kapatmak." },
+            { "arapca": "ضَوْءٌ / نُورٌ", "turkce": "Işık." },
+
+            { "arapca": "لَهْجَةٌ", "turkce": "Aksan." },
+            { "arapca": "طَلِيقٌ / بِطَلَاقَةٍ", "turkce": "Akıcı." },
+            { "arapca": "وَاضِحٌ", "turkce": "Açık, net." },
+            { "arapca": "صَعْبٌ", "turkce": "Zor." },
+            { "arapca": "اِجْتَازَ / يَجْتَازُ", "turkce": "Geçmek." },
+            { "arapca": "اِخْتِبَارُ اللُّغَةِ", "turkce": "Dil testi." },
+            { "arapca": "يَبْدُو كَأَنَّ ...", "turkce": "Gibi gelmek." },
+            { "arapca": "غَاضِبٌ", "turkce": "Kızgın." },
+            { "arapca": "أَوَّلُ / الْأَوَّلُ", "turkce": "İlk, birinci." },
+            { "arapca": "صَادِقٌ / مُخْلِصٌ", "turkce": "Samimi, içten." },
+            { "arapca": "حَسَنُ النِّيَّةِ", "turkce": "İyi niyetli." },
+
+            { "arapca": "فِيلْمٌ / سِينَمَا", "turkce": "Film, sinema." },
+            { "arapca": "مُمَثِّلٌ بَدِيلٌ لِلْمَشَاهِدِ الْخَطِرَةِ", "turkce": "Dublör." },
+            { "arapca": "سَائِحٌ", "turkce": "Turist." },
+            { "arapca": "زَارَ / يَزُورُ", "turkce": "Ziyaret etmek, gezmek." },
+            { "arapca": "أَمَاكِنُ تَارِيخِيَّةٌ", "turkce": "Tarihi yerler." },
+            { "arapca": "شَاهَدَ / يُشَاهِدُ", "turkce": "İzlemek." },
+            { "arapca": "الشَّفَقُ الْقُطْبِيُّ / الْأَضْوَاءُ الشَّمَالِيَّةُ", "turkce": "Kuzey ışıkları." },
+            { "arapca": "حَدَثَ / يَحْدُثُ، وَقَعَ / يَقَعُ", "turkce": "Meydana gelmek." },
+            { "arapca": "اِسْتَيْقَظَ / يَسْتَيْقِظُ", "turkce": "Uyanmak." },
+            { "arapca": "مُرِيحٌ", "turkce": "Rahat." },
+            { "arapca": "تَرَكَ / يَتْرُكُ", "turkce": "Bırakmak." },
+            { "arapca": "شَرِبَ / يَشْرَبُ", "turkce": "İçmek." },
+
+            { "arapca": "مَصْرُوفٌ / نَفَقَةٌ", "turkce": "Masraf." },
+            { "arapca": "أَفْلَسَ / يُفْلِسُ", "turkce": "İflas etmek." },
+            { "arapca": "تَحَمَّلَ التَّكْلِفَةَ / يَتَحَمَّلُ التَّكْلِفَةَ", "turkce": "Mali gücü yetmek, bedelini karşılamak." },
+            { "arapca": "ظَنَّ / يَظُنُّ", "turkce": "Sanmak, düşünmek." },
+            { "arapca": "مَشْهُورٌ", "turkce": "Ünlü." },
+            { "arapca": "سَرِيعٌ", "turkce": "Çabuk, hızlı." },
+            { "arapca": "وَفَّرَ / يُوَفِّرُ", "turkce": "Sağlamak." },
+            { "arapca": "فَائِدَةٌ", "turkce": "Fayda." },
+            { "arapca": "سُهُولَةٌ / رَاحَةٌ", "turkce": "Uygunluk, kolaylık." },
+
+            { "arapca": "جَيْشٌ", "turkce": "Ordu." },
+            { "arapca": "أَجْرَى تَدْرِيبَاتٍ / يُجْرِي تَدْرِيبَاتٍ", "turkce": "Tatbikat yapmak." },
+            { "arapca": "حَرْبٌ", "turkce": "Savaş." },
+            { "arapca": "اِسْتِعْدَادٌ / تَحْضِيرٌ", "turkce": "Hazırlık." },
+            { "arapca": "نِهَائِيٌّ", "turkce": "Son, final." },
+
+            { "arapca": "عَمِلَ / يَعْمَلُ، دَرَسَ / يَدْرُسُ", "turkce": "Çalışmak." },
+            { "arapca": "قَالَ / يَقُولُ", "turkce": "Söylemek." },
+            { "arapca": "تَعَلَّمَ / يَتَعَلَّمُ", "turkce": "Öğrenmek." },
+            { "arapca": "الأَبْجَدِيَّةُ", "turkce": "Alfabe." },
+            { "arapca": "اِسْتَخْدَمَ / يَسْتَخْدِمُ", "turkce": "Kullanmak." },
+            { "arapca": "أَسَّسَ / يُؤَسِّسُ، أَنْشَأَ / يُنْشِئُ", "turkce": "Kurmak." },
+            { "arapca": "نَفَّذَ / يُنَفِّذُ، طَبَّقَ / يُطَبِّقُ", "turkce": "Hayata geçirmek, uygulamak." },
+            { "arapca": "سَفَرٌ / رِحْلَةٌ", "turkce": "Seyahat." },
+            { "arapca": "مَشْرُوعٌ", "turkce": "Proje." }
         ]
     }
 };
