@@ -4619,6 +4619,80 @@ const egitimMufredati = {
             { arapca: "قَدْ أَذْهَبُ إِلَى بُودْرُوم.", turkce: "Bodrum'a gidebilirim." },
             { arapca: "أُفَكِّرُ فِي الذَّهَابِ إِلَى بُودْرُوم.", turkce: "Bodrum'a gitmeyi düşünüyorum." }
         ],
+        "diyaloglar": [
+            {
+                "baslik": "15. Gün - Diyalog 1: Yaz Planları",
+                "senaryo": "İki arkadaş bir kafede otururken gelecek planları hakkında konuşuyor. Konuşma samimi ve rahat bir tonda geçiyor.",
+                "akis": [
+                    {
+                        "tur": "kullanici",
+                        "isim": "Arkadaş",
+                        "arapca": "طَيِّب، مَاذَا تُخَطِّطُ أَنْ تَفْعَلَ هٰذَا الصَّيْفَ؟",
+                        "turkce": "Peki, bu yaz ne yapmayı planlıyorsun?"
+                    },
+                    {
+                        "tur": "video",
+                        "isim": "Sen",
+                        "arapca": "أُفَكِّرُ فِي السَّفَرِ إِلَى إِسْبَانْيَا. كُنْتُ دَائِمًا أَتَمَنَّى أَنْ أَزُورَ بَرْشَلُونَةَ.",
+                        "turkce": "İspanya'ya seyahat etmeyi düşünüyorum. Hep Barselona'yı ziyaret etmeyi istemişimdir."
+                    },
+                    {
+                        "tur": "kullanici",
+                        "isim": "Arkadaş",
+                        "arapca": "رَائِعٌ! هَلْ سَتُسَافِرُ وَحْدَكَ؟",
+                        "turkce": "Harika! Tek başına mı seyahat edeceksin?"
+                    },
+                    {
+                        "tur": "video",
+                        "isim": "Sen",
+                        "arapca": "لَا، أُفَكِّرُ فِي الذَّهَابِ مَعَ ابْنِ عَمِّي. وَأَنْتَ؟ هَلْ عِنْدَكَ أَيُّ خُطَطٍ؟",
+                        "turkce": "Hayır, kuzenimle gitmeyi düşünüyorum. Ya sen? Herhangi bir planın var mı?"
+                    },
+                    {
+                        "tur": "kullanici",
+                        "isim": "Arkadaş",
+                        "arapca": "أَتَمَنَّى أَنْ آخُذَ إِجَازَةً قَصِيرَةً، لٰكِنِّي لَسْتُ مُتَأَكِّدًا بَعْدُ مِنَ الْمَكَانِ. رُبَّمَا أُقَرِّرُ الْأُسْبُوعَ الْقَادِمَ.",
+                        "turkce": "Kısa bir tatil yapmak istiyorum, ama henüz yerden emin değilim. Belki gelecek hafta karar veririm."
+                    }
+                ]
+            },
+            {
+                "baslik": "15. Gün - Diyalog 2: Kariyer Planları",
+                "senaryo": "Bir çalışan, yöneticisiyle performans değerlendirme toplantısında kariyer planlarını tartışıyor. Konuşma profesyonel bir tonda geçiyor.",
+                "akis": [
+                    {
+                        "tur": "kullanici",
+                        "isim": "Müdür",
+                        "arapca": "أَيْنَ تَرَى نَفْسَكَ خِلَالَ السَّنَوَاتِ الْخَمْسِ الْقَادِمَةِ؟",
+                        "turkce": "Kendini önümüzdeki beş yıl içinde nerede görüyorsun?"
+                    },
+                    {
+                        "tur": "video",
+                        "isim": "Sen",
+                        "arapca": "أَهْدِفُ إِلَى تَحَمُّلِ مَسْؤُولِيَّاتٍ أَكْبَرَ دَاخِلَ الشَّرِكَةِ. كَمَا أُخَطِّطُ لِلْمُشَارَكَةِ فِي بَرَامِجَ تَدْرِيبِيَّةٍ فِي الْقِيَادَةِ.",
+                        "turkce": "Şirket içinde daha büyük sorumluluklar almayı hedefliyorum. Ayrıca liderlik eğitim programlarına katılmayı planlıyorum."
+                    },
+                    {
+                        "tur": "kullanici",
+                        "isim": "Müdür",
+                        "arapca": "هٰذِهِ خُطَّةٌ جَيِّدَةٌ. هَلْ فَكَّرْتَ فِي دَوْرَاتٍ مُعَيَّنَةٍ؟",
+                        "turkce": "Bu iyi bir plan. Belirli kurslar düşündün mü?"
+                    },
+                    {
+                        "tur": "video",
+                        "isim": "Sen",
+                        "arapca": "نَعَمْ، أُفَكِّرُ فِي أَنْ أَلْتَحِقَ بِبَرْنَامَجٍ لِنَيْلِ شَهَادَةٍ فِي إِدَارَةِ الْمَشَارِيعِ. وَأَرَى أَنَّهُ يُنَاسِبُ أَهْدَافِي الْمِهْنِيَّةَ جَيِّدًا.",
+                        "turkce": "Evet, proje yönetimi sertifikası almak için bir programa katılmayı düşünüyorum. Bunun mesleki hedeflerime iyi uyduğunu düşünüyorum."
+                    },
+                    {
+                        "tur": "kullanici",
+                        "isim": "Müdür",
+                        "arapca": "مُمْتَاز. أَخْبِرْنِي إِنْ كَانَ هُنَاكَ أَيُّ شَيْءٍ يُمْكِنُنِي أَنْ أُسَاعِدَكَ بِهِ لِتَحْقِيقِ هٰذِهِ الْأَهْدَافِ.",
+                        "turkce": "Harika. Bu hedeflere ulaşman için sana yardımcı olabileceğim herhangi bir şey olursa bana söyle."
+                    }
+                ]
+            }
+        ],
         "kelime_alistirmasi": [
             { "arapca": "سَـ / سَوْفَ", "turkce": "-acağım / -eceğim." },
             { "arapca": "أُخَطِّطُ لِـ ...", "turkce": "... planlıyorum." },
